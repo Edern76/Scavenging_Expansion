@@ -12,7 +12,8 @@ A mod for the management video-game Rimworld aiming to provide new options for s
 
 - A new hostile faction made of scavengers, helped by their animals clad in their scrap armors such as the deadly Armored Megaspider
 - Refining of mechanoids scraps into alloys, allowing for the fabrication of better gear.
-- A new Scavenger Ideology meme, allowing you to craft said gear at a new crafting table, but restricting research speed to either "None" or "Very Low"
+- New scavenging themed events to spice up gameplay.
+- A new Scavenger Ideology meme, allowing you to craft said gear at a new crafting table, but restricting research speed to either "None" or "Very Low".
 
 ## Compatibilty
 
