@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <StuffCategoryDef>
+        <defName>Scrappy</defName>
+        <label>scrappy</label>
+        <destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+        <destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+        <destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>
+      </StuffCategoryDef>    
+</Defs>

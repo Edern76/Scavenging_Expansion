@@ -16,6 +16,13 @@
         <statBases>
             <MarketValue>15</MarketValue>
             <Mass>0.6</Mass>
+            <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1</BluntDamageMultiplier>
         </statBases>
         <smeltable>true</smeltable>
         <intricate>true</intricate>
@@ -29,5 +36,21 @@
         <tradeTags>
             <li>ExoticMisc</li>
         </tradeTags>
+        <stuffProps>
+            <categories>
+              <li>Scrappy</li>
+            </categories>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statFactors>
+                <MaxHitPoints>2.8</MaxHitPoints>
+                <Beauty>0.2</Beauty>
+                <Flammability>0</Flammability>
+                <WorkToMake>2.2</WorkToMake>
+                <WorkToBuild>2.2</WorkToBuild>
+                <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+            </statFactors>
+        </stuffProps>
     </ThingDef>
 </Defs>
