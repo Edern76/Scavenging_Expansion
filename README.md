@@ -17,6 +17,8 @@ A mod for the management video-game Rimworld aiming to provide new options for s
 
 ## Compatibilty
 
+This mod requires to be loaded after **Harmony**.
+
 Compatibility with Combat Extended is planned, but updates to this mod might not immediately be CE compatible as the CE team reviews our patches merge requests.
 
 Integration with Vanilla Factions Expanded - Mechanoids is also planned, with new unique gear with better stats craftable from special materials extracted from the corpses of this mod toughest enemies.
@@ -26,5 +28,7 @@ Otherwise this should be compatible out of the box with most other mods, we will
 ## Authors
 
 Art and concept by Sir Van, code by Edern.
+
+This mod uses part of MIT-Licensed jecrell's [JecsTools](https://github.com/jecrell/JecsTools/) to handle oversized weapon drawing.
 
 Neither of the mod authors are affiliated with or endorsed by Ludeon Studios.

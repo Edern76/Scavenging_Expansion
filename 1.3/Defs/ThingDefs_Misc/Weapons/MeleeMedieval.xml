@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <thingClass>ThingWithComps</thingClass>
         <defName>SE_MeleeWeapon_ScrapSword</defName>
         <label>scrap sword</label>
         <description>A makeshift sword made from mechanoid remains.</description>
         <graphicData>
           <texPath>Things/Item/Equipment/WeaponMelee/ScrapSword</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <techLevel>Medieval</techLevel>
         <weaponTags>
@@ -62,5 +64,11 @@
             <soundWorking>Recipe_Smith</soundWorking>
             <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+              <eastOffset>(0.31,0,0)</eastOffset>
+              <westOffset>(-0.31,0,0)</westOffset>
+            </li>
+        </comps>
       </ThingDef>
 </Defs>
