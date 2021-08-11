@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef>
+        <defName>Smelt_SE_MechanoidScrap</defName>
+        <label>smelt mechanoid scrap</label>
+        <description>Smelt down some mechanoid scrap to obtain some steel and plasteel.</description>
+        <jobString>Smelting mechanoid scrap.</jobString>
+        <workAmount>100</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <specialProducts>
+          <li>Smelted</li>
+        </specialProducts>
+        <recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+        <ingredients>
+          <li>
+            <filter>
+                <thingDefs>
+                    <li>SE_MechanoidScrap</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+              <li>SE_MechanoidScrap</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+      </RecipeDef>
+</Defs>

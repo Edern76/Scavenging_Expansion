@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_MechanoidScrap</defName>
+        <label>mechanoid scrap</label>
+        <description>Metallic scraps extracted from a fallen mechanoid</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_MechanoidScrap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>100</stackLimit>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>15</MarketValue>
+            <Mass>0.6</Mass>
+        </statBases>
+        <smeltable>true</smeltable>
+        <intricate>true</intricate>
+        <smeltProducts>
+            <Steel>2</Steel>
+            <Plasteel>1</Plasteel>
+        </smeltProducts>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>
