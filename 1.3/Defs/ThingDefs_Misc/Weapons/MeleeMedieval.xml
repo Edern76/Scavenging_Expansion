@@ -71,4 +71,69 @@
             </li>
         </comps>
       </ThingDef>
+
+      <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <thingClass>ThingWithComps</thingClass>
+        <defName>SE_MeleeWeapon_ScrapMace</defName>
+        <label>scrap mace</label>
+        <description>A makeshift mace made from mechanoid remains.</description>
+        <graphicData>
+          <texPath>Things/Item/Equipment/WeaponMelee/ScrapMace</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.25</drawSize>
+        </graphicData>
+        <techLevel>Medieval</techLevel>
+        <weaponTags>
+          <li>ScavengerMeleeDecent</li>
+          <li>Mace</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Scavengers</li>
+        </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>50</SE_MechanoidScrap>
+        </costList>
+        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+        <statBases>
+          <WorkToMake>6000</WorkToMake>
+          <Mass>1.25</Mass>
+        </statBases>
+        <relicChance>2</relicChance>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>11</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+          <li>
+            <label>head</label>
+            <labelUsedInLogging>false</labelUsedInLogging>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>17</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+              <eastOffset>(0.31,0,0)</eastOffset>
+              <westOffset>(-0.31,0,0)</westOffset>
+            </li>
+        </comps>
+      </ThingDef>
 </Defs>
