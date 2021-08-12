@@ -13,8 +13,8 @@
           <li>Smelted</li>
         </specialProducts>
         <recipeUsers>
-			<li>ElectricSmelter</li>
-		</recipeUsers>
+			    <li>ElectricSmelter</li>
+		    </recipeUsers>
         <ingredients>
           <li>
             <filter>
@@ -30,5 +30,40 @@
               <li>SE_MechanoidScrap</li>
             </thingDefs>
         </fixedIngredientFilter>
+      </RecipeDef>
+
+      <RecipeDef>
+        <defName>SE_ScrapMechanoid</defName>
+        <label>salvage mechanoid</label>
+        <description>Attempt to salvage scraps from a dead mechanoid.</description>
+        <jobString>Salvaging mechanoid.</jobString>
+        <workAmount>500</workAmount>
+        <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+        <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
+        <effectWorking>ButcherMechanoid</effectWorking>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <categories>
+            <li>CorpsesMechanoid</li>
+          </categories>
+        </fixedIngredientFilter>
+        <!-- TODO : Replace with custom special product to allow for different scrap yield based on the mechanodi -->
+        <products>
+          <SE_MechanoidScrap>10</SE_MechanoidScrap>
+        </products>
+        <recipeUsers>
+          <li>SE_SalvagingTable</li>
+        </recipeUsers>
       </RecipeDef>
 </Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <WorkGiverDef>
+        <defName>SE_DoBillsSalvage</defName>
+        <label>salvage things</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>80</priorityInType>
+        <fixedBillGiverDefs>
+            <li>SE_SalvagingTable</li>
+        </fixedBillGiverDefs>
+        <verb>salvage</verb>
+        <gerund>salvaging at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+</Defs>
