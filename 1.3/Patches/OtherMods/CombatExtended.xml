@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+            <!-- ====== Scrap Sword ======-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapSword"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>handle</label>
+                                <capacities>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>3</power>
+                                <cooldownTime>1.69</cooldownTime>
+                                <chanceFactor>0.10</chanceFactor>
+                                <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>point</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>19</power>
+                                <cooldownTime>1.69</cooldownTime>
+                                <chanceFactor>0.60</chanceFactor>
+                                <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                                <armorPenetrationSharp>1.6</armorPenetrationSharp>
+                                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>edge</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>37</power>
+                                <cooldownTime>1.56</cooldownTime>
+                                <chanceFactor>0.30</chanceFactor>
+                                <armorPenetrationBlunt>2.592</armorPenetrationBlunt>
+                                <armorPenetrationSharp>0.62</armorPenetrationSharp>
+                                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapSword"]/statBases</xpath>
+                    <value>
+                        <Bulk>10</Bulk>
+                        <MeleeCounterParryBonus>1</MeleeCounterParryBonus>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapSword"]</xpath>
+                    <value>
+                        <equippedStatOffsets>
+                            <MeleeCritChance>0.63</MeleeCritChance>
+                            <MeleeParryChance>0.75</MeleeParryChance>
+                            <MeleeDodgeChance>0.4</MeleeDodgeChance>
+                        </equippedStatOffsets>
+                    </value>
+                </li>
+
+            <!-- ====== Scrap Mace ======-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapMace"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>handle</label>
+                                <capacities>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>2.5</power>
+                                <cooldownTime>1.69</cooldownTime>
+                                <chanceFactor>0.10</chanceFactor>
+                                <armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>head</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>15</power>
+                                <cooldownTime>1.9</cooldownTime>
+                                <chanceFactor>1.33</chanceFactor>
+                                <armorPenetrationBlunt>5.5</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapMace"]/statBases</xpath>
+                    <value>
+                        <Bulk>4.5</Bulk>
+                        <MeleeCounterParryBonus>0.24</MeleeCounterParryBonus>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapMace"]</xpath>
+                    <value>
+                        <equippedStatOffsets>
+                            <MeleeCritChance>0.42</MeleeCritChance>
+                            <MeleeParryChance>0.24</MeleeParryChance>
+                            <MeleeDodgeChance>0.2</MeleeDodgeChance>
+                        </equippedStatOffsets>
+                    </value>
+                </li>    
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapMace"]/weaponTags</xpath>
+                    <value>
+                        <li>CE_OneHandedWeapon</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

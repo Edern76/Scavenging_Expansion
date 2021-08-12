@@ -15,6 +15,7 @@
       </modDependencies>
       <loadAfter>
         <li>brrainz.harmony</li>
+        <li>ceteam.combatextended</li>
       </loadAfter>
     <packageId>SirVan.Scavenging</packageId>
     <description>A mod aiming to provide new options for scavenger playstyles.

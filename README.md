@@ -1,10 +1,10 @@
 # Scavenging Expansion
 
-A mod for the management video-game Rimworld aiming to provide new options for scavenger playstyles.     
+A mod for the management video-game Rimworld aiming to provide new options for scavenger playstyles.
 
 ## Features
 
-### Short-term 
+### Short-term
 
 - New weapons and armors made with metallic scrap from fallen mechanoids
 
@@ -19,7 +19,7 @@ A mod for the management video-game Rimworld aiming to provide new options for s
 
 This mod requires to be loaded after **Harmony**.
 
-Compatibility with Combat Extended is planned, but updates to this mod might not immediately be CE compatible as the CE team reviews our patches merge requests.
+Compatible with Combat Extended, but balance might be inconsistent. Any suggestions on how to improve CE balance are welcome.
 
 Integration with Vanilla Factions Expanded - Mechanoids is also planned, with new unique gear with better stats craftable from special materials extracted from the corpses of this mod toughest enemies.
 
