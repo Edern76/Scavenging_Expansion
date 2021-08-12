@@ -86,6 +86,7 @@
         <weaponTags>
           <li>ScavengerMeleeDecent</li>
           <li>Mace</li>
+          <li>CE_OneHandedWeapon</li>
         </weaponTags>
         <weaponClasses>
             <li>Scavengers</li>

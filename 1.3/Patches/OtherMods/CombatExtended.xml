@@ -119,13 +119,6 @@
                         </equippedStatOffsets>
                     </value>
                 </li>    
-
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_ScrapMace"]/weaponTags</xpath>
-                    <value>
-                        <li>CE_OneHandedWeapon</li>
-                    </value>
-                </li>
             </operations>
         </match>
     </Operation>
