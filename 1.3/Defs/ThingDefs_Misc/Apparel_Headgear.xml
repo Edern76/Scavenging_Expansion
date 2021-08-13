@@ -33,7 +33,7 @@
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/MechanoidAlloyHelmet/SE_MechanoidAlloyHelmet</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MechanoidAlloyHelmet/SE_MechanoidAlloyHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>

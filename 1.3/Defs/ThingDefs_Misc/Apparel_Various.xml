@@ -35,7 +35,7 @@
         </thingSetMakerTags>
         <equippedStatOffsets>
             <MoveSpeed>-0.8</MoveSpeed>
-            <MeleeDodgeChance>-16</MeleeDodgeChance>
+            <MeleeDodgeChance>-10</MeleeDodgeChance>
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
