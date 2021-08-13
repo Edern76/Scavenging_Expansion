@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>SE_MechanoidAlloyHelmet</defName>
+        <label>helmet</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/MechanoidAlloyHelmet/SE_MechanoidAlloyHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.64</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/MechanoidAlloyHelmet/SE_MechanoidAlloyHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags Inherit="False">
+                <li>Apparel_Scavenger</li>
+                <li>Apparel_ScavengerMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+</Defs>
