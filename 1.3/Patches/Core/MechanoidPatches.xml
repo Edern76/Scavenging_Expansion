@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Centipede"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>30</scrapYield>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Lancer"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>10</scrapYield>
+            </li>
+        </value>
+    </Operation>
+</Patch>
