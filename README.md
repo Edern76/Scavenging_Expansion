@@ -19,6 +19,8 @@ A mod for the management video-game Rimworld aiming to provide new options for s
 
 This mod requires to be loaded after **Harmony**.
 
+It is highly recommended that you use both **High Quality Textures** (or **Graphic Settings +**) and **Vanilla Framework Expended** with the *Disable Texture Caching* option turned **on**, otherwise textures will appear extremely blurry.
+
 Compatible with Combat Extended, but balance might be inconsistent. Any suggestions on how to improve CE balance are welcome.
 
 Integration with Vanilla Factions Expanded - Mechanoids is also planned, with new unique gear with better stats craftable from special materials extracted from the corpses of this mod toughest enemies.
