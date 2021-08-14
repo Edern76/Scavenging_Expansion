@@ -4,5 +4,6 @@
         <li>/</li>
         <li>1.3</li>
         <li>Common</li>
+        <li IfModActive="sarg.alphaanimals">OtherMods/1.3/Alpha Animals</li>
     </v1.3>
 </loadFolders>
