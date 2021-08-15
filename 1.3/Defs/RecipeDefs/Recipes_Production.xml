@@ -32,8 +32,8 @@
         </fixedIngredientFilter>
       </RecipeDef>
 
-      <RecipeDef>
-        <defName>SE_ScrapMechanoid</defName>
+      <RecipeDef Class="ScavengingExpansion.Defs.ScavengingRecipeDef">
+        <defName>SE_ScrapMechanoidVariable</defName>
         <label>salvage mechanoid</label>
         <description>Attempt to salvage scraps from a dead mechanoid.</description>
         <jobString>Salvaging mechanoid.</jobString>
@@ -58,20 +58,18 @@
             <li>CorpsesMechanoid</li>
           </categories>
         </fixedIngredientFilter>
-        <!-- TODO : Replace with custom special product to allow for different scrap yield based on the mechanodi -->
-        <products>
-          <SE_MechanoidScrap>10</SE_MechanoidScrap>
-        </products>
+        <scavengingTypes>
+          <li>Basic</li>
+        </scavengingTypes>
         <recipeUsers>
           <li>SE_SalvagingTable</li>
         </recipeUsers>
       </RecipeDef>
 
-
       <RecipeDef Class="ScavengingExpansion.Defs.ScavengingRecipeDef">
-        <defName>SE_ScrapMechanoidVariable</defName>
-        <label>salvage mechanoid (custom class test)</label>
-        <description>Attempt to salvage scraps from a dead mechanoid.</description>
+        <defName>SE_ScrapMechanoidAdvanced</defName>
+        <label>carefully salvage mechanoid</label>
+        <description>Attempt to salvage rare materials from a dead mechanoid.</description>
         <jobString>Salvaging mechanoid.</jobString>
         <workAmount>500</workAmount>
         <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
@@ -94,9 +92,9 @@
             <li>CorpsesMechanoid</li>
           </categories>
         </fixedIngredientFilter>
-        <!-- TODO : Replace with custom special product to allow for different scrap yield based on the mechanodi -->
         <scavengingTypes>
           <li>Basic</li>
+          <li>Advanced</li>
         </scavengingTypes>
         <recipeUsers>
           <li>SE_SalvagingTable</li>

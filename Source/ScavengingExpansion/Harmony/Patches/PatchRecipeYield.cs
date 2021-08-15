@@ -40,6 +40,14 @@ namespace ScavengingExpansion.Harmony.Patches
                         yield return product;
                     }    
                 }
+
+                if (scavengingDef.scavengingTypes.Contains((ScavengingRecipeType.Advanced)))
+                {
+                    foreach (Thing product in RecipeUtils.GetAdvancedSalvagingProducts(recipeDef, worker, ingredients))
+                    {
+                        yield return product;
+                    }
+                }    
             }
         }
     }

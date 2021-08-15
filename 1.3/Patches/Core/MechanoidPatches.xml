@@ -5,6 +5,19 @@
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                 <scrapYield>30</scrapYield>
+                <!-- Testing purposes only -->
+                <advancedYield>
+                    <li>
+                        <defRef>SE_MechanoidAlloyHelmet</defRef>
+                        <count>1</count>
+                        <chance>0.20</chance>
+                    </li>
+                    <li>
+                        <defRef>SE_MechanoidAlloyHeavyArmor</defRef>
+                        <count>1</count>
+                        <chance>0.60</chance>
+                    </li>
+                </advancedYield>
             </li>
         </value>
     </Operation>
