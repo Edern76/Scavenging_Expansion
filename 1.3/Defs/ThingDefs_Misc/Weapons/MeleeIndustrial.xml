@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <thingClass>ThingWithComps</thingClass>
+        <defName>SE_MeleeWeapon_Scyther</defName>
+        <label>the scyther</label>
+        <description>A makeshift sword made from mechanoid remains.</description>
+        <graphicData>
+          <texPath>Things/Item/Equipment/WeaponMelee/TheScyther</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.3</drawSize>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+          <li>ScavengerMeleeAdvanced</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Scavengers</li>
+        </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>100</SE_MechanoidScrap>
+        </costList>
+        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+        <statBases>
+          <WorkToMake>18000</WorkToMake>
+          <Mass>2</Mass>
+        </statBases>
+        <relicChance>2</relicChance>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>26.5</power>
+            <cooldownTime>2.6</cooldownTime>
+          </li>
+          <li>
+            <label>edge</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>26.5</power>
+            <cooldownTime>2.6</cooldownTime>
+          </li>
+        </tools>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
+        </comps>
+      </ThingDef>
+</Defs>
