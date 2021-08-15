@@ -53,4 +53,49 @@
             </statFactors>
         </stuffProps>
     </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_MechanoidAlloy</defName>
+        <label>mechanoid alloy</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_MechanoidAlloy</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>100</stackLimit>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <Mass>1.2</Mass>
+            <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1</BluntDamageMultiplier>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <stuffProps>
+            <categories>
+              <li>Metallic</li>
+            </categories>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statFactors>
+                <MaxHitPoints>2.8</MaxHitPoints>
+                <Beauty>0.4</Beauty>
+                <Flammability>0</Flammability>
+                <WorkToMake>2.2</WorkToMake>
+                <WorkToBuild>2.2</WorkToBuild>
+                <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
 </Defs>
