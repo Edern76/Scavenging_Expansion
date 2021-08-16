@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_MammothPlate</defName>
+        <label>mammoth plate</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_MammothPlate</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>150</MarketValue>
+            <Mass>0.8</Mass>
+        </statBases>
+    </ThingDef>
+</Defs>
