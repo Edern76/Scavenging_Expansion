@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <Operation class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Alpha Animals</li>
         </mods>
 
         <match Class="PatchOperationSequence">
-            <li Class="PatchOperationAddModExtension">
-                <xpath>Defs/ThingDef[defName="AA_Aura"]</xpath>
-                <value>
-                    <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
-                        <scrapYield>20</scrapYield>
-                        <advancedYield>
-                            <li>
-                                <defRef>SE_DominionCrown_Resource</defRef>
-                                <count>1</count>
-                                <chance>0.05</chance>
-                            </li>
-                        </advancedYield>
-                    </li>
-                </value>
-            </li>
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="AA_Aura"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>20</scrapYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_DominionCrown_Resource</defRef>
+                                    <count>1</count>
+                                    <chance>0.05</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+            </operations>    
         </match>
     </Operation>
 </Patch>
