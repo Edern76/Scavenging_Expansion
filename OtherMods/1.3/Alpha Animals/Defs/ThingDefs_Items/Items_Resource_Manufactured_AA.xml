@@ -18,4 +18,23 @@
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
     </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_SlurrypedeDatabase</defName>
+        <label>slurrypede database</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_SlurrypedeDatabase</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
 </Defs>
