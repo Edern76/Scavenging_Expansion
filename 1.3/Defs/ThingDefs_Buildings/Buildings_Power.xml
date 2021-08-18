@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>SE_OverchargedPowerCell</defName>
+        <label>overcharged powercell</label>
+        <description>Placeholder</description>
+        <thingClass>Building</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/Power/OverchargedPowercell</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>    
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <costList>
+            <SE_MechanoidAlloy>60</SE_MechanoidAlloy>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <Plasteel>40</Plasteel>
+            <!-- TODO : Add overcahrged odin power core once it is implemented-->
+        </costList>
+        <blockWind>true</blockWind>
+        <fillPercent>1.0</fillPercent>
+        <rotatable>true</rotatable>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>-20</Beauty>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <canOverlapZones>false</canOverlapZones>
+        <size>(1, 2)</size>
+        <comps>
+            <li Class="CompProperties_Power">
+              <compClass>CompPowerPlant</compClass>
+              <basePowerConsumption>-3000</basePowerConsumption>
+              <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+              <glowRadius>3</glowRadius>
+              <glowColor>(227,233,168,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>5</explosiveRadius>
+                <damageAmountBase>200</damageAmountBase>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <wickTicks>70~150</wickTicks>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>12</heatPerSecond>
+            </li>
+        </comps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Power</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+    </ThingDef>
+</Defs>
