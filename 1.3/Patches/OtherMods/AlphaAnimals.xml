@@ -15,7 +15,6 @@
                             <advancedYield>
                                 <li>
                                     <defRef>SE_DominionCrown_Resource</defRef>
-                                    <count>1</count>
                                     <chance>0.05</chance>
                                 </li>
                             </advancedYield>

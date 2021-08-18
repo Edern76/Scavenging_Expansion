@@ -59,17 +59,17 @@ namespace ScavengingExpansion.Utils
                     foreach (AdvancedScavengingProduct product in ingredientYield.advancedYield )
                     {
                         float efficiency = recipeDef.efficiencyStat != null ? worker.GetStatValue(recipeDef.efficiencyStat) : 1f;
-                        int finalAmount = GenMath.RoundRandom((float)product.count * efficiency);
-                        if (finalAmount < 1)
-                        {
-                            finalAmount = 1;
-                        }
-
+                        int additionalAmount = product.maxAmount - product.minAmount;
+                        int finalAmount = GenMath.RoundRandom((float)additionalAmount * efficiency) + product.minAmount;
+                        //TODO : If ingredient is hoarder corpse, take into account hoarding sack health for efficiency
                         float finalChance = product.chance * efficiency;
                         float diceRoll = Rand.Value;
-                        Log.Message(
-                            $"Efficiency : {efficiency} | Base chance : {product.chance} | Final chance : {finalChance} | Dice Roll : {diceRoll} ");
-                        if (diceRoll < finalChance)
+                        #if DEBUG
+                            Log.Message(
+                                $"Efficiency : {efficiency} | Base chance : {product.chance} | Final chance : {finalChance} | Dice Roll : {diceRoll} | Final amount : {finalAmount}");
+                        #endif
+                        
+                        if (finalAmount > 0 && diceRoll < finalChance)
                         {
                             ThingDef productDef = DefDatabase<ThingDef>.GetNamed(product.defRef);
                             if (productDef == null)
