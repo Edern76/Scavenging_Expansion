@@ -60,7 +60,7 @@ namespace ScavengingExpansion.Utils
                     {
                         float efficiency = recipeDef.efficiencyStat != null ? worker.GetStatValue(recipeDef.efficiencyStat) : 1f;
                         int additionalAmount = product.maxAmount - product.minAmount;
-                        int finalAmount = GenMath.RoundRandom((float)additionalAmount * efficiency) + product.minAmount;
+                        int finalAmount = GenMath.RoundRandom((float)additionalAmount * efficiency * Rand.Value) + product.minAmount;
                         //TODO : If ingredient is hoarder corpse, take into account hoarding sack health for efficiency
                         float finalChance = product.chance * efficiency;
                         float diceRoll = Rand.Value;

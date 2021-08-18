@@ -100,4 +100,45 @@
           <li>SE_SalvagingTable</li>
         </recipeUsers>
       </RecipeDef>
+
+      <RecipeDef Class="ScavengingExpansion.Defs.ScavengingRecipeDef">
+        <defName>SE_DissectHoarder</defName>
+        <label>dissect hoarder loot bulb</label>
+        <description>Placeholder</description>
+        <jobString>Dissecting hoarder loot bulb.</jobString>
+        <workAmount>750</workAmount>
+        <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+        <effectWorking>ButcherFlesh</effectWorking>
+        <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+        <interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <specialProducts>
+          <li>Butchery</li>
+        </specialProducts>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_SE_InsectHoarder</li>
+          </thingDefs>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>
+          </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <scavengingTypes>
+          <li>Advanced</li>
+        </scavengingTypes>
+        <recipeUsers>
+          <li>TableButcher</li>
+        </recipeUsers>
+      </RecipeDef>
 </Defs>
