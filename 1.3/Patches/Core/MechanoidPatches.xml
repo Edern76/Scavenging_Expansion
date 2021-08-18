@@ -4,20 +4,7 @@
         <xpath>Defs/ThingDef[defName="Mech_Centipede"]</xpath>
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
-                <scrapYield>30</scrapYield>
-                <!-- Testing purposes only -->
-                <advancedYield>
-                    <li>
-                        <defRef>SE_MechanoidAlloyHelmet</defRef>
-                        <count>1</count>
-                        <chance>0.20</chance>
-                    </li>
-                    <li>
-                        <defRef>SE_MechanoidAlloyHeavyArmor</defRef>
-                        <count>1</count>
-                        <chance>0.60</chance>
-                    </li>
-                </advancedYield>
+                <scrapYield>40</scrapYield>
             </li>
         </value>
     </Operation>
@@ -26,7 +13,35 @@
         <xpath>Defs/ThingDef[defName="Mech_Lancer"]</xpath>
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
-                <scrapYield>10</scrapYield>
+                <scrapYield>15</scrapYield>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Scyther"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>15</scrapYield>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Pikeman"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>20</scrapYield>
+            </li>
+        </value>
+    </Operation>
+
+    
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Termite"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>25</scrapYield>
             </li>
         </value>
     </Operation>

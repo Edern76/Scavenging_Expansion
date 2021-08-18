@@ -57,6 +57,7 @@
         <Compile Include="Enums\ScavengingRecipeType.cs" />
         <Compile Include="Harmony\HarmonyBase.cs" />
         <Compile Include="Harmony\Patches\PatchRecipeYield.cs" />
+        <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Utils\RecipeUtils.cs" />
         <Compile Include="Utils\ThingUtils.cs" />

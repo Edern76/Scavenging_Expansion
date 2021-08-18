@@ -14,6 +14,9 @@
         </li>
       </modDependencies>
       <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
         <li>brrainz.harmony</li>
         <li>ceteam.combatextended</li>
         <li>sarg.alphaanimals</li>
