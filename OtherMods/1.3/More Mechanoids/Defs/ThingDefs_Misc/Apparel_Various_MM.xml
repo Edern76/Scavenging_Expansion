@@ -3,7 +3,7 @@
     <ThingDef ParentName="ArmorSmithableBase">
         <defName>SE_MammothCuirass</defName>
         <label>mammoth cuirass</label>
-        <description>Placeholder</description>
+        <description>Hardened overplates roughly assembled together to form a cuirass, incredibly heavy and sturdy it's a favorite amongst the lords</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/MammothCuirass/SE_MammothCuirass</texPath>
             <graphicClass>Graphic_Single</graphicClass>
