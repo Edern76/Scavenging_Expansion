@@ -3,7 +3,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>SE_OverchargedPowerCell</defName>
         <label>overcharged powercell</label>
-        <description>Placeholder</description>
+        <description>By adding an extra core, an containing most of the power through a protective layer of mechanoid alloy, some clans of scavengers managed to amplify and utilize the power within those innerparts of the odin.</description>
         <thingClass>Building</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>

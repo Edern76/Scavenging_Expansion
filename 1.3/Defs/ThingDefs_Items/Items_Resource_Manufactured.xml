@@ -3,7 +3,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>SE_MechanoidScrap</defName>
         <label>mechanoid scrap</label>
-        <description>Metallic scraps extracted from a fallen mechanoid</description>
+        <description>Worn out components and fragments of a mechanoid shell. Mostly useless, tho some with enough imagination may find use in those.</description>
         <graphicData>
             <texPath>Things/Item/Resource/SE_MechanoidScrap</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -57,7 +57,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>SE_MechanoidAlloy</defName>
         <label>mechanoid alloy</label>
-        <description>Placeholder</description>
+        <description>Layers of unknown metals and plasteel extracted from the outerplates of mechanoids. Hard to manipulate but somehow stronger than plasteel.</description>
         <graphicData>
             <texPath>Things/Item/Resource/SE_MechanoidAlloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
