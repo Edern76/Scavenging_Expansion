@@ -3,7 +3,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>SE_MammothPlate</defName>
         <label>mammoth plate</label>
-        <description>Placeholder</description>
+        <description>Overplates carefully extracted from a Mammoth. Harder than anything known on the rim, even surpassing plasteel.</description>
         <graphicData>
             <texPath>Things/Item/Resource/SE_MammothPlate</texPath>
             <graphicClass>Graphic_Single</graphicClass>

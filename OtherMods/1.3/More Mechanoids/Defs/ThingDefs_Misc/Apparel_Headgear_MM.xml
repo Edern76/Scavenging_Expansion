@@ -3,7 +3,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>SE_MammothHelmet</defName>
         <label>mammoth helmet</label>
-        <description>Placeholder</description>
+        <description>Unbreakable armored helmet, used by many lords in the outlands for its incredible protection.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/MammothVisiere/SE_MammothVisiere</texPath>
             <graphicClass>Graphic_Single</graphicClass>

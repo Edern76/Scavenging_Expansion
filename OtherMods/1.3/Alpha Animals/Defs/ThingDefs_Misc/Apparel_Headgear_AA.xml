@@ -3,7 +3,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SE_DominionCrownHelmet</defName>
         <label>dominion crown</label>
-        <description>Placeholder</description>
+        <description>Masterfully handcrafted crown, fitted for a king. Psychic energy seems to emanate from within the golden halo.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/DominionCrown/SE_DominionCrown</texPath>
             <graphicClass>Graphic_Single</graphicClass>

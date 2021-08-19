@@ -3,7 +3,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>SE_DominionCrown_Resource</defName>
         <label>dominion broken crown</label>
-        <description>Placeholder</description>
+        <description>A broken but not useless crown extracted with care from a dominion. A psychic energy seems to emanate from it.</description>
         <graphicData>
             <texPath>Things/Item/Resource/SE_DominionCrown</texPath>
             <graphicClass>Graphic_Single</graphicClass>
