@@ -4,7 +4,7 @@
         <thingClass>ThingWithComps</thingClass>
         <defName>SE_MeleeWeapon_ScrapSword</defName>
         <label>scrap sword</label>
-        <description>A makeshift sword made from mechanoid remains.</description>
+        <description>The usual cut-throat used by many within the outlands.</description>
         <graphicData>
           <texPath>Things/Item/Equipment/WeaponMelee/ScrapSword</texPath>
           <graphicClass>Graphic_Single</graphicClass>
@@ -76,7 +76,7 @@
         <thingClass>ThingWithComps</thingClass>
         <defName>SE_MeleeWeapon_ScrapMace</defName>
         <label>scrap mace</label>
-        <description>A makeshift mace made from mechanoid remains.</description>
+        <description>Roughly assembled mechanoid scraps and forged iron, some would call it a mace.</description>
         <graphicData>
           <texPath>Things/Item/Equipment/WeaponMelee/ScrapMace</texPath>
           <graphicClass>Graphic_Single</graphicClass>
