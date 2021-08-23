@@ -13,25 +13,33 @@
 			<skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
+            <recipeUsers>
+                <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
 		</recipeMaker>
+        <useHitPoints>false</useHitPoints>
         <costList>
-            <Steel>200</Steel>
+            <SE_MammothPlate>10</SE_MammothPlate>
+            <Plasteel>70</Plasteel>
+            <SE_MechanoidAlloy>20</SE_MechanoidAlloy>
         </costList>
         <statBases>
             <WorkToMake>38000</WorkToMake>
-            <MaxHitPoints>320</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0</Flammability>
-            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.37</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.65</ArmorRating_Heat>
-            <Insulation_Cold>34</Insulation_Cold>
-            <Insulation_Heat>15</Insulation_Heat>
+            <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <Insulation_Cold>28</Insulation_Cold>
+            <Insulation_Heat>5</Insulation_Heat>
             <EquipDelay>20</EquipDelay>
+            <DeteriorationRate>0</DeteriorationRate>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.95</MoveSpeed>
-            <MeleeDodgeChance>-12</MeleeDodgeChance>
+            <MoveSpeed>-1.5</MoveSpeed>
+            <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+            <MeleeDodgeChance>-15</MeleeDodgeChance>
+            <IncomingDamageFactor>-0.1</IncomingDamageFactor>
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
