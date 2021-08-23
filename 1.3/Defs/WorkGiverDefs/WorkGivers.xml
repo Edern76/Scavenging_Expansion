@@ -8,6 +8,7 @@
         <priorityInType>80</priorityInType>
         <fixedBillGiverDefs>
             <li>SE_SalvagingTable</li>
+            <li>SE_AdvancedSalvagingTable</li>
         </fixedBillGiverDefs>
         <verb>salvage</verb>
         <gerund>salvaging at</gerund>
