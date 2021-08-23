@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- ===== Ancient mechanoid shell ===== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AncientMechanoidShell"]</xpath>
+        <value>
+            <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <!-- Checks if building already has cost list to prevent from adding it twice -->
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ThingDef[defName="AncientMechanoidShell"]/costList</xpath>
+            <success>Invert</success>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AncientMechanoidShell"]</xpath>
+            <value>
+              <costList />
+            </value>
+          </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AncientMechanoidShell"]/costList</xpath>
+        <value>
+            <SE_MechanoidScrap>5</SE_MechanoidScrap>
+        </value>
+    </Operation>
+
+    <!-- ===== Ancient mechanoid drop beacon ===== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AncientMechDropBeacon"]</xpath>
+        <value>
+            <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <!-- Checks if building already has cost list to prevent from adding it twice -->
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ThingDef[defName="AncientMechDropBeacon"]/costList</xpath>
+            <success>Invert</success>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AncientMechDropBeacon"]</xpath>
+            <value>
+              <costList />
+            </value>
+          </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AncientMechDropBeacon"]/costList</xpath>
+        <value>
+            <SE_MechanoidScrap>5</SE_MechanoidScrap>
+        </value>
+    </Operation>
+
+</Patch>    
