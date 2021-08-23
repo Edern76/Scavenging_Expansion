@@ -8,20 +8,37 @@
             <texPath>Things/Pawn/Humanlike/Apparel/MammothVisiere/SE_MammothVisiere</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <useHitPoints>false</useHitPoints>
         <costList>
-            <Steel>100</Steel>
+            <SE_MammothPlate>5</SE_MammothPlate>
+            <Plasteel>30</Plasteel>
+            <SE_MechanoidAlloy>15</SE_MechanoidAlloy>
         </costList>
+        <recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+            <recipeUsers>
+                <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
+		</recipeMaker>
         <!-- TODO : Actual stats (and crafting recipe)-->
         <statBases>
             <WorkToMake>14000</WorkToMake>
             <Mass>5</Mass>
-            <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.64</ArmorRating_Heat>
-            <Insulation_Cold>4</Insulation_Cold>
-            <Insulation_Heat>4</Insulation_Heat>
+            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
+            <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>6</EquipDelay>
         </statBases>
+        <equippedStatOffsets>
+            <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+        </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
                 <li>FullHead</li>

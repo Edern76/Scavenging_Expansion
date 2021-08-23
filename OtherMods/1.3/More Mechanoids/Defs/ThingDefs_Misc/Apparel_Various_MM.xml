@@ -11,7 +11,7 @@
         <recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
-				<Crafting>11</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
             <recipeUsers>
                 <li>SE_AdvancedSalvagingTable</li>
