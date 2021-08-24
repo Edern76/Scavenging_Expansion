@@ -22,7 +22,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/statBases/Mass</xpath>
                     <value>
-                        <Mass>60</Mass>
+                        <Mass>20</Mass>
                     </value>
                 </li>
 

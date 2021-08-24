@@ -23,7 +23,6 @@
                 <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
 		</recipeMaker>
-        <!-- TODO : Actual stats (and crafting recipe)-->
         <statBases>
             <WorkToMake>14000</WorkToMake>
             <Mass>5</Mass>
@@ -32,6 +31,7 @@
             <ArmorRating_Heat>0.4</ArmorRating_Heat>
             <Insulation_Cold>1</Insulation_Cold>
             <Insulation_Heat>1</Insulation_Heat>
+            <Flammability>0</Flammability>
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>6</EquipDelay>
         </statBases>
