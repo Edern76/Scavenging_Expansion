@@ -47,6 +47,8 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <hatRenderedAboveBody>false</hatRenderedAboveBody>
+            <canBeDesiredForIdeo MayRequire="Ludeon.RimWorld.Ideology">true</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
 </Defs>

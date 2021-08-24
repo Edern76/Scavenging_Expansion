@@ -19,7 +19,7 @@
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
-            <recipeUsers>
+            <recipeUsers Inherit="False">
                 <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
 		</recipeMaker>
@@ -47,6 +47,7 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <hatRenderedAboveBody>false</hatRenderedAboveBody>
         </apparel>
     </ThingDef>
 </Defs>

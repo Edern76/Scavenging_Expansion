@@ -44,6 +44,7 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <hatRenderedAboveBody>false</hatRenderedAboveBody>
         </apparel>
     </ThingDef>
 </Defs>
