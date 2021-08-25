@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_SalvagedLightHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
+                    <value>
+                      <StuffEffectMultiplierArmor>4.5</StuffEffectMultiplierArmor>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_SalvagedLightHelmet"]/stuffCategories/li[.="Metallic"]</xpath>
+                    <value>
+                      <li>Steeled</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>                

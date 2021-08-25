@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SE_MechanoidAlloyHelmet</defName>
-        <label>helmet</label>
+        <label>mechanoid alloy helmet</label>
         <description>Placeholder</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/MechanoidAlloyHelmet/SE_MechanoidAlloyHelmet</texPath>
@@ -34,6 +34,57 @@
                 <li>FullHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MechanoidAlloyHelmet/SE_MechanoidAlloyHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags Inherit="False">
+                <li>Apparel_Scavenger</li>
+                <li>Apparel_ScavengerMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <hatRenderedAboveBody>false</hatRenderedAboveBody>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>SE_SalvagedLightHelmet</defName>
+        <label>salvaged light helmet</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ScavLightHelmet/SE_ScavLightHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>45</costStuffCount>
+        <recipeMaker>
+            <recipeUsers>
+              <li>ElectricSmithy</li>
+              <li>FueledSmithy</li>
+              <li>SE_SalvagingTable</li>
+              <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>3200</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>2</Mass>
+            <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScavLightHelmet/SE_ScavLightHelm</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
