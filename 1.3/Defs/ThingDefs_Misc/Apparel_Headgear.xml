@@ -3,7 +3,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SE_MechanoidAlloyHelmet</defName>
         <label>mechanoid alloy helmet</label>
-        <description>Placeholder</description>
+        <description>Hard and bulky, the mechaoid alloy helmet is a favorite of many for its above average protection.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/MechanoidAlloyHelmet/SE_MechanoidAlloyHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -51,7 +51,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SE_SalvagedLightHelmet</defName>
         <label>salvaged light helmet</label>
-        <description>Placeholder</description>
+        <description>Metals twisted together to form a helmet, even if mocked the sturdy design offer a decent protection.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/ScavLightHelmet/SE_ScavLightHelm</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -102,7 +102,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SE_ScrapCrown</defName>
         <label>scrap crown</label>
-        <description>Placeholder</description>
+        <description>A roughly assembled crown made out of mechanoid scraps, often worn by so called nobles of the outlands to dignify their status.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/ScrapCrown/SE_ScrapCrown</texPath>
             <graphicClass>Graphic_Single</graphicClass>

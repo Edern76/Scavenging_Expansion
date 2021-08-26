@@ -4,7 +4,7 @@
         <thingClass>ThingWithComps</thingClass>
         <defName>SE_MeleeWeapon_Scyther</defName>
         <label>the scyther</label>
-        <description>Trusty friend or bane of the prisoner, the scyther named after the mechanoid is often used as an executionner tool within the outlands.</description>
+        <description>Trusty friend or bane of the prisoner, the scyther named after the mechanoid is often used as an executionner tool but can be seen amongst the mechanoid hunters.</description>
         <graphicData>
           <texPath>Things/Item/Equipment/WeaponMelee/TheScyther</texPath>
           <graphicClass>Graphic_Single</graphicClass>
