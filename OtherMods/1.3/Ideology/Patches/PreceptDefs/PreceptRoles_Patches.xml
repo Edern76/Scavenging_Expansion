@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements</xpath>
+        <value>
+            <li>
+                <anyMemeRequired>
+                    <li>Supremacist</li> <!-- TODO : Replace with Scavenger meme -->
+                </anyMemeRequired>
+                <requirement>
+                    <bodyPartGroupsMatchAny>
+                        <li>UpperHead</li>
+                    </bodyPartGroupsMatchAny>
+                    <requiredDefs>
+                        <li>SE_ScrapCrown</li>
+                    </requiredDefs>
+                </requirement>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements</xpath>
+        <value>
+            <li>
+                <anyMemeRequired>
+                    <li>Supremacist</li> <!-- TODO : Replace with Scavenger meme -->
+                </anyMemeRequired>
+                <requirement>
+                    <bodyPartGroupsMatchAny>
+                        <li>UpperHead</li>
+                    </bodyPartGroupsMatchAny>
+                    <requiredDefs>
+                        <li>SE_ScrapCrown</li>
+                    </requiredDefs>
+                </requirement>
+            </li>
+        </value>
+    </Operation>
+</Patch>

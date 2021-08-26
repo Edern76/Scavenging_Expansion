@@ -26,7 +26,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="SE_DominionCrownHelmet"]/statBases/ArmorRating_Blunt</xpath>
                     <value>
-                        <ArmorRating_Blunt>30</ArmorRating_Blunt>
+                        <ArmorRating_Blunt>24</ArmorRating_Blunt>
                     </value>
                 </li>
 

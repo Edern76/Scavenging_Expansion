@@ -20,6 +20,20 @@
                       <li>Steeled</li>
                     </value>
                 </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_ScrapCrown"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>4</ArmorRating_Sharp>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_ScrapCrown"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>4</ArmorRating_Blunt>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>

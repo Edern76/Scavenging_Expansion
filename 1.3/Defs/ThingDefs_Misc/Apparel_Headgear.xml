@@ -98,4 +98,61 @@
             <hatRenderedAboveBody>false</hatRenderedAboveBody>
         </apparel>
     </ThingDef>
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>SE_ScrapCrown</defName>
+        <label>scrap crown</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ScrapCrown/SE_ScrapCrown</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingCategories>
+            <li>HeadgearNoble</li>
+        </thingCategories>
+        <costList>
+            <Steel>30</Steel>
+            <SE_MechanoidScrap>10</SE_MechanoidScrap>
+        </costList>
+        <recipeMaker>
+            <recipeUsers>
+              <li>ElectricSmithy</li>
+              <li>FueledSmithy</li>
+              <li>SE_SalvagingTable</li>
+              <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>1600</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+            <TradePriceImprovement>0.1</TradePriceImprovement>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScrapCrown/SE_ScrapCrown</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags Inherit="False">
+                <li>Apparel_Scavenger</li>
+                <li>Royal</li>
+                <li>RoyalTier2</li>
+            </tags>
+            <hatRenderedAboveBody>false</hatRenderedAboveBody>
+            <canBeDesiredForIdeo MayRequire="Ludeon.RimWorld.Ideology">true</canBeDesiredForIdeo>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+    </ThingDef>
 </Defs>
