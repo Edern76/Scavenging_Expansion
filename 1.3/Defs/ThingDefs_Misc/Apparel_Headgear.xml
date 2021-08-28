@@ -9,17 +9,32 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <costList>
-            <Steel>100</Steel>
+            <Plasteel>35</Plasteel>
+            <SE_MechanoidAlloy>35</SE_MechanoidAlloy>
+            <Uranium>15</Uranium>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
+        <recipeMaker>
+            <skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+            <recipeUsers>
+              <li>ElectricSmithy</li>
+              <li>FueledSmithy</li>
+              <li>SE_SalvagingTable</li>
+              <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
+        </recipeMaker>
         <statBases>
             <WorkToMake>14000</WorkToMake>
-            <MaxHitPoints>180</MaxHitPoints>
+            <MaxHitPoints>250</MaxHitPoints>
+            <MarketValue>450</MarketValue>
             <Mass>5</Mass>
-            <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.64</ArmorRating_Heat>
-            <Insulation_Cold>4</Insulation_Cold>
-            <Insulation_Heat>4</Insulation_Heat>
+            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>0</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
         <thingSetMakerTags>
@@ -27,7 +42,8 @@
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <equippedStatOffsets>
-            <ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+            <MoveSpeed>-0.2</MoveSpeed>
+            <ShootingAccuracyPawn>-0.5</ShootingAccuracyPawn>
         </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
@@ -67,6 +83,9 @@
               <li>SE_SalvagingTable</li>
               <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
+            <memePrerequisitesAny>
+                <li>Supremacist</li> <!-- TODO : Replace with scavenger meme-->
+            </memePrerequisitesAny>
         </recipeMaker>
         <statBases>
             <WorkToMake>3200</WorkToMake>

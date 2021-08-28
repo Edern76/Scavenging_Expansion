@@ -13,12 +13,15 @@
         <techLevel>Industrial</techLevel>
         <weaponTags>
           <li>ScavengerMeleeAdvanced</li>
+          <li>Axe</li>
         </weaponTags>
         <weaponClasses>
             <li>Scavengers</li>
         </weaponClasses>
         <costList>
-            <SE_MechanoidScrap>100</SE_MechanoidScrap>
+            <SE_MechanoidAlloy>40</SE_MechanoidAlloy>
+            <SE_MechanoidScrap>10</SE_MechanoidScrap>
+            <Plasteel>50</Plasteel>
         </costList>
         <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
         <statBases>
@@ -37,26 +40,21 @@
             <cooldownTime>2</cooldownTime>
           </li>
           <li>
-            <label>point</label>
-            <capacities>
-              <li>Stab</li>
-            </capacities>
-            <power>26.5</power>
-            <cooldownTime>2.6</cooldownTime>
-          </li>
-          <li>
             <label>edge</label>
             <capacities>
               <li>Cut</li>
             </capacities>
-            <power>26.5</power>
-            <cooldownTime>2.6</cooldownTime>
+            <power>26</power>
+            <cooldownTime>2.5</cooldownTime>
+            <armorPenetration>0.7</armorPenetration>
           </li>
         </tools>
         <recipeMaker>
             <recipeUsers>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
+                <li>SE_SalvagingTable</li>
+                <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>

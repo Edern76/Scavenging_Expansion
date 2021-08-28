@@ -119,6 +119,57 @@
                         </equippedStatOffsets>
                     </value>
                 </li>    
+
+                <!-- ====== Scrap Mace ======-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_Scyther"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>handle</label>
+                                <capacities>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>2.5</power>
+                                <cooldownTime>1.69</cooldownTime>
+                                <chanceFactor>0.10</chanceFactor>
+                                <armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>edge</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>34</power>
+                                <cooldownTime>1.9</cooldownTime>
+                                <chanceFactor>1.33</chanceFactor>
+                                <armorPenetrationBlunt>2.8</armorPenetrationBlunt>
+                                <armorPenetrationSharp>18</armorPenetrationSharp>
+                                <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_Scyther"]/statBases</xpath>
+                    <value>
+                        <Bulk>4.5</Bulk>
+                        <MeleeCounterParryBonus>0.35</MeleeCounterParryBonus>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_Scyther"]</xpath>
+                    <value>
+                        <equippedStatOffsets>
+                            <MeleeCritChance>0.7</MeleeCritChance>
+                            <MeleeParryChance>0.3</MeleeParryChance>
+                            <MeleeDodgeChance>0.2</MeleeDodgeChance>
+                        </equippedStatOffsets>
+                    </value>
+                </li>    
             </operations>
         </match>
     </Operation>

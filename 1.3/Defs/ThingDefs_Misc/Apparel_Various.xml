@@ -13,20 +13,30 @@
 			<skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>SE_SalvagingTable</li>
+                <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
 		</recipeMaker>
         <costList>
-            <Steel>200</Steel>
+            <Plasteel>60</Plasteel>
+            <SE_MechanoidAlloy>35</SE_MechanoidAlloy>
+            <Uranium>15</Uranium>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <statBases>
             <WorkToMake>38000</WorkToMake>
-            <MaxHitPoints>320</MaxHitPoints>
+            <MaxHitPoints>1000</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0</Flammability>
-            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.37</ArmorRating_Blunt>
+            <MarketValue>2100</MarketValue>
+            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
             <ArmorRating_Heat>0.65</ArmorRating_Heat>
-            <Insulation_Cold>34</Insulation_Cold>
-            <Insulation_Heat>15</Insulation_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
             <EquipDelay>20</EquipDelay>
         </statBases>
         <thingSetMakerTags>
@@ -34,8 +44,8 @@
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <equippedStatOffsets>
-            <MoveSpeed>-0.8</MoveSpeed>
-            <MeleeDodgeChance>-10</MeleeDodgeChance>
+            <MoveSpeed>-0.5</MoveSpeed>
+            <MeleeDodgeChance>-5</MeleeDodgeChance>
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
@@ -72,39 +82,36 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
-			<unfinishedThingDef>UnfinishedMetallicArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-        <costList>
-            <Steel>200</Steel>
-        </costList>
+        <stuffCategories>
+            <li>Metallic</li>
+          </stuffCategories>
+        <costStuffCount>75</costStuffCount>
         <statBases>
             <WorkToMake>12000</WorkToMake>
             <MaxHitPoints>120</MaxHitPoints>
             <Mass>10</Mass>
             <Flammability>0</Flammability>
-            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.37</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.65</ArmorRating_Heat>
-            <Insulation_Cold>34</Insulation_Cold>
-            <Insulation_Heat>15</Insulation_Heat>
-            <EquipDelay>20</EquipDelay>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>10</EquipDelay>
         </statBases>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
         </thingSetMakerTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScavLightArmor/SE_ScavLightArmor</wornGraphicPath>
             <layers>
