@@ -120,7 +120,7 @@
                     </value>
                 </li>    
 
-                <!-- ====== Scrap Mace ======-->
+                <!-- ====== Scyther ======-->
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="SE_MeleeWeapon_Scyther"]/tools</xpath>
                     <value>
