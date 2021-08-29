@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- ===== Hunter Flintlock ===== -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_HunterFlintlock</defName>
+        <label>hunter flintlock</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterFlintlock</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_HunterFlintlock</defaultProjectile>
+              <warmupTime>2.1</warmupTime>
+              <range>32</range>
+              <soundCast>Shot_BoltActionRifle</soundCast>
+              <soundCastTail>GunTail_Heavy</soundCastTail>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>SE_Bullet_HunterFlintlock</defName>
+        <label>hunter flintlock bullet</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>17</damageAmountBase>
+            <stoppingPower>1.7</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <!-- ===== Hunter Rifle ===== -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_HunterRifle</defName>
+        <label>hunter rifle</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_HunterRifle</defaultProjectile>
+              <warmupTime>1.9</warmupTime>
+              <range>40</range>
+              <soundCast>Shot_BoltActionRifle</soundCast>
+              <soundCastTail>GunTail_Heavy</soundCastTail>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>SE_Bullet_HunterRifle</defName>
+        <label>hunter rifle bullet</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>19</damageAmountBase>
+            <stoppingPower>1.7</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <!-- ===== Hunter Shotgun ===== -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_HunterShotgun</defName>
+        <label>hunter shotgun</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterShotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>ShortShots</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.96</AccuracyTouch>
+            <AccuracyShort>0.92</AccuracyShort>
+            <AccuracyMedium>0.66</AccuracyMedium>
+            <AccuracyLong>0.42</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>SE_Bullet_HunterShotgun</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>14</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>SE_Bullet_HunterShotgun</defName>
+        <label>hunter shotgun bullet</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>19</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>0.11</armorPenetrationBase>
+            <speed>60</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+</Defs>

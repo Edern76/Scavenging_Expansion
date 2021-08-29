@@ -6,44 +6,45 @@
         </mods>
 
         <match Class="PatchOperationSequence">
-            <!-- ===== Mechanoid Alloy Armor =====-->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases</xpath>
-                <value>
-                    <Bulk>100</Bulk>
-                    <WornBulk>15</WornBulk>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases/ArmorRating_Sharp</xpath>
-                <value>
-                    <ArmorRating_Sharp>17</ArmorRating_Sharp>
-                </value>
-            </li>
-        
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases/ArmorRating_Blunt</xpath>
-                <value>
-                    <ArmorRating_Blunt>'(</ArmorRating_Blunt>
-                </value>
-            </li>
-
-            <li Class="PatchOperationRemove">
-                <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/equippedStatOffsets/MoveSpeed</xpath>
-            </li>
-
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/apparel/bodyPartGroups</xpath>
-                <value>
-                    <li>Hands</li>
-                    <li>Feet</li>
-                </value>
-            </li>
-
-            <!-- ===== Scav Armor =====-->
-
             <operations>
+                <!-- ===== Mechanoid Alloy Armor =====-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases</xpath>
+                    <value>
+                        <Bulk>100</Bulk>
+                        <WornBulk>15</WornBulk>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>17</ArmorRating_Sharp>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>'(</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Hands</li>
+                        <li>Feet</li>
+                    </value>
+                </li>
+
+                <!-- ===== Scav Armor =====-->
+
+            
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="SE_ScavLightArmor"]/statBases</xpath>
                     <value>
