@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>SE_SubZeroCooler</defName>
+        <label>sub zero cooler</label>
+        <description>Placeholder</description>
+        <category>Building</category>
+        <graphicData>
+          <texPath>Things/Building/Misc/Freezer</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawRotated>false</drawRotated>
+          <allowFlip>false</allowFlip>
+          <shadowData>
+            <volume>(0.9,0.3,0.9)</volume>
+          </shadowData>
+          <damageData>
+            <rect>(0.2,0,0.6,0.1)</rect>
+          </damageData>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>30</pathCost>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <fillPercent>0.40</fillPercent>
+        <statBases>
+          <MaxHitPoints>130</MaxHitPoints>
+          <WorkToBuild>600</WorkToBuild>
+          <Flammability>0</Flammability>
+        </statBases>
+        <selectable>true</selectable>
+        <costList>
+          <WoodLog>50</WoodLog> <!-- Placeholder -->
+        </costList>
+        <building>
+          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <placeWorkers>
+          <li>PlaceWorker_CoolerSimple</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+          <li Class="CompProperties_HeatPusher">
+            <compClass>CompHeatPusherPowered</compClass>
+            <heatPerSecond>-75</heatPerSecond>
+            <heatPushMinTemperature>17</heatPushMinTemperature>
+          </li>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>100</basePowerConsumption>
+            <shortCircuitInRain>true</shortCircuitInRain>
+          </li>
+        </comps>
+        <designationCategory>Temperature</designationCategory>
+      </ThingDef>
+</Defs>
