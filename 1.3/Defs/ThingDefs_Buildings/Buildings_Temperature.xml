@@ -47,7 +47,7 @@
           <li Class="CompProperties_HeatPusher">
             <compClass>CompHeatPusherPowered</compClass>
             <heatPerSecond>-75</heatPerSecond>
-            <heatPushMinTemperature>17</heatPushMinTemperature>
+            <heatPushMinTemperature>-75</heatPushMinTemperature>
           </li>
           <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
