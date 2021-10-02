@@ -127,4 +127,55 @@
             </defaultOutfitTags>
         </apparel>
     </ThingDef>
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>SE_TestArmor</defName>
+        <label>test armor</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/TestArmor/TestArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+          </stuffCategories>
+        <costStuffCount>75</costStuffCount>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0</Flammability>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/TestArmor/TestArmor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags Inherit="False">
+                <li>TestItem</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
 </Defs>

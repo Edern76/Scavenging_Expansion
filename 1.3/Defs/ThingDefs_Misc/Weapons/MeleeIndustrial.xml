@@ -126,4 +126,69 @@
           <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
         </comps>
       </ThingDef>
+
+      <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <thingClass>ThingWithComps</thingClass>
+        <defName>SE_MeleeWeapon_SmartTool</defName>
+        <label>smarttool</label>
+        <description>Placeholder</description>
+        <graphicData>
+          <texPath>Things/Item/Equipment/WeaponMelee/SmartHackSaw</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.1</drawSize>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+          <li>ScavengerMeleeAdvanced</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Scavengers</li>
+        </weaponClasses>
+        <costList>
+            <SE_MechanoidAlloy>40</SE_MechanoidAlloy>
+            <SE_MechanoidScrap>10</SE_MechanoidScrap>
+            <Plasteel>50</Plasteel>
+        </costList>
+        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+        <statBases>
+          <WorkToMake>18000</WorkToMake>
+          <Mass>2</Mass>
+        </statBases>
+        <relicChance>2</relicChance>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+          <li>
+            <label>edge</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>26</power>
+            <cooldownTime>2.5</cooldownTime>
+            <armorPenetration>0.7</armorPenetration>
+          </li>
+        </tools>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+                <li>SE_SalvagingTable</li>
+                <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
+        </comps>
+      </ThingDef>
 </Defs>

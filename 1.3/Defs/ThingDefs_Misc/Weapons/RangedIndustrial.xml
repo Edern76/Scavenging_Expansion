@@ -123,6 +123,11 @@
               <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
+                <JamChancePerShot>0.80</JamChancePerShot>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -237,7 +242,7 @@
             <li>
               <verbClass>Verb_Shoot</verbClass>
               <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_HellfireLmg</defaultProjectile>
+              <defaultProjectile>SE_Bullet_HellfireLMG</defaultProjectile>
               <warmupTime>1.9</warmupTime>
               <range>26</range>
               <soundCast>Shot_Minigun</soundCast>
