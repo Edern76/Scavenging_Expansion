@@ -61,6 +61,7 @@
         <Compile Include="Defs\Tags\AdvancedScavengingProduct.cs" />
         <Compile Include="Enums\ScavengingRecipeType.cs" />
         <Compile Include="Harmony\HarmonyBase.cs" />
+        <Compile Include="Harmony\Patches\PatchPawnGizmos.cs" />
         <Compile Include="Harmony\Patches\PatchRecipeYield.cs" />
         <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
         <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />

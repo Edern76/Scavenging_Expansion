@@ -126,6 +126,7 @@
         <comps>
             <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
                 <JamChancePerShot>0.80</JamChancePerShot>
+                <UIIconPath>UI/Unjam/Unjam</UIIconPath>
             </li>
         </comps>
     </ThingDef>
