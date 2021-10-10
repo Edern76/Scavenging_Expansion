@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI;
+using JobDefOf = ScavengingExpansion.DefOfs.JobDefOf;
 
 namespace ScavengingExpansion.Comps
 {
@@ -14,6 +16,7 @@ namespace ScavengingExpansion.Comps
 
         public float JamChancePerShot = 0.05f;
         public string UIIconPath = string.Empty;
+        public float UnjamTime = 2f;
     }
 
     public class CompJammable : ThingComp
@@ -21,7 +24,7 @@ namespace ScavengingExpansion.Comps
         public CompProperties_Jammable Props => (CompProperties_Jammable)this.props;
         private Texture2D GizmoTex
         {
-            get { Log.Message("Trying to find tex");return ContentFinder<Texture2D>.Get(Props.UIIconPath); }
+            get { return ContentFinder<Texture2D>.Get(Props.UIIconPath); }
         }
 
         private bool _jammed;
@@ -50,24 +53,42 @@ namespace ScavengingExpansion.Comps
             this._jammed = true;
         }
 
-        private void unjam()
+        public void Unjam()
         {
             this._jammed = false;
+        }
+
+        private Job tryMakeJob()
+        {
+            return GetWearer == null ? null : JobMaker.MakeJob(JobDefOf.UnjamWeapon, GetWearer, parent);
+        }
+
+        private void tryStartUnjam()
+        {
+            Job unjamJob = tryMakeJob();
+            if (unjamJob != null)
+            {
+                GetWearer.jobs.StopAll();
+                GetWearer.jobs.TryTakeOrderedJob(unjamJob);
+            }
+            else
+            {
+                Log.Warning("UnjamJob is null");
+            }
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             //if (GetWearer != null && GetWearer.IsColonist && Find.Selector.SingleSelectedThing == GetWearer)
             //{
-                Log.Message("Getting gizmos");
-                if (Jammed)
+            if (Jammed)
                 {
                     yield return new Command_Action
                     {
                         icon = this.GizmoTex,
                         defaultLabel = "Unjam weapon",
                         defaultDesc = "Unjam a jammed weapon",
-                        action = delegate { this.unjam(); },
+                        action = this.tryStartUnjam,
                         activateSound = SoundDef.Named("Click"),
                     };
                 }

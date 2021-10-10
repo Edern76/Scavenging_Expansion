@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <JobDef>
+        <defName>UnjamWeapon</defName>
+        <driverClass>ScavengingExpansion.Jobs.JobDriver_Unjam</driverClass>
+        <reportString>Unjamming TargetB</reportString>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
+</Defs>

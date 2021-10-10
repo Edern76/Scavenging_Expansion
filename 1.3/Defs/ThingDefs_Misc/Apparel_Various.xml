@@ -177,5 +177,10 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
         </apparel>
+        <modExtensions>
+            <li Class="FalloutCore.ApparelExtension">
+                <shouldHideBody>true</shouldHideBody>
+            </li>
+        </modExtensions>
     </ThingDef>
 </Defs>
