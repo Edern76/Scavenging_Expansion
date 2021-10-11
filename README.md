@@ -31,7 +31,7 @@ Otherwise this should not have any hard incompatibilty with any other mods (shou
 
 ## Authors
 
-Art and concept by Sir Van, code by Edern.
+Art and concept by Sir Van, code by Edern and Ythern.
 
 This mod uses part of MIT-Licensed jecrell's [JecsTools](https://github.com/jecrell/JecsTools/) to handle oversized weapon drawing.
 
