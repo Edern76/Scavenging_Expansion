@@ -7,7 +7,7 @@ using Verse;
 
 namespace ScavengingExpansion.Utils
 {
-    public class RecipeUtils
+    public static class RecipeUtils
     {
         public static IEnumerable<Thing> GetBasicSalvagingProducts(RecipeDef recipeDef, Pawn worker,
             List<Thing> ingredients)

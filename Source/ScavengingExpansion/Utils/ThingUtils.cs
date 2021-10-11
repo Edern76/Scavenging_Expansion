@@ -2,7 +2,7 @@ using Verse;
 
 namespace ScavengingExpansion.Utils
 {
-    public class ThingUtils
+    public static class ThingUtils
     {
         public static Thing makeThingWithCount(ThingDef def, int amount)
         {

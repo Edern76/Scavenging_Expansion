@@ -184,6 +184,9 @@
           <destroySound>BuildingDestroyed_Metal_Big</destroySound>
         </building>
         <constructEffect>ConstructMetal</constructEffect>
+        <placeWorkers>
+          <li>ScavengingExpansion.PlaceWorkers.PlaceWorker_Excavator</li>
+        </placeWorkers>
       </ThingDef>
 
       <ThingDef ParentName="BuildingBase">
@@ -230,5 +233,8 @@
           <destroySound>BuildingDestroyed_Metal_Big</destroySound>
         </building>
         <constructEffect>ConstructMetal</constructEffect>
+        <placeWorkers>
+          <li>ScavengingExpansion.PlaceWorkers.PlaceWorker_Excavator</li>
+        </placeWorkers>
       </ThingDef>
 </Defs>

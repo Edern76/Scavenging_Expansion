@@ -67,8 +67,11 @@
         <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
         <Compile Include="Jobs\JobDriver_Unjam.cs" />
         <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />
+        <Compile Include="PlaceWorkers\PlaceWorker_Excavator.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Utils\Grids\ExcavatorGrid.cs" />
         <Compile Include="Utils\RecipeUtils.cs" />
+        <Compile Include="Utils\TerrainUtils.cs" />
         <Compile Include="Utils\ThingUtils.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
