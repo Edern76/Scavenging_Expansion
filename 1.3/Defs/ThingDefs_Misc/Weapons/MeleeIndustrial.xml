@@ -154,6 +154,13 @@
           <WorkToMake>18000</WorkToMake>
           <Mass>2</Mass>
         </statBases>
+        <equippedStatOffsets>
+          <MiningYield>0.20</MiningYield>
+          <ButcheryFleshEfficiency>0.20</ButcheryFleshEfficiency>
+          <PlantHarvestYield>0.20</PlantHarvestYield>
+          <GeneralLaborSpeed>0.15</GeneralLaborSpeed>
+          <SmeltingSpeed>0.25</SmeltingSpeed>
+        </equippedStatOffsets>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>

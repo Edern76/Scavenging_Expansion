@@ -197,7 +197,7 @@
         </recipeMaker>
         <statBases>
             <WorkToMake>1600</WorkToMake>
-            <MaxHitPoints>100</MaxHitPoints>
+            <MaxHitPoints>150</MaxHitPoints>
             <Mass>2</Mass>
             <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -207,8 +207,9 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.1</SocialImpact>
-            <TradePriceImprovement>0.1</TradePriceImprovement>
+            <ConstructionSpeed>0.25</ConstructionSpeed>
+            <ConstructSuccessChance>0.4</ConstructSuccessChance>
+            <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
         </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
