@@ -57,48 +57,118 @@
     	</addedPartProps>
   	</HediffDef>
 
-  	<ThingDef ParentName="TierTwo">
-    	<defName>SE_UnstableHealthCore</defName>
-    	<label>unstable health core</label>
-    	<description>Placeholder</description>
-    	<descriptionHyperlinks><RecipeDef>InstallSE_UnstableHealthCore</RecipeDef></descriptionHyperlinks>
-    	<costList>
-      		<Plasteel>15</Plasteel>
-      		<ComponentSpacer>4</ComponentSpacer>
-    	</costList>
-    	<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
-    	<statBases>
-      		<Mass>0.3</Mass>
-    	</statBases>
-  	</ThingDef>
+  <ThingDef ParentName="TierTwo">
+  	<defName>SE_UnstableHealthCore</defName>
+   	<label>unstable health core</label>
+   	<description>Placeholder</description>
+  	<descriptionHyperlinks><RecipeDef>InstallSE_UnstableHealthCore</RecipeDef></descriptionHyperlinks>
+  	<costList>
+    		<Plasteel>15</Plasteel>
+    		<ComponentSpacer>4</ComponentSpacer>
+  	</costList>
+  	<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+  	<statBases>
+    		<Mass>0.3</Mass>
+  	</statBases>
+  </ThingDef>
 
-  	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    	<defName>InstallSE_UnstableHealthCore</defName>
-    	<label>install unstable health core</label>
-    	<description>Install a unstable health core.</description>
-    	<descriptionHyperlinks>
-     		<ThingDef>SE_UnstableHealthCore</ThingDef>
-      		<HediffDef>SE_UnstableHealthCore</HediffDef>
-    	</descriptionHyperlinks>
-    	<jobString>Installing unstable health core.</jobString>
-    	<ingredients>
-      		<li>
-        		<filter>
-          		<thingDefs>
-            	<li>SE_UnstableHealthCore</li>
-          		</thingDefs>
-        		</filter>
-        		<count>1</count>
-      		</li>
-    	</ingredients>
-    	<fixedIngredientFilter>
-      		<thingDefs>
-        	<li>SE_UnstableHealthCore</li>
-      		</thingDefs>
-    	</fixedIngredientFilter>
-    	<appliedOnFixedBodyParts>
-      		<li>Heart</li>
-    	</appliedOnFixedBodyParts>
-    	<addsHediff>SE_UnstableHealthCore</addsHediff>
-  	</RecipeDef>
-  </Defs>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  	<defName>InstallSE_UnstableHealthCore</defName>
+  	<label>install unstable health core</label>
+  	<description>Install a unstable health core.</description>
+  	<descriptionHyperlinks>
+   		<ThingDef>SE_UnstableHealthCore</ThingDef>
+     		<HediffDef>SE_UnstableHealthCore</HediffDef>
+    </descriptionHyperlinks>
+  	<jobString>Installing unstable health core.</jobString>
+  	<ingredients>
+     		<li>
+       		<filter>
+        		<thingDefs>
+           	<li>SE_UnstableHealthCore</li>
+        		</thingDefs>
+      		</filter>
+       		<count>1</count>
+    		</li>
+  	</ingredients>
+  	<fixedIngredientFilter>
+   		<thingDefs>
+      	<li>SE_UnstableHealthCore</li>
+  		</thingDefs>
+  	</fixedIngredientFilter>
+  	<appliedOnFixedBodyParts>
+   		<li>Heart</li>
+  	</appliedOnFixedBodyParts>
+   	<addsHediff>SE_UnstableHealthCore</addsHediff>
+	</RecipeDef>
+
+    <!-- Repurposed Centipede Sensor -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>SE_RepurposedCentipedeSensor</defName>
+    <label>repurposed centipede sensor</label>
+    <labelNoun>a repurposed centipede sensor</labelNoun>
+    <description>An installed repurposed centipede sensor.</description>
+    <descriptionHyperlinks><ThingDef>SE_RepurposedCentipedeSensor</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>SE_RepurposedCentipedeSensor</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+          <AimingDelayFactor>-0.2</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.15</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="TierTwo">
+    <defName>SE_RepurposedCentipedeSensor</defName>
+    <label>repurposed centipede sensor</label>
+    <description>Placeholder</description>
+    <descriptionHyperlinks><RecipeDef>InstallSE_RepurposedCentipedeSensor</RecipeDef></descriptionHyperlinks>
+    <costList>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallSE_RepurposedCentipedeSensor</defName>
+    <label>install repurposed centipede sensor</label>
+    <description>Install a repurposed centipede sensor.</description>
+    <descriptionHyperlinks>
+      <ThingDef>SE_RepurposedCentipedeSensor</ThingDef>
+      <HediffDef>SE_RepurposedCentipedeSensor</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing repurposed centipede sensor.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SE_RepurposedCentipedeSensor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SE_RepurposedCentipedeSensor</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SE_RepurposedCentipedeSensor</addsHediff>
+  </RecipeDef></Defs>
