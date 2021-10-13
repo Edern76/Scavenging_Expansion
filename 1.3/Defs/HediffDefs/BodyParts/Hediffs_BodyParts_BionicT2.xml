@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  	<!--Tier 2 (Industrial Tech)-->
+  	<!--Tier 2 (Spacer Tech)-->
 
 	<ThingDef Name="TierTwo" ParentName="BodyPartBase" Abstract="True">
-    	<techLevel>Industrial</techLevel>
+    	<techLevel>Spacer</techLevel>
     	<thingCategories>
       		<li>BodyPartsBionic</li>
     	</thingCategories>
     	<graphicData>
-      		<texPath>Things\Item\ProstheticIcons\ScavImplantsTierTwo.png</texPath>
-      		<graphicClass>Graphic_Single</graphicClass>
-      		<drawSize>0.80</drawSize>
-     		<color>(189,169,118)</color>
+      	<texPath>Things/Item/ProstheticIcons/ScavImplantsTierTwo</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      	<drawSize>0.80</drawSize>
     	</graphicData>
     	<tradeTags>
       		<li>Bionic</li>
@@ -43,12 +42,12 @@
 	  <!-- Unstable Health Core -->
 
  	<HediffDef ParentName="AddedBodyPartBase">
-    	<defName>UnstableHealthCore</defName>
+    	<defName>SE_UnstableHealthCore</defName>
     	<label>unstable health core</label>
     	<labelNoun>a unstable health core</labelNoun>
     	<description>An installed unstable health core.</description>
-    	<descriptionHyperlinks><ThingDef>UnstableHealthCore</ThingDef></descriptionHyperlinks>
-    	<spawnThingOnRemoved>UnstableHealthCore</spawnThingOnRemoved>
+    	<descriptionHyperlinks><ThingDef>SE_UnstableHealthCore</ThingDef></descriptionHyperlinks>
+    	<spawnThingOnRemoved>SE_UnstableHealthCore</spawnThingOnRemoved>
     	<woundAnchorRange>0</woundAnchorRange>
     	<displayWound>true</displayWound>
     	<addedPartProps>
@@ -59,10 +58,10 @@
   	</HediffDef>
 
   	<ThingDef ParentName="TierTwo">
-    	<defName>UnstableHealthCore</defName>
+    	<defName>SE_UnstableHealthCore</defName>
     	<label>unstable health core</label>
     	<description>Placeholder</description>
-    	<descriptionHyperlinks><RecipeDef>InstallUnstableHealthCore</RecipeDef></descriptionHyperlinks>
+    	<descriptionHyperlinks><RecipeDef>InstallSE_UnstableHealthCore</RecipeDef></descriptionHyperlinks>
     	<costList>
       		<Plasteel>15</Plasteel>
       		<ComponentSpacer>4</ComponentSpacer>
@@ -74,19 +73,19 @@
   	</ThingDef>
 
   	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    	<defName>InstallUnstableHealthCore</defName>
+    	<defName>InstallSE_UnstableHealthCore</defName>
     	<label>install unstable health core</label>
     	<description>Install a unstable health core.</description>
     	<descriptionHyperlinks>
-     		<ThingDef>UnstableHealthCore</ThingDef>
-      		<HediffDef>UnstableHealthCore</HediffDef>
+     		<ThingDef>SE_UnstableHealthCore</ThingDef>
+      		<HediffDef>SE_UnstableHealthCore</HediffDef>
     	</descriptionHyperlinks>
     	<jobString>Installing unstable health core.</jobString>
     	<ingredients>
       		<li>
         		<filter>
           		<thingDefs>
-            	<li>UnstableHealthCore</li>
+            	<li>SE_UnstableHealthCore</li>
           		</thingDefs>
         		</filter>
         		<count>1</count>
@@ -94,12 +93,12 @@
     	</ingredients>
     	<fixedIngredientFilter>
       		<thingDefs>
-        	<li>UnstableHealthCore</li>
+        	<li>SE_UnstableHealthCore</li>
       		</thingDefs>
     	</fixedIngredientFilter>
     	<appliedOnFixedBodyParts>
       		<li>Heart</li>
     	</appliedOnFixedBodyParts>
-    	<addsHediff>UnstableHealthCore</addsHediff>
+    	<addsHediff>SE_UnstableHealthCore</addsHediff>
   	</RecipeDef>
   </Defs>
