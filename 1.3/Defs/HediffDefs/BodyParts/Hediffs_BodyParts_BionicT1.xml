@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Tier 1 (Industrial Tech) -->
+
+	<ThingDef Name="TierOne" ParentName="BodyPartBase" Abstract="True">
+    	<techLevel>Industrial</techLevel>
+    	<thingCategories>
+      		<li>BodyPartsBionic</li>
+    	</thingCategories>
+    	<graphicData>
+      		<texPath>Things/Item/ProstheticIcons/ScavImplantsTierOne</texPath>
+      		<graphicClass>Graphic_Single</graphicClass>
+      		<drawSize>0.80</drawSize>
+    	</graphicData>
+    	<tradeTags>
+      		<li>Bionic</li>
+    	</tradeTags>
+    	<techHediffsTags>
+      		<li>Advanced</li>
+    	</techHediffsTags>
+    	<statBases>
+      		<WorkToMake>26000</WorkToMake>
+    	</statBases>
+    	<recipeMaker>
+      		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      		<workSkill>Crafting</workSkill>
+      		<effectWorking>Smith</effectWorking>
+      		<soundWorking>Recipe_Smith</soundWorking>
+      		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      		<skillRequirements>
+        		<Crafting>8</Crafting>
+      		</skillRequirements>
+      		<researchPrerequisite>Bionics</researchPrerequisite>
+      		<recipeUsers>
+        		<li>FabricationBench</li>
+      		</recipeUsers>
+    	</recipeMaker>
+  	</ThingDef>
+
+      <!-- Vulture's Claw -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+      <defName>SE_VulturesClaw</defName>
+      <label>vulture's claw</label>
+      <labelNoun>a vulture's claw</labelNoun>
+      <description>An installed vulture's claw.</description>
+      <descriptionHyperlinks><ThingDef>SE_VulturesClaw</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>SE_VulturesClaw</spawnThingOnRemoved>
+      <woundAnchorRange>0</woundAnchorRange>
+      <displayWound>true</displayWound>
+      <stages>
+        <li>
+          <statOffsets>
+            <ButcheryFleshEfficiency>0.10</ButcheryFleshEfficiency>
+            <CarryingCapacity>35</CarryingCapacity>
+          </statOffsets>
+        </li>
+      </stages>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>0.9</partEfficiency>
+          <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+      <comps>
+        <li Class="HediffCompProperties_VerbGiver">
+          <tools>
+            <li>
+              <label>claw</label>
+             <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>9.5</power>
+             <cooldownTime>3</cooldownTime>
+            </li>
+          </tools>
+        </li>
+      </comps>
+    </HediffDef>
+
+    <ThingDef ParentName="TierOne">
+      <defName>SE_VulturesClaw</defName>
+      <label>vulture's claw</label>
+      <description>Placeholder</description>
+      <descriptionHyperlinks><RecipeDef>InstallSE_VulturesClaw</RecipeDef></descriptionHyperlinks>
+      <costList>
+          <SE_MechanoidScrap>10</SE_MechanoidScrap>
+          <Steel>100</Steel>
+          <ComponentIndustrial>4</ComponentIndustrial>
+      </costList>
+      <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+      <statBases>
+        <MarketValue>540</MarketValue>
+        <Mass>0.3</Mass>
+      </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+      <defName>InstallSE_VulturesClaw</defName>
+      <label>install vulture's claw</label>
+      <description>Install a vulture's claw.</description>
+      <descriptionHyperlinks>
+        <ThingDef>SE_VulturesClaw</ThingDef>
+          <HediffDef>SE_VulturesClaw</HediffDef>
+      </descriptionHyperlinks>
+      <jobString>Installing vulture's claw.</jobString>
+      <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+              <li>SE_VulturesClaw</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+      </ingredients>
+      <fixedIngredientFilter>
+          <thingDefs>
+          <li>SE_VulturesClaw</li>
+          </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+          <li>Shoulder</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>SE_VulturesClaw</addsHediff>
+    </RecipeDef>
+</Defs>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  	<!--Tier 2 (Spacer Tech)-->
+
+	<ThingDef Name="TierTwo" ParentName="BodyPartBase" Abstract="True">
+    	<techLevel>Spacer</techLevel>
+    	<thingCategories>
+      		<li>BodyPartsBionic</li>
+    	</thingCategories>
+    	<graphicData>
+      	<texPath>Things/Item/ProstheticIcons/ScavImplantsTierTwo</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      	<drawSize>0.80</drawSize>
+    	</graphicData>
+    	<tradeTags>
+      		<li>Bionic</li>
+    	</tradeTags>
+    	<techHediffsTags>
+      		<li>Advanced</li>
+    	</techHediffsTags>
+    	<statBases>
+      		<WorkToMake>26000</WorkToMake>
+    	</statBases>
+    	<recipeMaker>
+      		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      		<workSkill>Crafting</workSkill>
+      		<effectWorking>Smith</effectWorking>
+      		<soundWorking>Recipe_Smith</soundWorking>
+      		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      		<skillRequirements>
+        		<Crafting>8</Crafting>
+      		</skillRequirements>
+      		<researchPrerequisite>Bionics</researchPrerequisite>
+      		<recipeUsers>
+        		<li>FabricationBench</li>
+      		</recipeUsers>
+    	</recipeMaker>
+  	</ThingDef>
+
+
+	  <!-- Unstable Health Core -->
+
+ 	<HediffDef ParentName="AddedBodyPartBase">
+    	<defName>SE_UnstableHealthCore</defName>
+    	<label>unstable health core</label>
+    	<labelNoun>a unstable health core</labelNoun>
+    	<description>An installed unstable health core.</description>
+    	<descriptionHyperlinks><ThingDef>SE_UnstableHealthCore</ThingDef></descriptionHyperlinks>
+    	<spawnThingOnRemoved>SE_UnstableHealthCore</spawnThingOnRemoved>
+    	<woundAnchorRange>0</woundAnchorRange>
+    	<displayWound>true</displayWound>
+    	<addedPartProps>
+      		<solid>true</solid>
+      		<partEfficiency>2</partEfficiency>
+      		<betterThanNatural>true</betterThanNatural>
+    	</addedPartProps>
+  	</HediffDef>
+
+  	<ThingDef ParentName="TierTwo">
+    	<defName>SE_UnstableHealthCore</defName>
+    	<label>unstable health core</label>
+    	<description>Placeholder</description>
+    	<descriptionHyperlinks><RecipeDef>InstallSE_UnstableHealthCore</RecipeDef></descriptionHyperlinks>
+    	<costList>
+      		<Plasteel>15</Plasteel>
+      		<ComponentSpacer>4</ComponentSpacer>
+    	</costList>
+    	<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    	<statBases>
+      		<Mass>0.3</Mass>
+    	</statBases>
+  	</ThingDef>
+
+  	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    	<defName>InstallSE_UnstableHealthCore</defName>
+    	<label>install unstable health core</label>
+    	<description>Install a unstable health core.</description>
+    	<descriptionHyperlinks>
+     		<ThingDef>SE_UnstableHealthCore</ThingDef>
+      		<HediffDef>SE_UnstableHealthCore</HediffDef>
+    	</descriptionHyperlinks>
+    	<jobString>Installing unstable health core.</jobString>
+    	<ingredients>
+      		<li>
+        		<filter>
+          		<thingDefs>
+            	<li>SE_UnstableHealthCore</li>
+          		</thingDefs>
+        		</filter>
+        		<count>1</count>
+      		</li>
+    	</ingredients>
+    	<fixedIngredientFilter>
+      		<thingDefs>
+        	<li>SE_UnstableHealthCore</li>
+      		</thingDefs>
+    	</fixedIngredientFilter>
+    	<appliedOnFixedBodyParts>
+      		<li>Heart</li>
+    	</appliedOnFixedBodyParts>
+    	<addsHediff>SE_UnstableHealthCore</addsHediff>
+  	</RecipeDef>
+  </Defs>
