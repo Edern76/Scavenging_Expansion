@@ -39,4 +39,67 @@
     	</recipeMaker>
   	</ThingDef>
 
+
+	  <!-- Unstable Health Core -->
+
+ 	<HediffDef ParentName="AddedBodyPartBase">
+    	<defName>UnstableHealthCore</defName>
+    	<label>unstable health core</label>
+    	<labelNoun>a unstable health core</labelNoun>
+    	<description>An installed unstable health core.</description>
+    	<descriptionHyperlinks><ThingDef>UnstableHealthCore</ThingDef></descriptionHyperlinks>
+    	<spawnThingOnRemoved>UnstableHealthCore</spawnThingOnRemoved>
+    	<woundAnchorRange>0</woundAnchorRange>
+    	<displayWound>true</displayWound>
+    	<addedPartProps>
+      		<solid>true</solid>
+      		<partEfficiency>2</partEfficiency>
+      		<betterThanNatural>true</betterThanNatural>
+    	</addedPartProps>
+  	</HediffDef>
+
+  	<ThingDef ParentName="TierTwo">
+    	<defName>UnstableHealthCore</defName>
+    	<label>unstable health core</label>
+    	<description>Placeholder</description>
+    	<descriptionHyperlinks><RecipeDef>InstallUnstableHealthCore</RecipeDef></descriptionHyperlinks>
+    	<costList>
+      		<Plasteel>15</Plasteel>
+      		<ComponentSpacer>4</ComponentSpacer>
+    	</costList>
+    	<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    	<statBases>
+      		<Mass>0.3</Mass>
+    	</statBases>
+  	</ThingDef>
+
+  	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    	<defName>InstallUnstableHealthCore</defName>
+    	<label>install unstable health core</label>
+    	<description>Install a unstable health core.</description>
+    	<descriptionHyperlinks>
+     		<ThingDef>UnstableHealthCore</ThingDef>
+      		<HediffDef>UnstableHealthCore</HediffDef>
+    	</descriptionHyperlinks>
+    	<jobString>Installing unstable health core.</jobString>
+    	<ingredients>
+      		<li>
+        		<filter>
+          		<thingDefs>
+            	<li>UnstableHealthCore</li>
+          		</thingDefs>
+        		</filter>
+        		<count>1</count>
+      		</li>
+    	</ingredients>
+    	<fixedIngredientFilter>
+      		<thingDefs>
+        	<li>UnstableHealthCore</li>
+      		</thingDefs>
+    	</fixedIngredientFilter>
+    	<appliedOnFixedBodyParts>
+      		<li>Heart</li>
+    	</appliedOnFixedBodyParts>
+    	<addsHediff>UnstableHealthCore</addsHediff>
+  	</RecipeDef>
   </Defs>
