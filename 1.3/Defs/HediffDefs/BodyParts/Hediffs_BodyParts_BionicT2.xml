@@ -55,6 +55,11 @@
       		<partEfficiency>2</partEfficiency>
       		<betterThanNatural>true</betterThanNatural>
     	</addedPartProps>
+		<modExtensions>
+			<li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+				<bodyPartHealthOffset>25</bodyPartHealthOffset>
+			</li>
+		</modExtensions>
   	</HediffDef>
 
   <ThingDef ParentName="TierTwo">
