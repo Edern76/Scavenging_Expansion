@@ -1,8 +1,10 @@
-using Rimworld;
+using System.Collections.Generic;
+using RimWorld;
 using Verse;
 using ScavengingExpansion.Defs.DefModExtensions;
 using ScavengingExpansion.Defs.Tags;
 using ScavengingExpansion.Defs;
+using ScavengingExpansion.Utils;
 
 namespace ScavengingExpansion.Buildings
 {
@@ -25,44 +27,24 @@ namespace ScavengingExpansion.Buildings
             {
                 if (_possibleProducts == null)
                 {
-                    ExcavatorThingSet thingSet = (ExcavatorThingSet)DefDatabase<ThingDef>.GetNamed(excavatorExtension.thingSetDef)
-                    this._possibleProducts = thingSet.excavatingProducts;
+                    ProbabilisticThingSetDef thingSetDef =
+                        (ProbabilisticThingSetDef)DefDatabase<ThingDef>.GetNamed(excavatorExtension.thingSetDef);
+                    this._possibleProducts = thingSetDef.products;
                 }
                 return this._possibleProducts;
             }
         }
 
-        public CompAssignableToPawn compAssignable
-        {
-            get
-            {
-                return this.TryGetComp<CompAssignableToPawn>();
-            }
-        }
-        public CompForbiddable forbiddable
-        {
-            get
-            {
-                return this.TryGetComp<CompForbiddable>();
-            }
-        }
-
-        public IEnumerable<Pawn> AssignedPawns
-        {
-            get
-            {
-                return compAssignable.AssignedPawnsForReading;
-            }
-        }
-
+        public float ExcavationTime => excavatorExtension.excavationCycleTime;
 
 
         public IEnumerable<Thing> MakeRessources(Pawn worker)
         {
-            foreach (AdvancedScavengingProduct product in this.possibleProducts)
+            float efficiency = worker.GetStatValue(StatDefOf.MiningYield) * excavatorExtension.buildingEfficiency;
+            foreach (Thing product in ThingUtils.getProbabilisticThingSet(possibleProducts, efficiency))
             {
-                
-            }
+                yield return product;
+            }    
         } 
     }
 }

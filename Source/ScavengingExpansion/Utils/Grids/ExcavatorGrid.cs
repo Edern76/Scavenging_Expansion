@@ -35,7 +35,7 @@ namespace ScavengingExpansion.Utils.Grids
             {
                 if (TerrainUtils.IsRockyTerrain(map.terrainGrid.TerrainAt(cell), false))
                 {
-                    AddToGrid(cell, false);
+                    AddToGrid(cell, false); //TODO : Make it so only a few subsets of rocky tiles are valid
                 }    
             }
             _drawer.SetDirty();

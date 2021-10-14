@@ -6,8 +6,8 @@ using ScavengingExpansion.Defs.Tags;
 
 namespace ScavengingExpansion.Defs
 {
-    public class ExcavatorThingSet : ThingSet
+    public class ProbabilisticThingSetDef : ThingDef
     {
-        public List<AdvancedScavengingProduct> excavatingProducts;
+        public List<AdvancedScavengingProduct> products;
     }
 }

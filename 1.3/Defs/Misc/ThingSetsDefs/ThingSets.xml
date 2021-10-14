@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Class="ScavengingExpansion.Defs.ProbabilisticThingSetDef">
+        <defName>SE_DefaultExcavatorThingSet</defName>
+        <label>DefaultExcavatorThingSet</label>
+        <thingClass>ScavengingExpansion.Defs.ProbabilisticThingSetDef</thingClass>
+        <description>Not sure this and label are needed but putting them just in case</description>
+        <products>
+            <li>
+                <defRef>Plasteel</defRef>
+                <chance>0.05</chance>
+                <minAmount>5</minAmount>
+                <maxAmount>30</maxAmount>
+            </li>
+            <li>
+                <defRef>ChunkSlagSteel</defRef>
+                <chance>1</chance>
+                <minAmount>1</minAmount>
+                <maxAmount>3</maxAmount>
+            </li>
+            <li>
+                <defRef>SE_MechanoidScrap</defRef>
+                <chance>0.75</chance>
+                <minAmount>10</minAmount>
+                <maxAmount>50</maxAmount>
+            </li>
+            <li>
+                <defRef>ComponentIndustrial</defRef>
+                <chance>0.5</chance>
+                <minAmount>1</minAmount>
+                <maxAmount>10</maxAmount>
+            </li>
+        </products>
+    </ThingDef>
+</Defs>

@@ -17,7 +17,7 @@ namespace ScavengingExpansion.Jobs
 
         public override string GetReport()
         {
-            string text = JobDefOf.UnjamWeapon.reportString.Replace("TargetB", weapon.def.label);
+            string text = JobDefOf.SE_UnjamWeapon.reportString.Replace("TargetB", weapon.def.label);
             return text;
         }
 

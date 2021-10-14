@@ -144,7 +144,7 @@
         <defName>SE_ExcavationSite</defName>
         <label>excavation site</label>
         <description>Placeholder</description>
-        <thingClass>Building</thingClass>
+        <thingClass>ScavengingExpansion.Buildings.Building_Excavator</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
           <texPath>Things/Building/Production/ExcavationSite/ExcavationSite</texPath>
@@ -187,13 +187,18 @@
         <placeWorkers>
           <li>ScavengingExpansion.PlaceWorkers.PlaceWorker_Excavator</li>
         </placeWorkers>
+        <modExtensions>
+          <li Class="ScavengingExpansion.Defs.DefModExtensions.ExcavatorExtension">
+            <buildingEfficiency>0.75</buildingEfficiency>
+          </li>
+        </modExtensions>
       </ThingDef>
 
       <ThingDef ParentName="BuildingBase">
         <defName>SE_Excavator</defName>
         <label>excavator</label>
         <description>Placeholder</description>
-        <thingClass>Building</thingClass>
+        <thingClass>ScavengingExpansion.Buildings.Building_Excavator</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
           <texPath>Things/Building/Production/Excavator/Excavator</texPath>
@@ -236,5 +241,17 @@
         <placeWorkers>
           <li>ScavengingExpansion.PlaceWorkers.PlaceWorker_Excavator</li>
         </placeWorkers>
+        <modExtensions>
+          <li Class="ScavengingExpansion.Defs.DefModExtensions.ExcavatorExtension">
+            <excavationCycleTime>10</excavationCycleTime>
+          </li>
+        </modExtensions>
+        <comps>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>2500</basePowerConsumption>
+            <shortCircuitInRain>false</shortCircuitInRain>
+          </li>
+        </comps>
       </ThingDef>
 </Defs>

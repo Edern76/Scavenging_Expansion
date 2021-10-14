@@ -56,32 +56,12 @@ namespace ScavengingExpansion.Utils
                 if (ingredient.def.HasModExtension<ScavengingYield>())
                 {
                     ScavengingYield ingredientYield = ingredient.def.GetModExtension<ScavengingYield>();
-                    foreach (AdvancedScavengingProduct product in ingredientYield.advancedYield )
+                    float efficiency = recipeDef.efficiencyStat != null ? worker.GetStatValue(recipeDef.efficiencyStat) : 1f;  //TODO : If ingredient is hoarder corpse, take into account hoarding sack health for efficiency
+                    foreach (Thing product in ThingUtils.getProbabilisticThingSet(ingredientYield.advancedYield,
+                        efficiency))
                     {
-                        float efficiency = recipeDef.efficiencyStat != null ? worker.GetStatValue(recipeDef.efficiencyStat) : 1f;
-                        int additionalAmount = product.maxAmount - product.minAmount;
-                        int finalAmount = GenMath.RoundRandom((float)additionalAmount * efficiency * Rand.Value) + product.minAmount;
-                        //TODO : If ingredient is hoarder corpse, take into account hoarding sack health for efficiency
-                        float finalChance = product.chance * efficiency;
-                        float diceRoll = Rand.Value;
-                        #if DEBUG
-                            Log.Message(
-                                $"Efficiency : {efficiency} | Base chance : {product.chance} | Final chance : {finalChance} | Dice Roll : {diceRoll} | Final amount : {finalAmount}");
-                        #endif
-                        
-                        if (finalAmount > 0 && diceRoll < finalChance)
-                        {
-                            ThingDef productDef = DefDatabase<ThingDef>.GetNamed(product.defRef);
-                            if (productDef == null)
-                            {
-                                Log.Error($"Cannot find def named {product.defRef}");
-                            }
-                            else
-                            {
-                                yield return ThingUtils.makeThingWithCount(productDef, finalAmount);
-                            }
-                        }
-                    }    
+                        yield return product;
+                    }
                 }    
             }    
         }

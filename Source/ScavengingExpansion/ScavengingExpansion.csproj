@@ -55,9 +55,13 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Bootstrap.cs" />
+        <Compile Include="Buildings\Buidling_Excavator.cs" />
         <Compile Include="Comps\CompJammable.cs" />
+        <Compile Include="DefOfs\BuildingDefOf.cs" />
         <Compile Include="DefOfs\JobDefOf.cs" />
+        <Compile Include="Defs\DefModExtensions\ExcavatorExtension.cs" />
         <Compile Include="Defs\DefModExtensions\ScavengingYield.cs" />
+        <Compile Include="Defs\ProbabilisticThingSetDef.cs" />
         <Compile Include="Defs\ScavengingRecipeDef.cs" />
         <Compile Include="Defs\Tags\AdvancedScavengingProduct.cs" />
         <Compile Include="Enums\ScavengingRecipeType.cs" />
@@ -65,7 +69,9 @@
         <Compile Include="Harmony\Patches\PatchPawnGizmos.cs" />
         <Compile Include="Harmony\Patches\PatchRecipeYield.cs" />
         <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
+        <Compile Include="Jobs\JobDriver_Excavate.cs" />
         <Compile Include="Jobs\JobDriver_Unjam.cs" />
+        <Compile Include="Jobs\WorkGivers\WorkGiver_Excavate.cs" />
         <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />
         <Compile Include="PlaceWorkers\PlaceWorker_Excavator.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

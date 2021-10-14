@@ -60,7 +60,7 @@ namespace ScavengingExpansion.Comps
 
         private Job tryMakeJob()
         {
-            return GetWearer == null ? null : JobMaker.MakeJob(JobDefOf.UnjamWeapon, GetWearer, parent);
+            return GetWearer == null ? null : JobMaker.MakeJob(JobDefOf.SE_UnjamWeapon, GetWearer, parent);
         }
 
         private void tryStartUnjam()

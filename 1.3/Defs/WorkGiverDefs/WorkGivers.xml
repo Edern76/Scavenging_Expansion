@@ -17,4 +17,17 @@
         </requiredCapacities>
         <prioritizeSustains>true</prioritizeSustains>
     </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>SE_Excavate</defName>
+        <label>operate an excavator to unearth forgotten riches</label>
+        <giverClass>ScavengingExpansion.Jobs.WorkGivers.WorkGiver_Excavate</giverClass>
+        <workType>Excavating</workType>
+        <priorityInType>100</priorityInType>
+        <verb>excavate at</verb>
+        <gerund>excavating at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
 </Defs>
