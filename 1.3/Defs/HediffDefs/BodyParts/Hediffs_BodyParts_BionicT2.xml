@@ -51,9 +51,9 @@
     	<woundAnchorRange>0</woundAnchorRange>
     	<displayWound>true</displayWound>
     	<addedPartProps>
-      		<solid>true</solid>
-      		<partEfficiency>2</partEfficiency>
-      		<betterThanNatural>true</betterThanNatural>
+      	<solid>true</solid>
+      	<partEfficiency>2</partEfficiency>
+      	<betterThanNatural>true</betterThanNatural>
     	</addedPartProps>
 		<modExtensions>
 			<li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
@@ -68,12 +68,14 @@
    	<description>Placeholder</description>
   	<descriptionHyperlinks><RecipeDef>InstallSE_UnstableHealthCore</RecipeDef></descriptionHyperlinks>
   	<costList>
-    		<Plasteel>15</Plasteel>
-    		<ComponentSpacer>4</ComponentSpacer>
+      <UnstablePowerCell>1</UnstablePowerCell>
+      <SE_MechanoidAlloy>40</SE_MechanoidAlloy>
+      <ComponentSpacer>4</ComponentSpacer>
   	</costList>
   	<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
   	<statBases>
-    		<Mass>0.3</Mass>
+      <MarketValue>1500</MarketValue>
+    	<Mass>0.3</Mass>
   	</statBases>
   </ThingDef>
 
@@ -130,7 +132,12 @@
       <solid>true</solid>
       <partEfficiency>1.15</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
-      </addedPartProps>
+    </addedPartProps>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+        <bodyPartHealthOffset>6</bodyPartHealthOffset>
+      </li>
+    </modExtensions>
   </HediffDef>
 
   <ThingDef ParentName="TierTwo">
@@ -139,11 +146,13 @@
     <description>Placeholder</description>
     <descriptionHyperlinks><RecipeDef>InstallSE_RepurposedCentipedeSensor</RecipeDef></descriptionHyperlinks>
     <costList>
-        <Plasteel>15</Plasteel>
-        <ComponentSpacer>4</ComponentSpacer>
+      <CentipedeCorpse>1</CentipedeCorpse>
+      <SE_MechanoidAlloy>10</SE_MechanoidAlloy>
+      <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
+      <MarketValue>1000</MarketValue>
       <Mass>0.3</Mass>
     </statBases>
   </ThingDef>

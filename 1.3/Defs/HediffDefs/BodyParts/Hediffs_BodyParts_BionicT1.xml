@@ -85,12 +85,12 @@
       <descriptionHyperlinks><RecipeDef>InstallSE_VulturesClaw</RecipeDef></descriptionHyperlinks>
       <costList>
           <SE_MechanoidScrap>10</SE_MechanoidScrap>
-          <Steel>100</Steel>
-          <ComponentIndustrial>4</ComponentIndustrial>
+          <Steel>60</Steel>
+          <ComponentIndustrial>7</ComponentIndustrial>
       </costList>
       <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
       <statBases>
-        <MarketValue>540</MarketValue>
+        <MarketValue>750</MarketValue>
         <Mass>0.3</Mass>
       </statBases>
     </ThingDef>
