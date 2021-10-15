@@ -88,6 +88,9 @@
      		<HediffDef>SE_UnstableHealthCore</HediffDef>
     </descriptionHyperlinks>
   	<jobString>Installing unstable health core.</jobString>
+    <skillRequirements>
+      <Medicine>14</Medicine>
+    </skillRequirements>
   	<ingredients>
      		<li>
        		<filter>
@@ -166,6 +169,9 @@
       <HediffDef>SE_RepurposedCentipedeSensor</HediffDef>
     </descriptionHyperlinks>
     <jobString>Installing repurposed centipede sensor.</jobString>
+    <skillRequirements>
+      <Medicine>9</Medicine>
+    </skillRequirements>
     <ingredients>
       <li>
         <filter>

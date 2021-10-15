@@ -104,6 +104,9 @@
           <HediffDef>SE_VulturesClaw</HediffDef>
       </descriptionHyperlinks>
       <jobString>Installing vulture's claw.</jobString>
+      <skillRequirements>
+        <Medicine>7</Medicine>
+      </skillRequirements>
       <ingredients>
           <li>
             <filter>
