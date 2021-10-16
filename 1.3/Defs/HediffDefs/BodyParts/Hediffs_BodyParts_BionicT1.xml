@@ -41,12 +41,12 @@
       <!-- Vulture's Claw -->
 
     <HediffDef ParentName="AddedBodyPartBase">
-      <defName>SE_VulturesClaw</defName>
+      <defName>SE_Bionics_VulturesClaw</defName>
       <label>vulture's claw</label>
       <labelNoun>a vulture's claw</labelNoun>
       <description>An installed vulture's claw.</description>
-      <descriptionHyperlinks><ThingDef>SE_VulturesClaw</ThingDef></descriptionHyperlinks>
-      <spawnThingOnRemoved>SE_VulturesClaw</spawnThingOnRemoved>
+      <descriptionHyperlinks><ThingDef>SE_Bionics_VulturesClaw</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>SE_Bionics_VulturesClaw</spawnThingOnRemoved>
       <woundAnchorRange>0</woundAnchorRange>
       <displayWound>true</displayWound>
       <stages>
@@ -79,10 +79,10 @@
     </HediffDef>
 
     <ThingDef ParentName="TierOne">
-      <defName>SE_VulturesClaw</defName>
+      <defName>SE_Bionics_VulturesClaw</defName>
       <label>vulture's claw</label>
       <description>Placeholder</description>
-      <descriptionHyperlinks><RecipeDef>InstallSE_VulturesClaw</RecipeDef></descriptionHyperlinks>
+      <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_VulturesClaw</RecipeDef></descriptionHyperlinks>
       <costList>
           <SE_MechanoidScrap>10</SE_MechanoidScrap>
           <Steel>60</Steel>
@@ -96,12 +96,12 @@
     </ThingDef>
 
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-      <defName>InstallSE_VulturesClaw</defName>
+      <defName>InstallSE_Bionics_VulturesClaw</defName>
       <label>install vulture's claw</label>
       <description>Install a vulture's claw.</description>
       <descriptionHyperlinks>
-        <ThingDef>SE_VulturesClaw</ThingDef>
-          <HediffDef>SE_VulturesClaw</HediffDef>
+        <ThingDef>SE_Bionics_VulturesClaw</ThingDef>
+          <HediffDef>SE_Bionics_VulturesClaw</HediffDef>
       </descriptionHyperlinks>
       <jobString>Installing vulture's claw.</jobString>
       <skillRequirements>
@@ -111,7 +111,7 @@
           <li>
             <filter>
               <thingDefs>
-              <li>SE_VulturesClaw</li>
+              <li>SE_Bionics_VulturesClaw</li>
               </thingDefs>
             </filter>
             <count>1</count>
@@ -119,12 +119,12 @@
       </ingredients>
       <fixedIngredientFilter>
           <thingDefs>
-          <li>SE_VulturesClaw</li>
+          <li>SE_Bionics_VulturesClaw</li>
           </thingDefs>
       </fixedIngredientFilter>
       <appliedOnFixedBodyParts>
           <li>Shoulder</li>
       </appliedOnFixedBodyParts>
-      <addsHediff>SE_VulturesClaw</addsHediff>
+      <addsHediff>SE_Bionics_VulturesClaw</addsHediff>
     </RecipeDef>
 </Defs>
