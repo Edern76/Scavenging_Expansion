@@ -57,6 +57,7 @@
         <Compile Include="Bootstrap.cs" />
         <Compile Include="Buildings\Buidling_Excavator.cs" />
         <Compile Include="Comps\CompJammable.cs" />
+        <Compile Include="Comps\HediffComp_ExplodeOnDeath.cs" />
         <Compile Include="DefOfs\BuildingDefOf.cs" />
         <Compile Include="DefOfs\JobDefOf.cs" />
         <Compile Include="Defs\DefModExtensions\ExcavatorExtension.cs" />

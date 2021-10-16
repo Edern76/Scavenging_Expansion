@@ -60,6 +60,13 @@
 				<bodyPartHealthOffset>25</bodyPartHealthOffset>
 			</li>
 		</modExtensions>
+		<comps>
+			<li Class="ScavengingExpansion.Comps.HediffCompProperties_ExplodeOnDeath">
+				<explosiveRadius>5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<damageAmountBase>10</damageAmountBase>
+			</li>
+		</comps>
   	</HediffDef>
 
   <ThingDef ParentName="TierTwo">
