@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Industrial -->
+    <!-- Light Scavenged Gloves -->
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>SE_Handwear_LightScavengedGloves</defName>
+		<label>light Scavenged gloves</label>
+		<description>A pair of light scavenged gloves.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ScavLightGloves/SE_ScavLightGloves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.1</generateCommonality>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+      	<costList>
+          	<SE_MechanoidScrap>5</SE_MechanoidScrap>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<MaxHitPoints>135</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>70</MarketValue>
+			<Flammability>0</Flammability>
+			<Mass>1.5</Mass>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+            <Insulation_Cold>0.1</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>SE_BootsAndGloves</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <!-- Heavy Scavenged Gloves -->
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>SE_Handwear_HeavyScavengedGloves</defName>
+		<label>heavy scavenged gloves</label>
+		<description>A pair of heavy scavenged gloves.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ScavHeavyGloves/SE_ScavHeavyGloves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.1</generateCommonality>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+      	<costList>
+          	<SE_MechanoidScrap>10</SE_MechanoidScrap>
+          	<SE_MechanoidAlloy>5</SE_MechanoidAlloy>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>110</MarketValue>
+			<Flammability>0</Flammability>
+			<Mass>3</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+            <Insulation_Cold>0.2</Insulation_Cold>
+            <Insulation_Heat>0.2</Insulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>SE_BootsAndGloves</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+</Defs>
