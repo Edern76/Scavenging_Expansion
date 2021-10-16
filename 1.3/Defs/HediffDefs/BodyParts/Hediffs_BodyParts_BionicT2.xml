@@ -149,9 +149,8 @@
     <description>Placeholder</description>
     <descriptionHyperlinks><RecipeDef>InstallSE_RepurposedCentipedeSensor</RecipeDef></descriptionHyperlinks>
     <costList>
-      <CentipedeCorpse>1</CentipedeCorpse>
       <SE_MechanoidAlloy>10</SE_MechanoidAlloy>
-      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentSpacer>8</ComponentSpacer>
     </costList>
     <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
