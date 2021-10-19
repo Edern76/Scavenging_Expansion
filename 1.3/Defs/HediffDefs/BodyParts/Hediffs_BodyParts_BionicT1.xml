@@ -99,7 +99,6 @@
           <Crafting>7</Crafting>
         </skillRequirements>
       </recipeMaker>
-
     </ThingDef>
 
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -134,5 +133,97 @@
           <li>Shoulder</li>
       </appliedOnFixedBodyParts>
       <addsHediff>SE_Bionics_VulturesClaw</addsHediff>
+    </RecipeDef>
+
+      <!-- Mechanoid Alloy Skin-Plates -->
+
+    <HediffDef ParentName="ImplantHediffBase">
+      <defName>SE_Bionics_MechanoidAlloySkinPlates</defName>
+      <label>mechanoid alloy skin-plates</label>
+      <labelNoun>a mechanoid alloy skin-plates</labelNoun>
+      <description>An installed mechanoid alloy skin-plates.</description>
+      <descriptionHyperlinks><ThingDef>SE_Bionics_MechanoidAlloySkinPlates</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>SE_Bionics_MechanoidAlloySkinPlates</spawnThingOnRemoved>
+      <woundAnchorRange>0</woundAnchorRange>
+      <displayWound>true</displayWound>
+      <stages>
+        <li>
+          <painOffset>0.1</painOffset>
+          <statOffsets>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Beauty>-1</Beauty>
+            <MoveSpeed>-0.1</MoveSpeed>
+          </statOffsets>
+        </li>
+      </stages>
+      <modExtensions>
+        <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+          <bodyPartHealthOffset>5</bodyPartHealthOffset>
+        </li>
+      </modExtensions>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>1</partEfficiency>
+          <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="TierOne">
+      <defName>SE_Bionics_MechanoidAlloySkinPlates</defName>
+      <label>mechanoid alloy skin-plates</label>
+      <description>Placeholder</description>
+      <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_MechanoidAlloySkinPlates</RecipeDef></descriptionHyperlinks>
+      <costList>
+          <SE_MechanoidAlloy>20</SE_MechanoidAlloy>
+          <Plasteel>20</Plasteel>
+          <ComponentIndustrial>4</ComponentIndustrial>
+      </costList>
+      <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+      <statBases>
+        <MarketValue>800</MarketValue>
+        <Mass>0.3</Mass>
+        <WorkToMake>13000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+        <skillRequirements>
+          <Crafting>6</Crafting>
+        </skillRequirements>
+      </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+      <defName>InstallSE_Bionics_MechanoidAlloySkinPlates</defName>
+      <label>install mechanoid alloy skin-plates</label>
+      <description>Install a mechanoid alloy skin-plates.</description>
+      <descriptionHyperlinks>
+        <ThingDef>SE_Bionics_MechanoidAlloySkinPlates</ThingDef>
+          <HediffDef>SE_Bionics_MechanoidAlloySkinPlates</HediffDef>
+      </descriptionHyperlinks>
+      <jobString>Installing mechanoid alloy skin-plates.</jobString>
+      <workAmount>2400</workAmount>
+      <skillRequirements>
+        <Medicine>6</Medicine>
+      </skillRequirements>
+      <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+              <li>SE_Bionics_MechanoidAlloySkinPlates</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+      </ingredients>
+      <fixedIngredientFilter>
+          <thingDefs>
+          <li>SE_Bionics_MechanoidAlloySkinPlates</li>
+          </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+          <li>Torso</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>SE_Bionics_MechanoidAlloySkinPlates</addsHediff>
     </RecipeDef>
 </Defs>
