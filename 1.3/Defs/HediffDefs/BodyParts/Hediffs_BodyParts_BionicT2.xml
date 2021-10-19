@@ -82,7 +82,13 @@
     <statBases>
       <MarketValue>1000</MarketValue>
       <Mass>0.3</Mass>
+      <WorkToMake>18000</WorkToMake>
     </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
   </ThingDef>
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -94,8 +100,9 @@
       <HediffDef>SE_Bionics_RepurposedCentipedeSensor</HediffDef>
     </descriptionHyperlinks>
     <jobString>Installing repurposed centipede sensor.</jobString>
+    <workAmount>2400</workAmount>
     <skillRequirements>
-      <Medicine>9</Medicine>
+      <Medicine>7</Medicine>
     </skillRequirements>
     <ingredients>
       <li>

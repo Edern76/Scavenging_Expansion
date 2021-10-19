@@ -29,7 +29,7 @@
       		<soundWorking>Recipe_Smith</soundWorking>
       		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
       		<skillRequirements>
-        		<Crafting>8</Crafting>
+        		<Crafting>5</Crafting>
       		</skillRequirements>
       		<researchPrerequisite>Bionics</researchPrerequisite>
       		<recipeUsers>
@@ -92,7 +92,14 @@
       <statBases>
         <MarketValue>750</MarketValue>
         <Mass>0.3</Mass>
+        <WorkToMake>16000</WorkToMake>
       </statBases>
+      <recipeMaker>
+        <skillRequirements>
+          <Crafting>7</Crafting>
+        </skillRequirements>
+      </recipeMaker>
+
     </ThingDef>
 
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -104,8 +111,9 @@
           <HediffDef>SE_Bionics_VulturesClaw</HediffDef>
       </descriptionHyperlinks>
       <jobString>Installing vulture's claw.</jobString>
+      <workAmount>2400</workAmount>
       <skillRequirements>
-        <Medicine>7</Medicine>
+        <Medicine>5</Medicine>
       </skillRequirements>
       <ingredients>
           <li>
