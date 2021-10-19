@@ -141,11 +141,6 @@
         <painOffset>-0.3</painOffset>
       </li>
     </stages>
-    <modExtensions>
-      <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
-        <bodyPartHealthOffset>5</bodyPartHealthOffset>
-      </li>
-    </modExtensions>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.15</partEfficiency>
@@ -153,7 +148,7 @@
     </addedPartProps>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
-        <bodyPartHealthOffset>6</bodyPartHealthOffset>
+        <bodyPartHealthOffset>5</bodyPartHealthOffset>
       </li>
     </modExtensions>
   </HediffDef>
