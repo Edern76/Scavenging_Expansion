@@ -39,7 +39,7 @@
       </addedPartProps>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
-        <bodyPartHealthOffset>25</bodyPartHealthOffset>
+        <bodyPartHealthOffset>15</bodyPartHealthOffset>
       </li>
     </modExtensions>
     <comps>
