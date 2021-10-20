@@ -129,6 +129,95 @@
     </ThingDef>
 
     <ThingDef ParentName="ArmorSmithableBase">
+        <defName>SE_ScavBook</defName>
+        <label>scavenging book</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Accessories/Scavbook/ScavBook</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.70</drawSize>
+        </graphicData>
+        <costList>
+            <SE_MechanoidScrap>10</SE_MechanoidScrap>
+            <WoodLog>10</WoodLog>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>75</MarketValue>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <equippedStatOffsets>
+            <GeneralLaborSpeed>0.15</GeneralLaborSpeed>
+            <ForagedNutritionPerDay>0.5</ForagedNutritionPerDay>
+            <FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+            <ConstructionSpeed>0.1</ConstructionSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Accessories/Scavbook/ScavBook</wornGraphicPath>
+            <wornGraphicData>
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                <north>
+                    <male>  <offset>(0.25, -0.25)</offset> </male>
+                    <female><offset>(0.3,-0.3)</offset> </female>
+                    <thin>  <offset>(0.20,-0.25)</offset> </thin>
+                    <hulk>  <offset>(0.3,-0.4)</offset> </hulk>
+                    <fat>   <offset>(0.45,-0.25)</offset> </fat>
+                </north>
+                <south>
+                    <male>  <offset>(-0.25, -0.25)</offset> </male>
+                    <female><offset>(-0.3,-0.3)</offset> </female>
+                    <thin>  <offset>(-0.20,-0.25)</offset> </thin>
+                    <hulk>  <offset>(-0.3,-0.4)</offset> </hulk>
+                    <fat>   <offset>(-0.45,-0.25)</offset> </fat>
+                </south>
+                <east>
+                    <offset>(-0.05,-0.3)</offset>
+                    <hulk><offset>(-0.1,-0.1)</offset></hulk>
+                    <thin><offset>(-0.1,-0.0)</offset></thin>
+                    <female><offset>(-0.05,-0.0)</offset> </female>
+                </east>
+                <west>
+                    <offset>(0.05,-0.3)</offset>
+                    <hulk><offset>(0.1,-0.1)</offset></hulk>
+                    <thin><offset>(0.1,-0.0)</offset></thin>
+                    <female><offset>(0.05,-0.0)</offset> </female>
+                </west>
+                <male> <scale>(0.6,0.6)</scale></male>
+                <female><scale>(0.6,0.6)</scale></female>
+                <thin><scale>(0.6,0.6)</scale></thin>
+                <hulk><scale>(0.7,0.75)</scale></hulk>
+                <fat> <scale>(0.7,0.75)</scale></fat>
+            </wornGraphicData>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags Inherit="False">
+                <li>Apparel_Scavenger</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorSmithableBase">
         <defName>SE_TestArmor</defName>
         <label>test armor</label>
         <description>Placeholder</description>
