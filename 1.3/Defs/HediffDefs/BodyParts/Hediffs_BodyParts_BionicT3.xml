@@ -29,6 +29,10 @@
       <labelNoun>a unstable health core</labelNoun>
       <description>An installed unstable health core.</description>
       <descriptionHyperlinks><ThingDef>SE_Bionics_UnstableHealthCore</ThingDef></descriptionHyperlinks>
+      <stages>
+        <li>
+        </li>
+      </stages>
       <spawnThingOnRemoved>SE_Bionics_UnstableHealthCore</spawnThingOnRemoved>
       <woundAnchorRange>0</woundAnchorRange>
       <displayWound>true</displayWound>
