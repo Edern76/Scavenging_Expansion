@@ -50,7 +50,7 @@
       <li Class="ScavengingExpansion.Comps.HediffCompProperties_ExplodeOnDeath">
         <explosiveRadius>5</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
-        <damageAmountBase>10</damageAmountBase>
+        <damageAmountBase>25</damageAmountBase>
       </li>
     </comps>
     </HediffDef>
