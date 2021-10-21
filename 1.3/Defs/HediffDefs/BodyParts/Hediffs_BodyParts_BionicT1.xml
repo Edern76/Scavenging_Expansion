@@ -29,7 +29,7 @@
       		<soundWorking>Recipe_Smith</soundWorking>
       		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
       		<skillRequirements>
-        		<Crafting>8</Crafting>
+        		<Crafting>5</Crafting>
       		</skillRequirements>
       		<researchPrerequisite>Bionics</researchPrerequisite>
       		<recipeUsers>
@@ -92,7 +92,13 @@
       <statBases>
         <MarketValue>750</MarketValue>
         <Mass>0.3</Mass>
+        <WorkToMake>16000</WorkToMake>
       </statBases>
+      <recipeMaker>
+        <skillRequirements>
+          <Crafting>7</Crafting>
+        </skillRequirements>
+      </recipeMaker>
     </ThingDef>
 
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -104,8 +110,9 @@
           <HediffDef>SE_Bionics_VulturesClaw</HediffDef>
       </descriptionHyperlinks>
       <jobString>Installing vulture's claw.</jobString>
+      <workAmount>2400</workAmount>
       <skillRequirements>
-        <Medicine>7</Medicine>
+        <Medicine>5</Medicine>
       </skillRequirements>
       <ingredients>
           <li>
@@ -127,4 +134,377 @@
       </appliedOnFixedBodyParts>
       <addsHediff>SE_Bionics_VulturesClaw</addsHediff>
     </RecipeDef>
+
+      <!-- Mechanoid Alloy Skin-Plates -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+      <defName>SE_Bionics_MechanoidAlloySkinPlates</defName>
+      <label>mechanoid alloy skin-plates</label>
+      <labelNoun>a mechanoid alloy skin-plates</labelNoun>
+      <description>An installed mechanoid alloy skin-plates.</description>
+      <descriptionHyperlinks><ThingDef>SE_Bionics_MechanoidAlloySkinPlates</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>SE_Bionics_MechanoidAlloySkinPlates</spawnThingOnRemoved>
+      <woundAnchorRange>0</woundAnchorRange>
+      <displayWound>true</displayWound>
+      <stages>
+        <li>
+          <painOffset>0.1</painOffset>
+          <statOffsets>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Beauty>-1</Beauty>
+            <MoveSpeed>-0.1</MoveSpeed>
+          </statOffsets>
+        </li>
+      </stages>
+      <modExtensions>
+        <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+          <bodyPartHealthOffset>5</bodyPartHealthOffset>
+        </li>
+      </modExtensions>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>1</partEfficiency>
+          <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="TierOne">
+      <defName>SE_Bionics_MechanoidAlloySkinPlates</defName>
+      <label>mechanoid alloy skin-plates</label>
+      <description>Placeholder</description>
+      <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_MechanoidAlloySkinPlates</RecipeDef></descriptionHyperlinks>
+      <costList>
+          <SE_MechanoidAlloy>20</SE_MechanoidAlloy>
+          <Plasteel>20</Plasteel>
+          <ComponentIndustrial>4</ComponentIndustrial>
+      </costList>
+      <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+      <statBases>
+        <MarketValue>800</MarketValue>
+        <Mass>0.3</Mass>
+        <WorkToMake>13000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+        <skillRequirements>
+          <Crafting>6</Crafting>
+        </skillRequirements>
+      </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+      <defName>InstallSE_Bionics_MechanoidAlloySkinPlates</defName>
+      <label>install mechanoid alloy skin-plates</label>
+      <description>Install a mechanoid alloy skin-plates.</description>
+      <descriptionHyperlinks>
+        <ThingDef>SE_Bionics_MechanoidAlloySkinPlates</ThingDef>
+          <HediffDef>SE_Bionics_MechanoidAlloySkinPlates</HediffDef>
+      </descriptionHyperlinks>
+      <jobString>Installing mechanoid alloy skin-plates.</jobString>
+      <workAmount>2400</workAmount>
+      <skillRequirements>
+        <Medicine>6</Medicine>
+      </skillRequirements>
+      <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+              <li>SE_Bionics_MechanoidAlloySkinPlates</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+      </ingredients>
+      <fixedIngredientFilter>
+          <thingDefs>
+          <li>SE_Bionics_MechanoidAlloySkinPlates</li>
+          </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+          <li>Torso</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>SE_Bionics_MechanoidAlloySkinPlates</addsHediff>
+    </RecipeDef>
+
+      <!-- Pegger -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+      <defName>SE_Bionics_Pegger</defName>
+      <label>pegger</label>
+      <labelNoun>a pegger</labelNoun>
+      <description>An installed pegger.</description>
+      <descriptionHyperlinks><ThingDef>SE_Bionics_Pegger</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>SE_Bionics_Pegger</spawnThingOnRemoved>
+      <woundAnchorRange>0</woundAnchorRange>
+      <displayWound>true</displayWound>
+      <stages>
+        <li>
+          <statOffsets>
+            <SocialImpact>+0.15</SocialImpact>
+          </statOffsets>
+        </li>
+      </stages>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>0.8</partEfficiency>
+          <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+      <comps>
+        <li Class="HediffCompProperties_VerbGiver">
+          <tools>
+            <li>
+              <label>pegshot</label>
+             <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>8.5</power>
+             <cooldownTime>2</cooldownTime>
+            </li>
+          </tools>
+        </li>
+      </comps>
+    </HediffDef>
+
+    <ThingDef ParentName="TierOne">
+      <defName>SE_Bionics_Pegger</defName>
+      <label>pegger</label>
+      <description>PegChamp</description>
+      <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_Pegger</RecipeDef></descriptionHyperlinks>
+      <costList>
+          <SE_MechanoidScrap>15</SE_MechanoidScrap>
+          <Steel>30</Steel>
+          <ComponentIndustrial>4</ComponentIndustrial>
+      </costList>
+      <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+      <statBases>
+        <MarketValue>650</MarketValue>
+        <Mass>0.3</Mass>
+        <WorkToMake>12000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+        <skillRequirements>
+          <Crafting>5</Crafting>
+        </skillRequirements>
+      </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+      <defName>InstallSE_Bionics_Pegger</defName>
+      <label>install pegger</label>
+      <description>Install a pegger.</description>
+      <descriptionHyperlinks>
+        <ThingDef>SE_Bionics_Pegger</ThingDef>
+          <HediffDef>SE_Bionics_Pegger</HediffDef>
+      </descriptionHyperlinks>
+      <jobString>Installing pegger.</jobString>
+      <workAmount>2400</workAmount>
+      <skillRequirements>
+        <Medicine>6</Medicine>
+      </skillRequirements>
+      <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+              <li>SE_Bionics_Pegger</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+      </ingredients>
+      <fixedIngredientFilter>
+          <thingDefs>
+          <li>SE_Bionics_Pegger</li>
+          </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+          <li>Leg</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>SE_Bionics_Pegger</addsHediff>
+    </RecipeDef>
+
+      <!-- Salvaged Arm -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+      <defName>SE_Bionics_SalvagedArm</defName>
+      <label>salvaged arm</label>
+      <labelNoun>a salvaged arm</labelNoun>
+      <description>An installed salvaged arm.</description>
+      <descriptionHyperlinks><ThingDef>SE_Bionics_SalvagedArm</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>SE_Bionics_SalvagedArm</spawnThingOnRemoved>
+      <woundAnchorRange>0</woundAnchorRange>
+      <displayWound>true</displayWound>
+      <stages>
+        <li>
+          <painOffset>0.03</painOffset>
+        </li>
+      </stages>
+      <modExtensions>
+        <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+          <bodyPartHealthOffset>4</bodyPartHealthOffset>
+        </li>
+      </modExtensions>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>0.4</partEfficiency>
+          <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+      <comps>
+        <li Class="HediffCompProperties_VerbGiver">
+          <tools>
+            <li>
+              <label>fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>8.2</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+          </tools>
+        </li>
+      </comps>
+    </HediffDef>
+
+    <ThingDef ParentName="TierOne">
+      <defName>SE_Bionics_SalvagedArm</defName>
+      <label>salvaged arm</label>
+      <description>Placeholder</description>
+      <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_SalvagedArm</RecipeDef></descriptionHyperlinks>
+      <costList>
+          <SE_MechanoidScrap>10</SE_MechanoidScrap>
+          <Steel>20</Steel>
+          <ComponentIndustrial>2</ComponentIndustrial>
+      </costList>
+      <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+      <statBases>
+        <MarketValue>160</MarketValue>
+        <Mass>0.3</Mass>
+        <WorkToMake>2000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+        <skillRequirements>
+          <Crafting>4</Crafting>
+        </skillRequirements>
+      </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+      <defName>InstallSE_Bionics_SalvagedArm</defName>
+      <label>install salvaged arm</label>
+      <description>Install a salvaged arm.</description>
+      <descriptionHyperlinks>
+        <ThingDef>SE_Bionics_SalvagedArm</ThingDef>
+          <HediffDef>SE_Bionics_SalvagedArm</HediffDef>
+      </descriptionHyperlinks>
+      <jobString>Installing salvaged arm.</jobString>
+      <workAmount>2400</workAmount>
+      <skillRequirements>
+        <Medicine>4</Medicine>
+      </skillRequirements>
+      <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+              <li>SE_Bionics_SalvagedArm</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+      </ingredients>
+      <fixedIngredientFilter>
+          <thingDefs>
+          <li>SE_Bionics_SalvagedArm</li>
+          </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+          <li>Shoulder</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>SE_Bionics_SalvagedArm</addsHediff>
+    </RecipeDef>
+
+      <!-- Salvaged Leg -->
+
+    <HediffDef ParentName="ImplantHediffBase">
+      <defName>SE_Bionics_SalvagedLeg</defName>
+      <label>salvaged leg</label>
+      <labelNoun>a salvaged leg</labelNoun>
+      <description>An installed salvaged leg.</description>
+      <descriptionHyperlinks><ThingDef>SE_Bionics_SalvagedLeg</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>SE_Bionics_SalvagedLeg</spawnThingOnRemoved>
+      <woundAnchorRange>0</woundAnchorRange>
+      <displayWound>true</displayWound>
+      <stages>
+        <li>
+          <painOffset>0.03</painOffset>
+        </li>
+      </stages>
+      <modExtensions>
+        <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+          <bodyPartHealthOffset>4</bodyPartHealthOffset>
+        </li>
+      </modExtensions>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>0.4</partEfficiency>
+          <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="TierOne">
+      <defName>SE_Bionics_SalvagedLeg</defName>
+      <label>salvaged leg</label>
+      <description>Placeholder</description>
+      <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_SalvagedLeg</RecipeDef></descriptionHyperlinks>
+      <costList>
+          <SE_MechanoidScrap>10</SE_MechanoidScrap>
+          <Steel>20</Steel>
+          <ComponentIndustrial>2</ComponentIndustrial>
+      </costList>
+      <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+      <statBases>
+        <MarketValue>160</MarketValue>
+        <Mass>0.3</Mass>
+        <WorkToMake>2000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+        <skillRequirements>
+          <Crafting>4</Crafting>
+        </skillRequirements>
+      </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+      <defName>InstallSE_Bionics_SalvagedLeg</defName>
+      <label>install salvaged leg</label>
+      <description>Install a salvaged leg.</description>
+      <descriptionHyperlinks>
+        <ThingDef>SE_Bionics_SalvagedLeg</ThingDef>
+          <HediffDef>SE_Bionics_SalvagedLeg</HediffDef>
+      </descriptionHyperlinks>
+      <jobString>Installing salvaged leg.</jobString>
+      <workAmount>2400</workAmount>
+      <skillRequirements>
+        <Medicine>4</Medicine>
+      </skillRequirements>
+      <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+              <li>SE_Bionics_SalvagedLeg</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+      </ingredients>
+      <fixedIngredientFilter>
+          <thingDefs>
+          <li>SE_Bionics_SalvagedLeg</li>
+          </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+          <li>Leg</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>SE_Bionics_SalvagedLeg</addsHediff>
+    </RecipeDef>
+
 </Defs>

@@ -38,87 +38,6 @@
     	</recipeMaker>
   	</ThingDef>
 
-
-	  <!-- Unstable Health Core -->
-
- 	<HediffDef ParentName="AddedBodyPartBase">
-    	<defName>SE_Bionics_UnstableHealthCore</defName>
-    	<label>unstable health core</label>
-    	<labelNoun>a unstable health core</labelNoun>
-    	<description>An installed unstable health core.</description>
-    	<descriptionHyperlinks><ThingDef>SE_Bionics_UnstableHealthCore</ThingDef></descriptionHyperlinks>
-    	<spawnThingOnRemoved>SE_Bionics_UnstableHealthCore</spawnThingOnRemoved>
-    	<woundAnchorRange>0</woundAnchorRange>
-    	<displayWound>true</displayWound>
-    	<addedPartProps>
-      	<solid>true</solid>
-      	<partEfficiency>2</partEfficiency>
-      	<betterThanNatural>true</betterThanNatural>
-    	</addedPartProps>
-		<modExtensions>
-			<li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
-				<bodyPartHealthOffset>25</bodyPartHealthOffset>
-			</li>
-		</modExtensions>
-		<comps>
-			<li Class="ScavengingExpansion.Comps.HediffCompProperties_ExplodeOnDeath">
-				<explosiveRadius>5</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<damageAmountBase>10</damageAmountBase>
-			</li>
-		</comps>
-  	</HediffDef>
-
-  <ThingDef ParentName="TierTwo">
-  	<defName>SE_Bionics_UnstableHealthCore</defName>
-   	<label>unstable health core</label>
-   	<description>Placeholder</description>
-  	<descriptionHyperlinks><RecipeDef>InstallSE_Bionics_UnstableHealthCore</RecipeDef></descriptionHyperlinks>
-  	<costList>
-      <UnstablePowerCell>1</UnstablePowerCell>
-      <SE_MechanoidAlloy>40</SE_MechanoidAlloy>
-      <ComponentSpacer>4</ComponentSpacer>
-  	</costList>
-  	<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
-  	<statBases>
-      <MarketValue>1500</MarketValue>
-    	<Mass>0.3</Mass>
-  	</statBases>
-  </ThingDef>
-
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  	<defName>InstallSE_Bionics_UnstableHealthCore</defName>
-  	<label>install unstable health core</label>
-  	<description>Install a unstable health core.</description>
-  	<descriptionHyperlinks>
-   		<ThingDef>SE_Bionics_UnstableHealthCore</ThingDef>
-     		<HediffDef>SE_Bionics_UnstableHealthCore</HediffDef>
-    </descriptionHyperlinks>
-  	<jobString>Installing unstable health core.</jobString>
-    <skillRequirements>
-      <Medicine>14</Medicine>
-    </skillRequirements>
-  	<ingredients>
-     		<li>
-       		<filter>
-        		<thingDefs>
-           	<li>SE_Bionics_UnstableHealthCore</li>
-        		</thingDefs>
-      		</filter>
-       		<count>1</count>
-    		</li>
-  	</ingredients>
-  	<fixedIngredientFilter>
-   		<thingDefs>
-      	<li>SE_Bionics_UnstableHealthCore</li>
-  		</thingDefs>
-  	</fixedIngredientFilter>
-  	<appliedOnFixedBodyParts>
-   		<li>Heart</li>
-  	</appliedOnFixedBodyParts>
-   	<addsHediff>SE_Bionics_UnstableHealthCore</addsHediff>
-	</RecipeDef>
-
     <!-- Repurposed Centipede Sensor -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -163,7 +82,13 @@
     <statBases>
       <MarketValue>1000</MarketValue>
       <Mass>0.3</Mass>
+      <WorkToMake>18000</WorkToMake>
     </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
   </ThingDef>
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -175,8 +100,9 @@
       <HediffDef>SE_Bionics_RepurposedCentipedeSensor</HediffDef>
     </descriptionHyperlinks>
     <jobString>Installing repurposed centipede sensor.</jobString>
+    <workAmount>2400</workAmount>
     <skillRequirements>
-      <Medicine>9</Medicine>
+      <Medicine>7</Medicine>
     </skillRequirements>
     <ingredients>
       <li>
@@ -197,4 +123,90 @@
       <li>Eye</li>
     </appliedOnFixedBodyParts>
     <addsHediff>SE_Bionics_RepurposedCentipedeSensor</addsHediff>
-  </RecipeDef></Defs>
+  </RecipeDef>
+
+    <!-- Gearhead -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>SE_Bionics_Gearhead</defName>
+    <label>gearhead</label>
+    <labelNoun>a gearhead</labelNoun>
+    <description>An installed gearhead.</description>
+    <descriptionHyperlinks><ThingDef>SE_Bionics_Gearhead</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>SE_Bionics_Gearhead</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <stages>
+      <li>
+        <painOffset>-0.3</painOffset>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.15</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+        <bodyPartHealthOffset>5</bodyPartHealthOffset>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <ThingDef ParentName="TierTwo">
+    <defName>SE_Bionics_Gearhead</defName>
+    <label>gearhead</label>
+    <description>Placeholder</description>
+    <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_Gearhead</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <SE_MechanoidAlloy>10</SE_MechanoidAlloy>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>20000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallSE_Bionics_Gearhead</defName>
+    <label>install gearhead</label>
+    <description>Install a gearhead.</description>
+    <descriptionHyperlinks>
+      <ThingDef>SE_Bionics_Gearhead</ThingDef>
+      <HediffDef>SE_Bionics_Gearhead</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing gearhead.</jobString>
+    <workAmount>2700</workAmount>
+    <skillRequirements>
+      <Medicine>14</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SE_Bionics_Gearhead</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SE_Bionics_Gearhead</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SE_Bionics_Gearhead</addsHediff>
+  </RecipeDef>
+</Defs>
