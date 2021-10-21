@@ -28,11 +28,19 @@ namespace ScavengingExpansion.Comps
         }
 
         private bool _jammed;
+        private bool _autoUnjam;
 
         public bool Jammed
         {
             get { return _jammed; }
         }
+
+        public bool AutoUnjam
+        {
+            get { return _autoUnjam; }
+            set { _autoUnjam = value; }
+        }
+        
         protected virtual Pawn GetWearer
         {
             get
@@ -58,14 +66,14 @@ namespace ScavengingExpansion.Comps
             this._jammed = false;
         }
 
-        private Job tryMakeJob()
+        public Job TryMakeJob()
         {
             return GetWearer == null ? null : JobMaker.MakeJob(JobDefOf.SE_UnjamWeapon, GetWearer, parent);
         }
 
         private void tryStartUnjam()
         {
-            Job unjamJob = tryMakeJob();
+            Job unjamJob = TryMakeJob();
             if (unjamJob != null)
             {
                 GetWearer.jobs.StopAll();
@@ -79,26 +87,38 @@ namespace ScavengingExpansion.Comps
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            //if (GetWearer != null && GetWearer.IsColonist && Find.Selector.SingleSelectedThing == GetWearer)
-            //{
-            if (Jammed)
-                {
-                    yield return new Command_Action
+            if (GetWearer != null && GetWearer.IsColonist && Find.Selector.SingleSelectedThing == GetWearer)
+            {
+                if (Jammed)
                     {
-                        icon = this.GizmoTex,
-                        defaultLabel = "Unjam weapon",
-                        defaultDesc = "Unjam a jammed weapon",
-                        action = this.tryStartUnjam,
-                        activateSound = SoundDef.Named("Click"),
-                    };
-                }
-                //}
+                        yield return new Command_Action
+                        {
+                            icon = this.GizmoTex,
+                            defaultLabel = "Unjam weapon",
+                            defaultDesc = "Unjam a jammed weapon",
+                            action = this.tryStartUnjam,
+                            activateSound = SoundDef.Named("Click"),
+                        };
+                    }
+
+                yield return new Command_Toggle()
+                {
+                    icon = this.GizmoTex,
+                    defaultLabel = "Auto unjamming",
+                    defaultDesc =
+                        "Toggle whether or not the wielder of this weapon should automatically try to unjam it.",
+                    toggleAction = delegate { AutoUnjam = !AutoUnjam; },
+                    isActive = (() => AutoUnjam),
+                    activateSound = SoundDef.Named("Click"),
+                };
+            }
         }
 
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Values.Look(ref this._jammed, "jammed", false);
+            Scribe_Values.Look(ref this._autoUnjam, "autoUnjam", true);
         }
     }    
 }
