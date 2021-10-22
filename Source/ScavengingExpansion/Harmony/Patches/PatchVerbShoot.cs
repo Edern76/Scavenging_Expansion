@@ -2,6 +2,7 @@ using RimWorld;
 using Verse;
 using HarmonyLib;
 using ScavengingExpansion.Comps;
+using Verse.AI;
 
 namespace ScavengingExpansion.Harmony.Patches
 {
@@ -9,11 +10,9 @@ namespace ScavengingExpansion.Harmony.Patches
     [HarmonyPatch("TryCastShot")]
     public class PatchVerbShoot
     {
-        [HarmonyPrefix]
-        public static bool Prefix(ref bool __result, Verb_Shoot __instance)
+
+        private static void getLauncherAndEquipment(Verb_Shoot __instance, out Thing launcher, out Thing equipment)
         {
-            Thing launcher;
-            Thing equipment;
             CompMannable comp = __instance.caster.TryGetComp<CompMannable>();
             if (comp != null && comp.ManningPawn != null) //Needed in the case the shooting thing is a manned turret
             {
@@ -25,6 +24,14 @@ namespace ScavengingExpansion.Harmony.Patches
                 launcher = __instance.caster;
                 equipment = (Thing)__instance.EquipmentSource;
             }
+        }
+        
+        [HarmonyPrefix]
+        public static bool Prefix(ref bool __result, Verb_Shoot __instance)
+        {
+            Thing launcher;
+            Thing equipment;
+            getLauncherAndEquipment(__instance, out launcher, out equipment);
 
             CompJammable compJam = equipment.TryGetComp<CompJammable>();
             if (compJam != null)
@@ -60,6 +67,27 @@ namespace ScavengingExpansion.Harmony.Patches
                 return true; //Let the vanilla method run without altering value
             }
         }
-            
+
+        public static void Postfix(ref bool __result, Verb_Shoot __instance)
+        {
+            Thing launcher;
+            Thing equipment;
+            getLauncherAndEquipment(__instance, out launcher, out equipment);
+            CompJammable compJam = equipment.TryGetComp<CompJammable>();
+            if (compJam != null && compJam.Jammed)
+            {
+                Pawn pawn = (Pawn)launcher;
+                if (pawn.IsColonist && !compJam.AutoUnjam)
+                {
+                    return;
+                }
+
+                Job job = compJam.TryMakeJob();
+                if (job != null)
+                {
+                    pawn.jobs.TryTakeOrderedJob(job);
+                }
+            }    
+        }
     }
 }

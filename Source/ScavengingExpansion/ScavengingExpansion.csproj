@@ -74,6 +74,7 @@
         <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
         <Compile Include="Jobs\JobDriver_Excavate.cs" />
         <Compile Include="Jobs\JobDriver_Unjam.cs" />
+        <Compile Include="Jobs\JobGiver_TryUnjam.cs" />
         <Compile Include="Jobs\WorkGivers\WorkGiver_Excavate.cs" />
         <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />
         <Compile Include="PlaceWorkers\PlaceWorker_Excavator.cs" />
