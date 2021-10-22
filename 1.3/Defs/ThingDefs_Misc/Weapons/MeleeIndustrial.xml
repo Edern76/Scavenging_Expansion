@@ -66,67 +66,6 @@
         </comps>
       </ThingDef>
 
-      <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-        <thingClass>ThingWithComps</thingClass>
-        <defName>SE_MeleeWeapon_SalvageHammer</defName>
-        <label>salvage hammer</label>
-        <description>Placeholder</description>
-        <techLevel>Medieval</techLevel>
-        <costStuffCount>150</costStuffCount>
-        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-        <statBases>
-          <WorkToMake>18000</WorkToMake>
-          <Mass>5</Mass>
-        </statBases>
-        <recipeMaker>
-          <skillRequirements>
-            <Crafting>5</Crafting>
-          </skillRequirements>
-          <recipeUsers>
-            <li>FueledSmithy</li>
-            <li>ElectricSmithy</li>
-          </recipeUsers>
-          <workSkill>Crafting</workSkill>
-          <effectWorking>Smith</effectWorking>
-          <soundWorking>Recipe_Smith</soundWorking>
-          <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-        </recipeMaker>
-        <stuffCategories>
-          <li>Metallic</li>
-        </stuffCategories>
-        <weaponTags>
-          <li>ScavengerMeleeDecent</li>
-        </weaponTags>
-        <tools>
-          <li>
-            <label>handle</label>
-            <capacities>
-              <li>Poke</li>
-            </capacities>
-            <power>11</power>
-            <cooldownTime>2.6</cooldownTime>
-          </li>
-          <li>
-            <label>head</label>
-            <labelUsedInLogging>false</labelUsedInLogging>
-            <capacities>
-              <li>Blunt</li>
-            </capacities>
-            <power>22</power>
-            <cooldownTime>2.6</cooldownTime>
-          </li>
-        </tools>
-        <equippedAngleOffset>-65</equippedAngleOffset>
-        <graphicData>
-          <texPath>Things/Item/Equipment/WeaponMelee/SE_SalvageHammer</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>1.3</drawSize>
-        </graphicData>
-        <comps>
-          <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
-        </comps>
-      </ThingDef>
-
       <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <thingClass>ThingWithComps</thingClass>
         <defName>SE_MeleeWeapon_SmartTool</defName>
