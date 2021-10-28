@@ -217,13 +217,13 @@
         </graphicData>
     </ThingDef>
 
-     <!-- ===== Hellfire LMG ===== -->
+     <!-- ===== Wildfire SMG ===== -->
      <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>SE_Gun_HellfireLMG</defName>
-        <label>hellfire lmg</label>
+        <defName>SE_Gun_WildfireSMG</defName>
+        <label>wildfire lmg</label>
         <description>Placeholder</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/SE_OverchargedWildfire</texPath>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_WildfireSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -243,7 +243,7 @@
             <li>
               <verbClass>Verb_Shoot</verbClass>
               <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_HellfireLMG</defaultProjectile>
+              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
               <warmupTime>1.9</warmupTime>
               <range>26</range>
               <soundCast>Shot_Minigun</soundCast>
@@ -274,9 +274,233 @@
         </tools>
     </ThingDef>
 
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_ScrapCrossbow</defName>
+        <label>scrap crossbow</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ScrapCrossbow</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.28</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
+              <warmupTime>1.9</warmupTime>
+              <range>26</range>
+              <soundCast>Shot_Minigun</soundCast>
+              <soundCastTail>GunTail_Medium</soundCastTail>
+              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+              <burstShotCount>6</burstShotCount>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>11</power>
+              <cooldownTime>4</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>7</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_HunterCanon</defName>
+        <label>hunter canon</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterCanon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.28</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
+              <warmupTime>1.9</warmupTime>
+              <range>26</range>
+              <soundCast>Shot_Minigun</soundCast>
+              <soundCastTail>GunTail_Medium</soundCastTail>
+              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+              <burstShotCount>6</burstShotCount>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>11</power>
+              <cooldownTime>4</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>7</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_RepurposedThumpCanon</defName>
+        <label>repurposed thump canon</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_RepurposedThumpCanon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.28</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
+              <warmupTime>1.9</warmupTime>
+              <range>26</range>
+              <soundCast>Shot_Minigun</soundCast>
+              <soundCastTail>GunTail_Medium</soundCastTail>
+              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+              <burstShotCount>6</burstShotCount>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>11</power>
+              <cooldownTime>4</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>7</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_UnstableLance</defName>
+        <label>unstable lance</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_UnstableLance</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.28</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
+              <warmupTime>1.9</warmupTime>
+              <range>26</range>
+              <soundCast>Shot_Minigun</soundCast>
+              <soundCastTail>GunTail_Medium</soundCastTail>
+              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+              <burstShotCount>6</burstShotCount>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>11</power>
+              <cooldownTime>4</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>7</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    
     <ThingDef ParentName="BaseBullet">
-        <defName>SE_Bullet_HellfireLMG</defName>
-        <label>hellfire lmg shot</label>
+        <defName>SE_Bullet_WildfireSMG</defName>
+        <label>wildfire smg shot</label>
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>14</damageAmountBase>
