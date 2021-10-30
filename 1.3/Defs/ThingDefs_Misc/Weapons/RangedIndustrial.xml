@@ -499,7 +499,63 @@
             </li>
         </tools>
     </ThingDef>
-    
+ 
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_TRV5HCanon</defName>
+        <label>TRV5H canon</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_TRV5HCanon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.28</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
+              <warmupTime>1.9</warmupTime>
+              <range>26</range>
+              <soundCast>Shot_Minigun</soundCast>
+              <soundCastTail>GunTail_Medium</soundCastTail>
+              <burstShotCount>1</burstShotCount>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <tools>
+            <li>
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>11</power>
+              <cooldownTime>4</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>7</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+       
     <ThingDef ParentName="BaseBullet">
         <defName>SE_Bullet_WildfireSMG</defName>
         <label>wildfire smg shot</label>
@@ -510,7 +566,23 @@
             <speed>60</speed>
         </projectile>
         <graphicData>
-            <texPath>Things/Projectile/Shot_OverchargedWildfire</texPath>
+            <texPath>Things/Projectile/Rocket_Canon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>SE_Bullet_Rocket_Canon</defName>
+        <label>TRV5H canon shot</label>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Rocket_Canon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
         </graphicData>
