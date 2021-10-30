@@ -17,7 +17,7 @@ namespace ScavengingExpansion.Comps
         }
 
         public float JamChancePerShot = 0.05f;
-        public string UIIconPath = "";
+        public string UIIconPath = "UI/Unjam/Unjam";
         public float UnjamTime = 2f;
         public SoundDef JamSound = null;
         public float ExplosionOnJamChance = 0f;
