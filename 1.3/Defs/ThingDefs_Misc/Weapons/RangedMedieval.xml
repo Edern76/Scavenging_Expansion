@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+    <!-- ===== Scrap Crossbow ===== -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_ScrapCrossbow</defName>
+        <label>scrap crossbow</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ScrapCrossbow</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Medieval</techLevel>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>20</SE_MechanoidScrap>
+            <Steel>50</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+            <MarketValue>120</MarketValue>
+            <Mass>3.4</Mass>
+            <AccuracyTouch>0.70</AccuracyTouch>
+            <AccuracyShort>0.79</AccuracyShort>
+            <AccuracyMedium>0.50</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
+            <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+            <MeleeWeapon_AverageArmorPenetration>0.1</MeleeWeapon_AverageArmorPenetration>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_ScrapCrossbow</defaultProjectile>
+              <warmupTime>1.67</warmupTime>
+              <range>38</range>
+              <soundCast>Shot_Minigun</soundCast>
+              <soundCastTail>GunTail_Medium</soundCastTail>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>cross</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>5</Crafting>
+          </skillRequirements>
+          <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+          </recipeUsers>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+      <defName>SE_Bullet_ScrapCrossbow</defName>
+      <label>scrap crossbow shot</label>
+      <projectile>
+        <damageDef>Arrow</damageDef>
+        <damageAmountBase>16</damageAmountBase>
+        <stoppingPower>1</stoppingPower>
+        <armorPenetrationBase>0.3</armorPenetrationBase>
+        <speed>50</speed>
+      </projectile>
+      <graphicData>
+        <texPath>Things/Projectile/Arrow_Small</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+      </graphicData>
+    </ThingDef>
+</Defs>

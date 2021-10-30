@@ -8,27 +8,34 @@
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterFlintlock</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
         </graphicData>
+        <techLevel>Industrial</techLevel>
         <soundInteract>Interact_Rifle</soundInteract>
         <weaponClasses>
             <li>LongShots</li>
         </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>20</SE_MechanoidScrap>
+            <Steel>50</Steel>
+        </costList>
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.65</AccuracyTouch>
-            <AccuracyShort>0.80</AccuracyShort>
-            <AccuracyMedium>0.90</AccuracyMedium>
-            <AccuracyLong>0.80</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <WorkToMake>7000</WorkToMake>
+            <MarketValue>630</MarketValue>
+            <Mass>2.3</Mass>
+            <AccuracyTouch>0.70</AccuracyTouch>
+            <AccuracyShort>0.50</AccuracyShort>
+            <AccuracyMedium>0.45</AccuracyMedium>
+            <AccuracyLong>0.40</AccuracyLong>
+            <RangedWeapon_Cooldown>1.58</RangedWeapon_Cooldown>
         </statBases>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>
               <hasStandardCommand>true</hasStandardCommand>
               <defaultProjectile>SE_Bullet_HunterFlintlock</defaultProjectile>
-              <warmupTime>2.1</warmupTime>
-              <range>32</range>
+              <warmupTime>0.83</warmupTime>
+              <range>27</range>
               <soundCast>Shot_BoltActionRifle</soundCast>
               <soundCastTail>GunTail_Heavy</soundCastTail>
               <muzzleFlashScale>9</muzzleFlashScale>
@@ -36,7 +43,7 @@
         </verbs>
         <tools>
             <li>
-              <label>stock</label>
+              <label>grip</label>
               <capacities>
                 <li>Blunt</li>
               </capacities>
@@ -53,6 +60,24 @@
               <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
+                <JamChancePerShot>0.15</JamChancePerShot>
+            </li>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
+        </comps>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>5</Crafting>
+          </skillRequirements>
+          <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+          </recipeUsers>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -61,8 +86,9 @@
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>17</damageAmountBase>
-            <stoppingPower>1.7</stoppingPower>
-            <speed>60</speed>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.16</armorPenetrationBase>
+            <speed>48</speed>
         </projectile>
         <graphicData>
             <texPath>Things/Projectile/Bullet_big</texPath>
@@ -79,26 +105,32 @@
             <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <techLevel>Industrial</techLevel>
         <soundInteract>Interact_Rifle</soundInteract>
         <weaponClasses>
             <li>LongShots</li>
         </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>20</SE_MechanoidScrap>
+            <Steel>50</Steel>
+        </costList>
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.65</AccuracyTouch>
-            <AccuracyShort>0.80</AccuracyShort>
-            <AccuracyMedium>0.90</AccuracyMedium>
-            <AccuracyLong>0.80</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <WorkToMake>40000</WorkToMake>
+            <MarketValue>560</MarketValue>
+            <Mass>5</Mass>
+            <AccuracyTouch>0.40</AccuracyTouch>
+            <AccuracyShort>0.50</AccuracyShort>
+            <AccuracyMedium>0.60</AccuracyMedium>
+            <AccuracyLong>0.76</AccuracyLong>
+            <RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
         </statBases>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>
               <hasStandardCommand>true</hasStandardCommand>
               <defaultProjectile>SE_Bullet_HunterRifle</defaultProjectile>
-              <warmupTime>1.9</warmupTime>
-              <range>40</range>
+              <warmupTime>4.17</warmupTime>
+              <range>46</range>
               <soundCast>Shot_BoltActionRifle</soundCast>
               <soundCastTail>GunTail_Heavy</soundCastTail>
               <muzzleFlashScale>9</muzzleFlashScale>
@@ -125,12 +157,21 @@
         </tools>
         <comps>
             <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
-                <JamChancePerShot>0.80</JamChancePerShot>
-                <UIIconPath>UI/Unjam/Unjam</UIIconPath>
-                <JamSound>SE_JammedSound</JamSound>
-                <ExplosionOnJamChance>0.20</ExplosionOnJamChance>
+                <JamChancePerShot>0.25</JamChancePerShot>
             </li>
         </comps>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>6</Crafting>
+          </skillRequirements>
+          <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+          </recipeUsers>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -138,9 +179,10 @@
         <label>hunter rifle bullet</label>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>19</damageAmountBase>
-            <stoppingPower>1.7</stoppingPower>
-            <speed>60</speed>
+            <damageAmountBase>28</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.45</armorPenetrationBase>
+            <speed>80</speed>
         </projectile>
         <graphicData>
             <texPath>Things/Projectile/Bullet_big</texPath>
@@ -157,28 +199,36 @@
             <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <techLevel>Industrial</techLevel>
         <soundInteract>Interact_Rifle</soundInteract>
         <weaponClasses>
             <li>ShortShots</li>
         </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>20</SE_MechanoidScrap>
+            <Steel>50</Steel>
+        </costList>
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.96</AccuracyTouch>
-            <AccuracyShort>0.92</AccuracyShort>
-            <AccuracyMedium>0.66</AccuracyMedium>
-            <AccuracyLong>0.42</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <WorkToMake>20000</WorkToMake>
+            <MarketValue>630</MarketValue>
+            <Mass>5.5</Mass>
+            <AccuracyTouch>0.56</AccuracyTouch>
+            <AccuracyShort>0.54</AccuracyShort>
+            <AccuracyMedium>0.34</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.67</RangedWeapon_Cooldown>
         </statBases>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>SE_Bullet_HunterShotgun</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
-                <range>14</range>
+                <warmupTime>1.07</warmupTime>
+                <range>14.6</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -201,6 +251,23 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
+                <JamChancePerShot>0.15</JamChancePerShot>
+            </li>
+        </comps>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>6</Crafting>
+          </skillRequirements>
+          <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+          </recipeUsers>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -208,10 +275,10 @@
         <label>hunter shotgun bullet</label>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>19</damageAmountBase>
-            <stoppingPower>3</stoppingPower>
-            <armorPenetrationBase>0.11</armorPenetrationBase>
-            <speed>60</speed>
+            <damageAmountBase>22</damageAmountBase>
+            <stoppingPower>4</stoppingPower>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <speed>48</speed>
         </projectile>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -219,119 +286,7 @@
         </graphicData>
     </ThingDef>
 
-     <!-- ===== Wildfire SMG ===== -->
-     <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>SE_Gun_WildfireSMG</defName>
-        <label>wildfire lmg</label>
-        <description>Placeholder</description>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/SE_WildfireSMG</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <weaponClasses>
-            <li>RangedHeavy</li>
-        </weaponClasses>
-        <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.28</AccuracyLong>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-        </statBases>
-        <verbs>
-            <li>
-              <verbClass>Verb_Shoot</verbClass>
-              <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
-              <warmupTime>1.9</warmupTime>
-              <range>26</range>
-              <soundCast>Shot_Minigun</soundCast>
-              <soundCastTail>GunTail_Medium</soundCastTail>
-              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-              <burstShotCount>6</burstShotCount>
-              <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-              <label>stock</label>
-              <capacities>
-                <li>Blunt</li>
-              </capacities>
-              <power>11</power>
-              <cooldownTime>4</cooldownTime>
-            </li>
-            <li>
-              <label>barrel</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>7</power>
-              <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>SE_Gun_ScrapCrossbow</defName>
-        <label>scrap crossbow</label>
-        <description>Placeholder</description>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ScrapCrossbow</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <weaponClasses>
-            <li>RangedHeavy</li>
-        </weaponClasses>
-        <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.28</AccuracyLong>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-        </statBases>
-        <verbs>
-            <li>
-              <verbClass>Verb_Shoot</verbClass>
-              <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
-              <warmupTime>1.9</warmupTime>
-              <range>26</range>
-              <soundCast>Shot_Minigun</soundCast>
-              <soundCastTail>GunTail_Medium</soundCastTail>
-              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-              <burstShotCount>6</burstShotCount>
-              <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-              <label>stock</label>
-              <capacities>
-                <li>Blunt</li>
-              </capacities>
-              <power>11</power>
-              <cooldownTime>4</cooldownTime>
-            </li>
-            <li>
-              <label>barrel</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>7</power>
-              <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-
+    <!-- ===== Hunter Canon ===== -->
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>SE_Gun_HunterCanon</defName>
         <label>hunter canon</label>
@@ -340,166 +295,86 @@
             <texPath>Things/Item/Equipment/WeaponRanged/SE_HunterCanon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <techLevel>Industrial</techLevel>
         <soundInteract>Interact_Rifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>
         </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>20</SE_MechanoidScrap>
+            <Steel>50</Steel>
+        </costList>
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.28</AccuracyLong>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <WorkToMake>50000</WorkToMake>
+            <MarketValue>1100</MarketValue>
+            <Mass>13</Mass>
+            <AccuracyTouch>0.30</AccuracyTouch>
+            <AccuracyShort>0.25</AccuracyShort>
+            <AccuracyMedium>0.30</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
         </statBases>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>
               <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
-              <warmupTime>1.9</warmupTime>
-              <range>26</range>
+              <defaultProjectile>SE_Bullet_HunterCanon</defaultProjectile>
+              <warmupTime>2.6</warmupTime>
+              <range>35.6</range>
               <soundCast>Shot_Minigun</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
-              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-              <burstShotCount>6</burstShotCount>
+              <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+              <burstShotCount>10</burstShotCount>
               <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
         <tools>
             <li>
-              <label>stock</label>
+              <label>barrels</label>
               <capacities>
                 <li>Blunt</li>
               </capacities>
-              <power>11</power>
-              <cooldownTime>4</cooldownTime>
-            </li>
-            <li>
-              <label>barrel</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>7</power>
-              <cooldownTime>2</cooldownTime>
+              <power>11.7</power>
+              <cooldownTime>2.6</cooldownTime>
             </li>
         </tools>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
+                <JamChancePerShot>0.20</JamChancePerShot>
+            </li>
+        </comps>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>8</Crafting>
+          </skillRequirements>
+          <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+          </recipeUsers>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
     </ThingDef>
 
-    <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>SE_Gun_RepurposedThumpCanon</defName>
-        <label>repurposed thump canon</label>
-        <description>Placeholder</description>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/SE_RepurposedThumpCanon</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <weaponClasses>
-            <li>RangedHeavy</li>
-        </weaponClasses>
-        <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.28</AccuracyLong>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-        </statBases>
-        <verbs>
-            <li>
-              <verbClass>Verb_Shoot</verbClass>
-              <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
-              <warmupTime>1.9</warmupTime>
-              <range>26</range>
-              <soundCast>Shot_Minigun</soundCast>
-              <soundCastTail>GunTail_Medium</soundCastTail>
-              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-              <burstShotCount>6</burstShotCount>
-              <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-              <label>stock</label>
-              <capacities>
-                <li>Blunt</li>
-              </capacities>
-              <power>11</power>
-              <cooldownTime>4</cooldownTime>
-            </li>
-            <li>
-              <label>barrel</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>7</power>
-              <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>SE_Gun_UnstableLance</defName>
-        <label>unstable lance</label>
-        <description>Placeholder</description>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/SE_UnstableLance</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <weaponClasses>
-            <li>RangedHeavy</li>
-        </weaponClasses>
-        <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.28</AccuracyLong>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-        </statBases>
-        <verbs>
-            <li>
-              <verbClass>Verb_Shoot</verbClass>
-              <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
-              <warmupTime>1.9</warmupTime>
-              <range>26</range>
-              <soundCast>Shot_Minigun</soundCast>
-              <soundCastTail>GunTail_Medium</soundCastTail>
-              <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-              <burstShotCount>6</burstShotCount>
-              <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-              <label>stock</label>
-              <capacities>
-                <li>Blunt</li>
-              </capacities>
-              <power>11</power>
-              <cooldownTime>4</cooldownTime>
-            </li>
-            <li>
-              <label>barrel</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>7</power>
-              <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
+    <ThingDef ParentName="BaseBullet">
+      <defName>SE_Bullet_HunterCanon</defName>
+      <label>hunter canon shot</label>
+      <projectile>
+        <damageDef>Bullet</damageDef>
+        <damageAmountBase>14</damageAmountBase>
+        <stoppingPower>1</stoppingPower>
+        <armorPenetrationBase>0.16</armorPenetrationBase>
+        <speed>48</speed>
+      </projectile>
+      <graphicData>
+        <texPath>Things/Projectile/Bullet_Small</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+      </graphicData>
     </ThingDef>
  
+    <!-- ===== TRV5H Canon ===== -->
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>SE_Gun_TRV5HCanon</defName>
         <label>TRV5H canon</label>
@@ -508,78 +383,88 @@
             <texPath>Things/Item/Equipment/WeaponRanged/SE_TRV5HCanon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <tickerType>Normal</tickerType>
+        <techLevel>Industrial</techLevel>
         <soundInteract>Interact_Rifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>
         </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>20</SE_MechanoidScrap>
+            <Steel>50</Steel>
+        </costList>
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.28</AccuracyLong>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <WorkToMake>76000</WorkToMake>
+            <MarketValue>1230</MarketValue>
+            <Mass>13</Mass>
+            <AccuracyTouch>0.40</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.80</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
         </statBases>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>
               <hasStandardCommand>true</hasStandardCommand>
-              <defaultProjectile>SE_Bullet_WildfireSMG</defaultProjectile>
-              <warmupTime>1.9</warmupTime>
-              <range>26</range>
+              <defaultProjectile>SE_Bullet_TRV5HCanon</defaultProjectile>
+              <forcedMissRadius>2.5</forcedMissRadius>
+              <warmupTime>4</warmupTime>
+              <range>53.4</range>
               <soundCast>Shot_Minigun</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <burstShotCount>1</burstShotCount>
               <muzzleFlashScale>9</muzzleFlashScale>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
             </li>
         </verbs>
         <equippedAngleOffset>45</equippedAngleOffset>
         <tools>
-            <li>
-              <label>stock</label>
-              <capacities>
-                <li>Blunt</li>
-              </capacities>
-              <power>11</power>
-              <cooldownTime>4</cooldownTime>
-            </li>
-            <li>
-              <label>barrel</label>
-              <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
-              </capacities>
-              <power>7</power>
-              <cooldownTime>2</cooldownTime>
-            </li>
+          <li>
+            <label>barrel</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>11.7</power>
+            <cooldownTime>2.6</cooldownTime>
+          </li>
         </tools>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
+                <JamChancePerShot>0.25</JamChancePerShot>
+            </li>
+            <li Class="CompProperties_Explosive">
+              <explosiveRadius>1.1</explosiveRadius>
+              <explosiveDamageType>Bomb</explosiveDamageType>
+              <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>9</Crafting>
+          </skillRequirements>
+          <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+          </recipeUsers>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
     </ThingDef>
        
     <ThingDef ParentName="BaseBullet">
-        <defName>SE_Bullet_WildfireSMG</defName>
-        <label>wildfire smg shot</label>
-        <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>14</damageAmountBase>
-            <stoppingPower>1</stoppingPower>
-            <speed>60</speed>
-        </projectile>
-        <graphicData>
-            <texPath>Things/Projectile/Rocket_Canon</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-        </graphicData>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>SE_Bullet_Rocket_Canon</defName>
+        <defName>SE_Bullet_TRV5HCanon</defName>
         <label>TRV5H canon shot</label>
+        <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>14</damageAmountBase>
-            <stoppingPower>1</stoppingPower>
-            <speed>60</speed>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>19</damageAmountBase>
+            <stoppingPower>4</stoppingPower>
+            <explosionRadius>2.9</explosionRadius>
+            <speed>55</speed>
         </projectile>
         <graphicData>
             <texPath>Things/Projectile/Rocket_Canon</texPath>
