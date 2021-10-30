@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SoundDef>
+        <defName>SE_JammedSound</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Jamming/Jammed</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>100~100</volumeRange>
+                <distRange>10~70</distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

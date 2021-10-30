@@ -51,7 +51,19 @@ namespace ScavengingExpansion.Harmony.Patches
                     {
                         MoteMaker.ThrowText(launcher.DrawPos, launcher.Map, "*click*");
                         compJam.setJammed();
-                            __result = false; //Cannot shoot
+                        __result = false; //Cannot shoot
+                        float explosionChance = compJam.Props.ExplosionOnJamChance;
+                        if (explosionChance != 0f)
+                        {
+                            float explosionDiceRoll = Rand.Value;
+                            #if DEBUG
+                            Log.Message($"Explosion DiceRoll : {explosionDiceRoll} | Chance : {explosionChance}");
+                            #endif
+                            if (explosionDiceRoll < explosionChance)
+                            {
+                                compJam.DoExplode();    
+                            }
+                        }    
                         return false; //Bypasses vanilla method, *hopefully* this shouldn't break things.
                     }
                 }

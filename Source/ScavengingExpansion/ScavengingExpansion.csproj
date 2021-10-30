@@ -36,7 +36,7 @@
           <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
           <Private>False</Private>
         </Reference>
-        <Reference Include="Assembly-CSharp, Version=1.3.7922.20075, Culture=neutral, PublicKeyToken=null">
+        <Reference Include="Assembly-CSharp, Version=1.3.7964.22648, Culture=neutral, PublicKeyToken=null">
           <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
           <Private>False</Private>
         </Reference>
@@ -60,6 +60,7 @@
         <Compile Include="Comps\HediffComp_ExplodeOnDeath.cs" />
         <Compile Include="DefOfs\BuildingDefOf.cs" />
         <Compile Include="DefOfs\JobDefOf.cs" />
+        <Compile Include="DefOfs\SoundDefOf.cs" />
         <Compile Include="Defs\DefModExtensions\ExcavatorExtension.cs" />
         <Compile Include="Defs\DefModExtensions\HealthModifier.cs" />
         <Compile Include="Defs\DefModExtensions\ScavengingYield.cs" />

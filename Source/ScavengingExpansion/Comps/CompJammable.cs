@@ -3,7 +3,9 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using Verse.Sound;
 using JobDefOf = ScavengingExpansion.DefOfs.JobDefOf;
+using SoundDefOf = ScavengingExpansion.DefOfs.SoundDefOf;
 
 namespace ScavengingExpansion.Comps
 {
@@ -15,8 +17,28 @@ namespace ScavengingExpansion.Comps
         }
 
         public float JamChancePerShot = 0.05f;
-        public string UIIconPath = string.Empty;
+        public string UIIconPath = "";
         public float UnjamTime = 2f;
+        public SoundDef JamSound = null;
+        public float ExplosionOnJamChance = 0f;
+        public float ExplosiveRadius = 1.9f;
+        public DamageDef ExplosiveDamageType;
+        public int DamageAmountBase = -1;
+        public float ArmorPenetrationBase = -1f;
+
+        public override void ResolveReferences(ThingDef parentDef)
+        {
+            base.ResolveReferences(parentDef);
+            if (JamSound == null)
+            {
+                JamSound = SoundDefOf.SE_JammedSound;
+            }
+
+            if (ExplosiveDamageType == null)
+            {
+                ExplosiveDamageType = DamageDefOf.Bomb;
+            }    
+        }
     }
 
     public class CompJammable : ThingComp
@@ -58,6 +80,10 @@ namespace ScavengingExpansion.Comps
 
         public void setJammed()
         {
+            if (this.Props.JamSound != null)
+            {
+                this.Props.JamSound.PlayOneShot(SoundInfo.InMap((TargetInfo)(Thing)this.GetWearer));
+            }    
             this._jammed = true;
         }
 
@@ -69,6 +95,18 @@ namespace ScavengingExpansion.Comps
         public Job TryMakeJob()
         {
             return GetWearer == null ? null : JobMaker.MakeJob(JobDefOf.SE_UnjamWeapon, GetWearer, parent);
+        }
+
+        public void DoExplode()
+        {
+            if (this.Props.ExplosionOnJamChance == 0f)
+            {
+                Log.Error("Trying to explode a weapon with 0 explosion chance");
+                return;
+            }    
+            
+            GenExplosion.DoExplosion(GetWearer.PositionHeld, GetWearer.Map, Props.ExplosiveRadius, Props.ExplosiveDamageType, GetWearer, Props.DamageAmountBase, Props.ArmorPenetrationBase);
+            this.parent.Destroy();
         }
 
         private void tryStartUnjam()

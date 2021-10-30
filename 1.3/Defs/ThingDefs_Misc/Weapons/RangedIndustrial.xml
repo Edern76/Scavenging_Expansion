@@ -127,6 +127,8 @@
             <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
                 <JamChancePerShot>0.80</JamChancePerShot>
                 <UIIconPath>UI/Unjam/Unjam</UIIconPath>
+                <JamSound>SE_JammedSound</JamSound>
+                <ExplosionOnJamChance>0.20</ExplosionOnJamChance>
             </li>
         </comps>
     </ThingDef>
