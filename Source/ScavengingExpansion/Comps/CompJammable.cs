@@ -50,7 +50,8 @@ namespace ScavengingExpansion.Comps
         }
 
         private bool _jammed;
-        private bool _autoUnjam;
+        private bool _autoUnjam = true;
+        private int _shotsSinceLastBurst = 0;
 
         public bool Jammed
         {
@@ -61,6 +62,12 @@ namespace ScavengingExpansion.Comps
         {
             get { return _autoUnjam; }
             set { _autoUnjam = value; }
+        }
+
+        public int ShotsSinceLastBurst
+        {
+            get { return _shotsSinceLastBurst; }
+            set { _shotsSinceLastBurst = value; }
         }
         
         protected virtual Pawn GetWearer
@@ -77,6 +84,7 @@ namespace ScavengingExpansion.Comps
                 }
             }
         }
+        
 
         public void setJammed()
         {
@@ -157,6 +165,7 @@ namespace ScavengingExpansion.Comps
             base.PostExposeData();
             Scribe_Values.Look(ref this._jammed, "jammed", false);
             Scribe_Values.Look(ref this._autoUnjam, "autoUnjam", true);
+            Scribe_Values.Look(ref _shotsSinceLastBurst, "shotsSinceLastBurst", 0);
         }
     }    
 }
