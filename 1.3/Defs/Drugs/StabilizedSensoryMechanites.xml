@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	  <ThingDef ParentName="DrugPillBase">
+    <defName>StabilizedSensoryMechanites</defName>
+    <label>stabilzed sensory mechanites</label>
+    <description>Placeholder.</description>
+    <graphicData>
+      <texPath>Things/Item/ProstheticIcons/ScavImplantsTierThree</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <minRewardCount>10</minRewardCount>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>StabilizedSensoryMechanites</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Luciferium</chemical>
+        <addictiveness>0</addictiveness>
+        <needLevelOffset>0</needLevelOffset>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>StabilizedSensoryMechanites</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>stabilized sensory mechanites</label>
+    <description>Placeholder.</description>
+    <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <painOffset>0.05</painOffset>
+        <restFallFactorOffset>0.35</restFallFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
