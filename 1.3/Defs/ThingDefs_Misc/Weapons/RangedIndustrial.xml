@@ -440,6 +440,22 @@
               <explosiveDamageType>Bomb</explosiveDamageType>
               <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
             </li>
+            <li Class="Reloading.CompProperties_Reloadable">
+                <compClass>Reloading.CompReloadable</compClass>
+                <MaxShots>1</MaxShots>
+                <AmmoFilter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </AmmoFilter>
+                <ItemsPerShot>30</ItemsPerShot>
+                <ReloadTimePerShot>1.67</ReloadTimePerShot>
+                <ReloadSound>ReloadWeapon</ReloadSound>
+                <NewVerbClass>Verb_Shoot</NewVerbClass>
+                <GenerateAmmo>
+                    <Steel>30~60</Steel>
+                </GenerateAmmo>
+            </li>
         </comps>
         <recipeMaker>
           <skillRequirements>
