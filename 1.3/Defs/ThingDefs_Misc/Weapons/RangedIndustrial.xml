@@ -442,18 +442,18 @@
             </li>
             <li Class="Reloading.CompProperties_Reloadable">
                 <compClass>Reloading.CompReloadable</compClass>
-                <MaxShots>1</MaxShots>
+                <MaxShots>8</MaxShots>
                 <AmmoFilter>
                     <thingDefs>
                         <li>Steel</li>
                     </thingDefs>
                 </AmmoFilter>
-                <ItemsPerShot>30</ItemsPerShot>
+                <ItemsPerShot>10</ItemsPerShot>
                 <ReloadTimePerShot>1.67</ReloadTimePerShot>
                 <ReloadSound>ReloadWeapon</ReloadSound>
                 <NewVerbClass>Verb_Shoot</NewVerbClass>
                 <GenerateAmmo>
-                    <Steel>30~60</Steel>
+                    <Steel>10~160</Steel>
                 </GenerateAmmo>
             </li>
         </comps>
