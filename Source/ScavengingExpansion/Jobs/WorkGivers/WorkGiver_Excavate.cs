@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using ScavengingExpansion.Buildings;
+using ScavengingExpansion.Comps;
 using ScavengingExpansion.DefOfs;
 using Verse;
 using Verse.AI;
@@ -46,6 +47,12 @@ namespace ScavengingExpansion.Jobs.WorkGivers
             {
                 return null;
             }
+
+            CompAutoExcavator compAutoExcavator = excavator.TryGetComp<CompAutoExcavator>();
+            if (compAutoExcavator != null && !compAutoExcavator.Props.AllowManualExcavating)
+            {
+                return null;
+            }    
 
             if (!pawn.CanReserve(excavator, 1))
             {

@@ -40,11 +40,20 @@ namespace ScavengingExpansion.Buildings
 
         public IEnumerable<Thing> MakeRessources(Pawn worker)
         {
-            float efficiency = worker.GetStatValue(StatDefOf.MiningYield) * excavatorExtension.buildingEfficiency;
+            float pawnEfficiency = worker != null ? worker.GetStatValue(StatDefOf.MiningYield) : 1;
+            float efficiency = pawnEfficiency * excavatorExtension.buildingEfficiency;
             foreach (Thing product in ThingUtils.getProbabilisticThingSet(possibleProducts, efficiency))
             {
                 yield return product;
             }    
-        } 
+        }
+
+        public IEnumerable<Thing> MakeRessources()
+        {
+            foreach (Thing product in MakeRessources(null))
+            {
+                yield return product;
+            }
+        }
     }
 }
