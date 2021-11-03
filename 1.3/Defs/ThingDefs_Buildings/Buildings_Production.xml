@@ -252,6 +252,9 @@
             <basePowerConsumption>2500</basePowerConsumption>
             <shortCircuitInRain>false</shortCircuitInRain>
           </li>
+          <li Class="ScavengingExpansion.Comps.CompProperties_AutoExcavator">
+            <AllowManualExcavating>false</AllowManualExcavating>
+          </li>
         </comps>
       </ThingDef>
 </Defs>
