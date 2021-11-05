@@ -152,17 +152,17 @@
     </projectile>
   </ThingDef>
 
-  <!-- Military Turret 
-  <ThingDef Name="VFES_Turret_MilitaryTurret" ParentName="BuildingBase">
-    <defName>VFES_Turret_MilitaryTurret</defName>
-    <label>military turret</label>
-    <description>A military-grade double barreled automatic turret. Requires steel to refurbish its barrels after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+  <!-- Siege Wrecker -->
+  <ThingDef Name="SE_Turret_SiegeWrecker" ParentName="BuildingBase">
+    <defName>SE_Turret_SiegeWrecker</defName>
+    <label>siege wrecker</label>
+    <description>Placeholder.</description>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/TurretMedium_Base</texPath>
+      <texPath>Things/Building/Security/SiegeWrecker/SiegeWrecker_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
+      <drawSize>(4,4)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
@@ -172,19 +172,17 @@
       </shadowData>
     </graphicData>
     <techLevel>Industrial</techLevel>
-    <uiIconPath>Things/Building/Military/TurretMilitary_MenuIcon</uiIconPath>
+    <size>(4,4)</size>
+    <uiIconPath>Things/Building/Security/SiegeWrecker/SiegeWrecker_MenuIcon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>false</rotatable>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <statBases>
-      <MaxHitPoints>120</MaxHitPoints>
-      <Flammability>0.7</Flammability>
-      <WorkToBuild>3300</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>20000</WorkToBuild>
+      <MarketValue>17000</MarketValue>
       <Mass>12</Mass>
       <Beauty>-20</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
@@ -199,7 +197,7 @@
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>120</basePowerConsumption>
+        <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
@@ -211,61 +209,61 @@
             <li>Steel</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>240</fuelCapacity>
+        <fuelCapacity>10</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>2</fuelMultiplier>
+        <fuelMultiplier>0.07</fuelMultiplier>
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
       </li>
     </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
     <hasTooltip>true</hasTooltip>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-    <costStuffCount>90</costStuffCount>
     <costList>
-      <Steel>80</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <SE_MechanoidAlloy>50</SE_MechanoidAlloy>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
     </costList>
     <designationCategory>Security</designationCategory>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
-      <turretGunDef>VFES_Gun_MilitaryTurret</turretGunDef>
-      <turretBurstCooldownTime>6.6</turretBurstCooldownTime>
+      <turretGunDef>SE_Gun_SiegeWrecker</turretGunDef>
+      <turretBurstCooldownTime>7.5</turretBurstCooldownTime>
+      <turretTopDrawSize>4</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>GunTurrets</li>
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef Name="VFES_Gun_MilitaryTurret" ParentName="BaseWeaponTurret">
-    <defName>VFES_Gun_MilitaryTurret</defName>
-    <label>military turret doublegun</label>
+  <ThingDef Name="SE_Gun_SiegeWrecker" ParentName="BaseWeaponTurret">
+    <defName>SE_Gun_SiegeWrecker</defName>
+    <label>siege wrecker doublegun</label>
     <description>Two simple automatic guns made to be mounted on a turret.</description>
     <graphicData>
-      <texPath>Things/Building/Military/TurretMilitary_Top</texPath>
+      <texPath>Things/Building/Security/SiegeWrecker/SiegeWrecker_top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <tickerType>Normal</tickerType>
     <statBases>
-      <AccuracyTouch>0.63</AccuracyTouch>
-      <AccuracyShort>0.58</AccuracyShort>
-      <AccuracyMedium>0.37</AccuracyMedium>
-      <AccuracyLong>0.20</AccuracyLong>
-      <RangedWeapon_Cooldown>6.6</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.20</AccuracyTouch>
+      <AccuracyShort>0.40</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>7.5</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>5</Mass>
       <Flammability>0</Flammability>
@@ -274,16 +272,34 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+        <defaultProjectile>Bullet_SiegeWrecker</defaultProjectile>
+        <forcedMissRadius>3.5</forcedMissRadius>
         <warmupTime>0</warmupTime>
-        <range>28.9</range>
-        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-        <burstShotCount>4</burstShotCount>
+        <minRange>16</minRange>
+        <range>60</range>
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>
-  </ThingDef> -->
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SiegeWrecker</defName>
+    <label>siege wrecker shell</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
+      <explosionRadius>3.5</explosionRadius>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
 </Defs>
