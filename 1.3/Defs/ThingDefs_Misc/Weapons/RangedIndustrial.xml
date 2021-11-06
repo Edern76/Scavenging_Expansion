@@ -488,4 +488,101 @@
             <shaderType>TransparentPostLight</shaderType>
         </graphicData>
     </ThingDef>
+
+    <!-- ===== Slugger ===== -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>SE_Gun_Slugger</defName>
+        <label>slugger</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SE_Slugger</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <costList>
+            <SE_MechanoidScrap>20</SE_MechanoidScrap>
+            <Steel>30</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <MarketValue>500</MarketValue>
+            <Mass>5</Mass>
+            <AccuracyTouch>0.70</AccuracyTouch>
+            <AccuracyShort>0.45</AccuracyShort>
+            <AccuracyMedium>0.25</AccuracyMedium>
+            <AccuracyLong>0.10</AccuracyLong>
+            <RangedWeapon_Cooldown>3.33</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+              <verbClass>Verb_Shoot</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>SE_Bullet_Slugger</defaultProjectile>
+              <warmupTime>0</warmupTime>
+              <range>40.9</range>
+              <soundCast>Shot_BoltActionRifle</soundCast>
+              <soundCastTail>GunTail_Heavy</soundCastTail>
+              <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
+                <JamChancePerShot>0.15</JamChancePerShot>
+            </li>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
+        </comps>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>6</Crafting>
+          </skillRequirements>
+          <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+          </recipeUsers>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>SE_Bullet_Slugger</defName>
+        <label>slugger bullet</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <stoppingPower>0.5</stoppingPower>
+            <armorPenetrationBase>0.18</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
 </Defs>
