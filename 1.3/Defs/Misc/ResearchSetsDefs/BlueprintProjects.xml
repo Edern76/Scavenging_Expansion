@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Class="ScavengingExpansion.Defs.ResearchProjectSetDef">
+        <defName>SE_DefaultBlueprintProjectSet</defName>
+        <label>DefaultBlueprintProjectSet</label>
+        <description>Not sure this is necessary here either.</description>
+        <thingClass>ScavengingExpansion.Defs.ResearchProjectSetDef</thingClass>
+        <projects>
+            <li>Batteries</li>
+            <li>BiofuelRefining</li>
+            <li>SolarPanels</li>
+            <li>Hydroponics</li>
+        </projects>
+    </ThingDef>    
+</Defs>

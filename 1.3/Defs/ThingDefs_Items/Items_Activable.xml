@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Name="ActivableBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>1</stackLimit>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>14</pathCost>
+        <statBases>
+            <Mass>0.4</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ActivableBase">
+        <defName>SE_Blueprint</defName>
+        <label>cryptic blueprint</label>
+        <thingClass>ThingWithComps</thingClass>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Special/SE_CodeCracker</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_AutoLearner">
+                <compClass>ScavengingExpansion.Comps.CompAutoLearner</compClass>
+                <SpawnWithSetProject>false</SpawnWithSetProject>
+                <AvailableProjects>SE_DefaultBlueprintProjectSet</AvailableProjects>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ActivableBase">
+        <defName>SE_DeterministicBlueprint</defName>
+        <label>blueprint</label>
+        <thingClass>ThingWithComps</thingClass>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Special/SE_CodeCracker</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <comps>
+            <li Class="ScavengingExpansion.Comps.CompProperties_AutoLearner">
+                <compClass>ScavengingExpansion.Comps.CompAutoLearner</compClass>
+                <SpawnWithSetProject>true</SpawnWithSetProject>
+                <AvailableProjects>SE_DefaultBlueprintProjectSet</AvailableProjects>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
