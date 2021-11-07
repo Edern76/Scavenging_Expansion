@@ -1,0 +1,84 @@
+using System;
+using HarmonyLib;
+using RimWorld;
+using UnityEngine;
+using Verse;
+
+namespace ScavengingExpansion.Harmony.Patches
+{
+    [HarmonyPatch(typeof(StatWorker_MarketValue))]
+    [HarmonyPatch("CalculatedBaseMarketValue")]
+    public class PatchMarketValue_DEBUG
+    {
+        public const int ERROR_KEY = 1260357851;
+        [HarmonyPrefix]
+        public static bool Prefix(ref float __result, BuildableDef def, ThingDef stuffDef)
+        {
+            Log.ErrorOnce("If you see this message and you're not developping the mod, it means the coder fucked up and forgot to remove something that he should have. Please yell at him to fix this ASAP.", ERROR_KEY);
+            Console.WriteLine($"Calculating for {def?.label} with {stuffDef}");
+            float num1 = 0.0f;
+            Console.WriteLine("Before recipe def");
+            RecipeDef recipe = StatWorker_MarketValue.CalculableRecipe(def);
+            Console.WriteLine("After recipe def");
+            float num2;
+            int num3;
+            if (recipe != null)
+            {
+                Console.WriteLine("Recipe not null");
+                num2 = recipe.workAmount;
+                num3 = recipe.products[0].count;
+                Console.WriteLine($"Recipe nums OK (num2 = {num2} | num3 = {num3})");
+                if (recipe.ingredients != null)
+                {
+                    Console.WriteLine("Ingredients not null");
+                    for (int index = 0; index < recipe.ingredients.Count; ++index)
+                    {
+                        Console.WriteLine("Before ing");
+                        IngredientCount ingredient = recipe.ingredients[index];
+                        Console.WriteLine($"Ingredient : {ingredient}");
+                        int num4 = ingredient.CountRequiredOfFor(ingredient.FixedIngredient, recipe);
+                        Console.WriteLine($"Num4 OK ({num4}");
+                        num1 += (float) num4 * ingredient.FixedIngredient.BaseMarketValue;
+                        Console.WriteLine($"Num1 ingredient updated ({num1})");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Recipe null");
+                num2 = Mathf.Max(def.GetStatValueAbstract(StatDefOf.WorkToMake, stuffDef), def.GetStatValueAbstract(StatDefOf.WorkToBuild, stuffDef));
+                num3 = 1;
+                Console.WriteLine($"Null nums OK (num2 = {num2} | num3 = {num3})");
+                if (def.CostList != null)
+                {
+                    Console.WriteLine("Cost list not null");
+                    for (int index = 0; index < def.CostList.Count; ++index)
+                    {
+                        Console.WriteLine("Before cost list");
+                        ThingDefCountClass cost = def.CostList[index];
+                        Console.WriteLine($"Cost OK ? ({cost})");
+                        num1 += (float) cost.count * cost.thingDef.BaseMarketValue;
+                        Console.WriteLine($"Num1 Cost updated ({num1})");
+                    }
+                }
+                if (def.CostStuffCount > 0)
+                {
+                    Console.WriteLine("Stuff not null");
+                    if (stuffDef != null)
+                    {
+                        Console.WriteLine("Stuffdef not null");
+                        num1 += (float)def.CostStuffCount / stuffDef.VolumePerUnit *
+                                stuffDef.GetStatValueAbstract(StatDefOf.MarketValue);
+                    }
+                    else
+                        num1 += (float) def.CostStuffCount * 2f;
+                    Console.WriteLine($"Num1 stuff updated ({num1})");
+                }
+            }
+            if ((double) num2 > 2.0)
+                num1 += num2 * 0.0036f;
+            __result = num1 / (float) num3;
+            return false;
+        }
+    }
+}
