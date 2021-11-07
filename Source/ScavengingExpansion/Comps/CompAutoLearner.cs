@@ -77,6 +77,13 @@ namespace ScavengingExpansion.Comps
             };
         }
 
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Values.Look(ref setProject, "setProject");
+        }
+
+
         public override string TransformLabel(string label) =>
             this.setProject != null ? label + $" ({this.setProject.label})" : base.TransformLabel(label);
     }
