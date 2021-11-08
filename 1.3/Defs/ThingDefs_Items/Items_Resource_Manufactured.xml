@@ -112,8 +112,8 @@
         <useHitPoints>true</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>1000</MarketValue>
-            <Mass>0.2</Mass>
+            <MarketValue>750</MarketValue>
+            <Mass>1.5</Mass>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
     </ThingDef>
@@ -138,6 +138,25 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
+        <defName>SE_CarpenterAI</defName>
+        <label>carpenter's AI</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_CarpenterAI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>450</MarketValue>
+            <Mass>0.4</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
         <defName>SE_MammothPlate</defName>
         <label>mammoth plate</label>
         <description>Overplates carefully extracted from a Mammoth. Harder than anything known on the rim, even surpassing plasteel.</description>
@@ -150,8 +169,8 @@
         <useHitPoints>false</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>150</MarketValue>
-            <Mass>0.8</Mass>
+            <MarketValue>560</MarketValue>
+            <Mass>2</Mass>
             <StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>0.30</StuffPower_Armor_Heat>
@@ -175,5 +194,81 @@
                 <WorkToBuild>5</WorkToBuild>
             </statFactors>
         </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_OdinOverchargedCore</defName>
+        <label>odin's overcharged core</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_OdinOverchargedCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <Mass>1</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_SiegebreakerCanon</defName>
+        <label>siegebreaker canon</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_SiegebreakerCanon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>530</MarketValue>
+            <Mass>4</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_FederatorCrucibleCore</defName>
+        <label>federator crucible core</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_FederatorCrucibleCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <Mass>0.6</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_SubZeroInnerCore</defName>
+        <label>sub-zero innercore</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_SubZeroInnerCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>540</MarketValue>
+            <Mass>0.6</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
     </ThingDef>
 </Defs>
