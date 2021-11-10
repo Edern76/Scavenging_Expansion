@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- ===== Gatherer Inner Blaster ===== -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseGunWithQuality">
     <defName>SE_Gun_GathererBlaster</defName>
     <label>gatherer inner blaster</label>
     <description>Placeholder</description>
@@ -58,7 +58,7 @@
   </ThingDef>
 
   <!-- ===== Forager Inner Blaster ===== -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseGunWithQuality">
     <defName>SE_Gun_ForagerBlaster</defName>
     <label>forager inner blaster</label>
     <description>Placeholder</description>
