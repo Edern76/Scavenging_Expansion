@@ -52,7 +52,7 @@
       <speed>120</speed>
     </projectile>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_big</texPath>
+      <texPath>Things/Projectile/Gatherer_shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>
@@ -108,7 +108,7 @@
       <speed>120</speed>
     </projectile>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_big</texPath>
+      <texPath>Things/Projectile/Gatherer_shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>
