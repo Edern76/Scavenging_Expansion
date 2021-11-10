@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ===== Gatherer Inner Blaster ===== -->
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>SE_Gun_GathererBlaster</defName>
+    <label>gatherer inner blaster</label>
+    <description>Placeholder</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/InvisiblePlaceholder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+    	<MarketValue>1400</MarketValue>
+      <Mass>22</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.67</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SE_Bullet_GathererBlaster</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>17.9</range>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>GathererGun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SE_Bullet_GathererBlaster</defName>
+    <label>gatherer inner blaster bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>120</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <!-- ===== Forager Inner Blaster ===== -->
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>SE_Gun_ForagerBlaster</defName>
+    <label>forager inner blaster</label>
+    <description>Placeholder</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/InvisiblePlaceholder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+    	<MarketValue>700</MarketValue>
+      <Mass>11</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SE_Bullet_ForagerBlaster</defaultProjectile>
+        <warmupTime>0.83</warmupTime>
+        <range>13.9</range>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>ForagerGun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SE_Bullet_ForagerBlaster</defName>
+    <label>forager inner blaster bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>120</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+</Defs>
