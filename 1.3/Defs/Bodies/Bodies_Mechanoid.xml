@@ -63,11 +63,17 @@
           <def>SE_BodyPart_MechanicalClaw</def>
           <customLabel>left shoulder</customLabel>
           <coverage>0.16</coverage>
+          <groups>
+            <li>LeftHand</li>
+          </groups>
         </li>
         <li>
           <def>SE_BodyPart_MechanicalClaw</def>
           <customLabel>right shoulder</customLabel>
           <coverage>0.16</coverage>
+          <groups>
+            <li>RightHand</li>
+          </groups>
         </li>
         <li>
         	<def>SE_BodyPart_IndividualSensor</def>

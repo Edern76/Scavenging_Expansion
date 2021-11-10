@@ -21,6 +21,8 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
         <armorPenetration>0.14</armorPenetration>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
       </li>
       <li>
       	<label>right claw</label>
@@ -30,6 +32,8 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
         <armorPenetration>0.14</armorPenetration>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
       </li>
     </tools>
     <race>
@@ -104,6 +108,8 @@
         <power>8</power>
         <cooldownTime>2</cooldownTime>
         <armorPenetration>0.14</armorPenetration>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
       </li>
       <li>
       	<label>right claw</label>
@@ -113,6 +119,8 @@
         <power>8</power>
         <cooldownTime>2</cooldownTime>
         <armorPenetration>0.14</armorPenetration>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
       </li>
     </tools>
     <race>
@@ -160,10 +168,105 @@
   <PawnKindDef ParentName="BaseMechForager">
     <defName>SE_Mech_Forager</defName>
     <label>gatherer</label>
-    <combatPower>400</combatPower>
+    <combatPower>100</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
       <li>ForagerGun</li>
     </weaponTags>
+  </PawnKindDef>
+
+  <!-- ==== Amalgam ==== -->
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>SE_Mech_Amalgam</defName>
+    <label>amalgam</label>
+    <description>Placeholder.</description>
+    <statBases>
+      <MoveSpeed>2.9</MoveSpeed>
+      <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.66</ArmorRating_Sharp>
+      <PsychicSensitivity>0.75</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.20</armorPenetration>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.20</armorPenetration>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.13</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>Lancer</body>
+      <baseBodySize>2</baseBodySize>
+      <baseHealthScale>3.46</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>30</Steel>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Abstract="true" Name="BaseMechAmalgam" ParentName="BaseMechanoidKind">
+    <race>SE_Mech_Amalgam</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/SE_Amalgam/Amalgam</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseMechAmalgam">
+    <defName>SE_Mech_Amalgam</defName>
+    <label>gatherer</label>
+    <combatPower>400</combatPower>
   </PawnKindDef>
 </Defs>
