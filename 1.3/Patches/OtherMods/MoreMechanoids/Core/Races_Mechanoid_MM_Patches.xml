@@ -15,7 +15,7 @@
                             <advancedYield>
                                 <li>
                                     <defRef>SE_MammothPlate</defRef>
-                                    <chance>0.15</chance>
+                                    <chance>0.05</chance>
                                 </li>
                             </advancedYield>
                         </li>
