@@ -193,6 +193,7 @@
         <modExtensions>
           <li Class="ScavengingExpansion.Defs.DefModExtensions.ExcavatorExtension">
             <buildingEfficiency>0.75</buildingEfficiency>
+            <excavationCycleTime>7000</excavationCycleTime>
           </li>
         </modExtensions>
       </ThingDef>
@@ -246,7 +247,7 @@
         </placeWorkers>
         <modExtensions>
           <li Class="ScavengingExpansion.Defs.DefModExtensions.ExcavatorExtension">
-            <excavationCycleTime>10</excavationCycleTime>
+            <excavationCycleTime>10000</excavationCycleTime>
           </li>
         </modExtensions>
         <comps>
