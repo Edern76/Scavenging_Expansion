@@ -138,6 +138,9 @@
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
+        <researchPrerequisites>
+            <li>SalvagingTable</li>
+        </researchPrerequisites>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
@@ -256,5 +259,8 @@
             <AllowManualExcavating>false</AllowManualExcavating>
           </li>
         </comps>
+        <researchPrerequisites>
+            <li>AutomatedExcavation</li>
+        </researchPrerequisites>
       </ThingDef>
 </Defs>

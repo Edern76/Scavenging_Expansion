@@ -67,6 +67,7 @@
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>AlloyGunsmithing</researchPrerequisite>
           <skillRequirements>
             <Crafting>5</Crafting>
           </skillRequirements>
@@ -161,6 +162,7 @@
             </li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>AlloyGunsmithing</researchPrerequisite>
           <skillRequirements>
             <Crafting>6</Crafting>
           </skillRequirements>
@@ -257,6 +259,7 @@
             </li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>AlloyGunsmithing</researchPrerequisite>
           <skillRequirements>
             <Crafting>6</Crafting>
           </skillRequirements>
@@ -344,6 +347,7 @@
             </li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>AlloyGunsmithing</researchPrerequisite>
           <skillRequirements>
             <Crafting>8</Crafting>
           </skillRequirements>
@@ -458,6 +462,7 @@
             </li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>BreachingCanon</researchPrerequisite>
           <skillRequirements>
             <Crafting>9</Crafting>
           </skillRequirements>
@@ -557,6 +562,7 @@
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>SluggerTechnology</researchPrerequisite>
           <skillRequirements>
             <Crafting>6</Crafting>
           </skillRequirements>

@@ -56,5 +56,8 @@
           </li>
         </comps>
         <designationCategory>Temperature</designationCategory>
+        <researchPrerequisites>
+          <li>FrozenCoreTech</li>
+        </researchPrerequisites>
       </ThingDef>
 </Defs>

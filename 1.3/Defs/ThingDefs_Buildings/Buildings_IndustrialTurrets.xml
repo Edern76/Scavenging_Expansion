@@ -96,7 +96,7 @@
     </placeWorkers>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>GunTurrets</li>
+      <li>SluggerTechnology</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -244,7 +244,7 @@
     </placeWorkers>
     <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>GunTurrets</li>
+      <li>BreachingCanon</li>
     </researchPrerequisites>
   </ThingDef>
 

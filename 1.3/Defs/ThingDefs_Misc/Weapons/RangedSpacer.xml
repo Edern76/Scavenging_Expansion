@@ -63,6 +63,7 @@
             </li>
         </tools>
         <recipeMaker>
+          <researchPrerequisite>OverchargedCoreTech</researchPrerequisite>
           <skillRequirements>
             <Crafting>10</Crafting>
           </skillRequirements>
@@ -163,6 +164,7 @@
             </li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>MiningOperation</researchPrerequisite>
           <skillRequirements>
             <Crafting>10</Crafting>
           </skillRequirements>
@@ -253,6 +255,7 @@
             </li>
         </comps>
         <recipeMaker>
+          <researchPrerequisite>UnstableOperation</researchPrerequisite>
           <skillRequirements>
             <Crafting>11</Crafting>
           </skillRequirements>

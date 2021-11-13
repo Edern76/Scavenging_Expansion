@@ -58,6 +58,7 @@
           </li>
         </tools>
         <recipeMaker>
+          <researchPrerequisite>ScrapWeaponry</researchPrerequisite>
           <skillRequirements>
             <Crafting>4</Crafting>
           </skillRequirements>
@@ -123,6 +124,7 @@
           </li>
         </tools>
         <recipeMaker>
+          <researchPrerequisite>ScrapWeaponry</researchPrerequisite>
           <skillRequirements>
             <Crafting>3</Crafting>
           </skillRequirements>
@@ -160,6 +162,7 @@
           <Steel>60</Steel>
         </costList>
         <recipeMaker>
+          <researchPrerequisite>ScrapWeaponry</researchPrerequisite>
           <skillRequirements>
             <Crafting>4</Crafting>
           </skillRequirements>
@@ -228,6 +231,7 @@
           <Steel>70</Steel>
         </costList>
         <recipeMaker>
+          <researchPrerequisite>ScrapWeaponry</researchPrerequisite>
           <skillRequirements>
             <Crafting>6</Crafting>
           </skillRequirements>
@@ -297,6 +301,7 @@
           <Steel>40</Steel>
         </costList>
         <recipeMaker>
+          <researchPrerequisite>ScrapWeaponry</researchPrerequisite>
           <skillRequirements>
             <Crafting>6</Crafting>
           </skillRequirements>
@@ -366,6 +371,7 @@
           <Steel>70</Steel>
         </costList>
         <recipeMaker>
+          <researchPrerequisite>ScrapWeaponry</researchPrerequisite>
           <skillRequirements>
             <Crafting>6</Crafting>
           </skillRequirements>

@@ -15,6 +15,7 @@
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>AlloyArmor</researchPrerequisite>
             <skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
@@ -188,6 +189,7 @@
             <SE_MechanoidScrap>10</SE_MechanoidScrap>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>ReprocessedAI</researchPrerequisite>
             <recipeUsers>
               <li>ElectricSmithy</li>
               <li>FueledSmithy</li>
@@ -242,6 +244,7 @@
             <Plasteel>40</Plasteel>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>DominionMight</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>

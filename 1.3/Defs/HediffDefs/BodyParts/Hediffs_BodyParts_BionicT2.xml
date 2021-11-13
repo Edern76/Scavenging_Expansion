@@ -23,6 +23,7 @@
       		<WorkToMake>26000</WorkToMake>
     	</statBases>
     	<recipeMaker>
+          <researchPrerequisite>AugmentedProsthetics</researchPrerequisite>
       		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       		<workSkill>Crafting</workSkill>
       		<effectWorking>Smith</effectWorking>
@@ -31,7 +32,6 @@
       		<skillRequirements>
         		<Crafting>8</Crafting>
       		</skillRequirements>
-      		<researchPrerequisite>Bionics</researchPrerequisite>
       		<recipeUsers>
         		<li>FabricationBench</li>
       		</recipeUsers>

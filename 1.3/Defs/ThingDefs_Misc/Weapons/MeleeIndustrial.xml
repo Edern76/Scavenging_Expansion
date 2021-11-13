@@ -56,6 +56,7 @@
           </li>
         </tools>
         <recipeMaker>
+          <researchPrerequisite>ReprocessedAI</researchPrerequisite>
             <recipeUsers>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>

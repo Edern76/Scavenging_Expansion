@@ -66,6 +66,9 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <designationCategory>Power</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+            <li>OverchargedCoreTech</li>
+        </researchPrerequisites>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
