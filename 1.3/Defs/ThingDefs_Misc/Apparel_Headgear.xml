@@ -230,7 +230,7 @@
         </apparel>
     </ThingDef>
 
-        <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SE_DominionCrownHelmet</defName>
         <label>dominion crown</label>
         <description>Masterfully handcrafted crown, fit for a king. Psychic energy seems to emanate from within the golden halo.</description>
@@ -279,6 +279,57 @@
             </layers>
             <hatRenderedAboveBody>false</hatRenderedAboveBody>
             <canBeDesiredForIdeo MayRequire="Ludeon.RimWorld.Ideology">true</canBeDesiredForIdeo>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>SE_MammothHelmet</defName>
+        <label>mammoth helmet</label>
+        <description>Unbreakable armored helmet, used by many lords in the outlands for its incredible protection.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/MammothVisiere/SE_MammothVisiere</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <costList>
+            <SE_MammothPlate>5</SE_MammothPlate>
+            <Plasteel>30</Plasteel>
+            <SE_MechanoidAlloy>15</SE_MechanoidAlloy>
+        </costList>
+        <recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
+            <researchPrerequisite>ImpenetrableBulwark</researchPrerequisite>
+		</recipeMaker>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MammothVisiere/SE_MammothVisiere</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <hatRenderedAboveBody>false</hatRenderedAboveBody>
         </apparel>
     </ThingDef>
 </Defs>
