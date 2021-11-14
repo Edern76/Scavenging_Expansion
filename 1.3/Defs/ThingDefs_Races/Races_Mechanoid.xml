@@ -268,5 +268,9 @@
     <defName>SE_Mech_Amalgam</defName>
     <label>gatherer</label>
     <combatPower>400</combatPower>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>AmalgamWeapon</li>
+    </weaponTags>
   </PawnKindDef>
 </Defs>
