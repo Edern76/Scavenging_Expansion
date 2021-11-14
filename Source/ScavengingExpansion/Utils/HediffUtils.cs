@@ -23,5 +23,18 @@ namespace ScavengingExpansion.Utils
             }    
             return pawn.health.hediffSet.hediffs.Where(hediff => hediff != null & hediff.Part != null && hediff.Part.def != null && hediff.Part.def == partDef);
         }
+
+        public static void AddOrUpdateHediffWithSeverity(Pawn pawn, HediffDef hediff, float severity)
+        {
+            Pawn_HealthTracker health = pawn.health;
+            HediffSet hediffSet = health.hediffSet;
+            if (hediffSet.GetFirstHediffOfDef(hediff) == null)
+            {
+                health.AddHediff(hediff);
+            }
+
+            hediffSet.GetFirstHediffOfDef(hediff).Severity += severity;
+
+        }
     }
 }

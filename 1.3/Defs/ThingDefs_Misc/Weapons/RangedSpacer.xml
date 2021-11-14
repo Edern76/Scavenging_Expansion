@@ -285,4 +285,102 @@
         <shaderType>TransparentPostLight</shaderType>
       </graphicData>
     </ThingDef>
+
+    <!-- ===== Blasphemy ===== -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+      <defName>SE_Gun_Blasphemy</defName>
+      <label>blashpemy</label>
+      <description>Placeholder</description>
+      <graphicData>
+          <texPath>Things/Item/Equipment/WeaponRanged/SE_Blasphemy</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <techLevel>Spacer</techLevel>
+      <soundInteract>Interact_Rifle</soundInteract>
+      <weaponClasses>
+          <li>RangedHeavy</li>
+      </weaponClasses>
+      <weaponTags>
+        <li>SpacerGun</li>
+        <li>ScavRangedAdvanced</li>
+      </weaponTags>
+      <costList>
+          <ComponentSpacer>4</ComponentSpacer>
+          <SE_MechanoidAlloy>50</SE_MechanoidAlloy>
+          <Plasteel>30</Plasteel>
+          <SE_FederatorCrucibleCore>1</SE_FederatorCrucibleCore>
+      </costList>
+      <statBases>
+          <WorkToMake>60000</WorkToMake>
+          <MarketValue>1350</MarketValue>
+          <Mass>5</Mass>
+          <AccuracyTouch>0.50</AccuracyTouch>
+          <AccuracyShort>0.50</AccuracyShort>
+          <AccuracyMedium>0.70</AccuracyMedium>
+          <AccuracyLong>0.40</AccuracyLong>
+          <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+      </statBases>
+      <verbs>
+          <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>SE_Bullet_Blasphemy</defaultProjectile>
+            <warmupTime>0.66</warmupTime>
+            <range>30</range>
+            <soundCast>Shot_Minigun</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+            <burstShotCount>2</burstShotCount>
+            <muzzleFlashScale>9</muzzleFlashScale>
+          </li>
+      </verbs>
+      <tools>
+          <li>
+            <label>barrel</label>
+            <capacities>
+              <li>Blunt</li>
+              <li>Poke</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+      </tools>
+      <comps>
+        <li Class="ScavengingExpansion.Comps.CompProperties_HediffWhenHeld">
+          <Hediff>SE_SanguisProditoris</Hediff>
+        </li>
+      </comps>
+      <recipeMaker>
+        <researchPrerequisite>FaithAndOrder</researchPrerequisite>
+        <skillRequirements>
+          <Crafting>10</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+          <li>FueledSmithy</li>
+          <li>ElectricSmithy</li>
+          <li>SE_SalvagingTable</li>
+          <li>SE_AdvancedSalvagingTable</li>
+        </recipeUsers>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+      </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SE_Bullet_Blasphemy</defName>
+    <label>blasphemy bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>24</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>90</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+  </ThingDef>
 </Defs>

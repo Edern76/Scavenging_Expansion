@@ -8,7 +8,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>Defs/ThingDef[defName="VFEV_Mech_Carpenter"]</xpath>
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Carpenter"]</xpath>
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
@@ -23,7 +23,7 @@
                 </li>
 
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>Defs/ThingDef[defName="VFEV_Mech_AdvancedCarpenter"]</xpath>
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_AdvancedCarpenter"]</xpath>
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
