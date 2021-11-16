@@ -52,7 +52,7 @@
       <speed>120</speed>
     </projectile>
     <graphicData>
-      <texPath>Things/Projectile/Gatherer_shot</texPath>
+      <texPath>Things/Projectile/Gatherer_shot_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>
