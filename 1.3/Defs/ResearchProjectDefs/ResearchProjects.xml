@@ -9,9 +9,10 @@
     <description>Salvaged debris from a  mechanoid cluster, repurposed into a more fitting defense system.</description>
     <baseCost>500</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>GunTurrets</li>
+      <li>AlloyForge</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
@@ -23,7 +24,10 @@
     <description>Allows you to craft weapons from mechanoid scraps.</description>
     <baseCost>300</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>SalvagingTable</li>
+    </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.60</researchViewY>
   </ResearchProjectDef>
@@ -34,9 +38,10 @@
     <description>Craft powerful but unreliable guns using mechanoid alloy.</description>
     <baseCost>550</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>BlowbackOperation</li>
+      <li>AlloyForge</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>1.20</researchViewY>
@@ -48,9 +53,10 @@
     <description>Craft a proper armor out of mechanoid alloy, heavy but resistant.</description>
     <baseCost>500</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>PlateArmor</li>
+      <li>AlloyForge</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>1.80</researchViewY>
@@ -62,7 +68,10 @@
     <description>Build a deadly highly unstable charge lance capable of ripping through metal and flesh.</description>
     <baseCost>1</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyGunsmithing</li>
+    </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>2.40</researchViewY>
   </ResearchProjectDef>
@@ -73,7 +82,10 @@
     <description>By repurposing a thump canon, create a powerful mining device.</description>
     <baseCost>550</baseCost
     	><tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyGunsmithing</li>
+    </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
@@ -84,7 +96,7 @@
     <description>Automatizing the excavation process, yielding even more valuables from sub-terran ruins while being fully automatized.</description>
     <baseCost>1300</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>MiningOperation</li>
     </prerequisites>
@@ -98,8 +110,8 @@
     <description>Craft crude, inexpensive and often painful prosthetics.</description>
     <baseCost>300</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
-    <researchViewX>0.00</researchViewX>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>4.00</researchViewX>
     <researchViewY>3.60</researchViewY>
   </ResearchProjectDef>
 
@@ -109,11 +121,11 @@
     <description>Repurposing mechanoids inner-circuits into bionic upgrades.</description>
     <baseCost>700</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>SalvagedProsthetics</li>
     </prerequisites>
-    <researchViewX>1.20</researchViewX>
+    <researchViewX>5.00</researchViewX>
     <researchViewY>3.60</researchViewY>
   </ResearchProjectDef>
 
@@ -123,7 +135,10 @@
     <description>Construct a deadly manned ballista out of scraps.</description>
     <baseCost>400</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ScrapWeaponry</li>
+    </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
@@ -134,9 +149,26 @@
     <description>Produce a deadly slow-firing auto-canon that needs to be manned.</description>
     <baseCost>600</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SluggerTechnology</li>
+    </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>4.80</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DeadMansKnowledge</defName>
+    <label>dead man's knowledge</label>
+    <description>Tricks and useful informations written in a handbook.</description>
+    <baseCost>300</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SalvagingTable</li>
+    </prerequisites>
+    <researchViewX>1.20</researchViewX>
+    <researchViewY>1.20</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -145,9 +177,37 @@
     <description>Unlocks the ability to salvage alloy and precious parts out of mechanoids with a salvaging table.</description>
     <baseCost>400</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>5.40</researchViewY>
+    <researchViewY>5.20</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AlloyForge</defName>
+    <label>alloy forge</label>
+    <description>A powered forge used to bend and reshape mechanoid alloy and metals alike into useful weapons.</description>
+    <baseCost>400</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SalvagingTable</li>
+    </prerequisites>
+    <researchViewX>1.20</researchViewX>
+    <researchViewY>5.20</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MechanoidRepurposingPro</defName>
+    <label>mechanoid repurposing pro</label>
+    <description>Unlocks the ability to be a true gamer in terms of repurposing mechanoids.</description>
+    <baseCost>400</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>1.20</researchViewX>
+    <researchViewY>5.20</researchViewY>
   </ResearchProjectDef>
 
   <!-- ==== Column 2 ==== -->
@@ -158,7 +218,10 @@
     <description>Recycling the Carpenter AI chip into useful all-purpose tools.</description>
     <baseCost>1</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MechanoidRepurposingPro</li>
+    </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
@@ -169,7 +232,10 @@
     <description>Allow you to concentrate the Psychic power of the dominion into a crown.</description>
     <baseCost>1</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MechanoidRepurposingPro</li>
+    </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>0.60</researchViewY>
   </ResearchProjectDef>
@@ -180,7 +246,10 @@
     <description>Bend the Mammoth plates into a indestructible and heavy armor.</description>
     <baseCost>1</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MechanoidRepurposingPro</li>
+    </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>1.20</researchViewY>
   </ResearchProjectDef>
@@ -191,7 +260,10 @@
     <description>Stealing and merging both mechanoid and crucible technology into new powerful devices.</description>
     <baseCost>1</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MechanoidRepurposingPro</li>
+    </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>1.80</researchViewY>
   </ResearchProjectDef>
@@ -202,7 +274,10 @@
     <description>Concentre, stabilize and weaponize the energy of the overcharged core.</description>
     <baseCost>1</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MechanoidRepurposingPro</li>
+    </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>2.40</researchViewY>
   </ResearchProjectDef>
@@ -213,7 +288,10 @@
     <description>Using the salvaged canon from a siegebreaker build both a long range powerful turret and a portable canon-device.</description>
     <baseCost>1</baseCost>
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MechanoidRepurposingPro</li>
+    </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
@@ -224,7 +302,10 @@
     <description>Securing the innercore of the phalanx, repurposing it's ever freezing fluid.</description>
     <baseCost>1</baseCost>  
     <tab>ScavengerExpanded</tab>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MechanoidRepurposingPro</li>
+    </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>3.60</researchViewY>
   </ResearchProjectDef>
