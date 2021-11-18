@@ -334,6 +334,7 @@
             <muzzleFlashScale>9</muzzleFlashScale>
           </li>
       </verbs>
+      <equippedAngleOffset>45</equippedAngleOffset>
       <tools>
           <li>
             <label>barrel</label>
@@ -378,7 +379,7 @@
       <speed>90</speed>
     </projectile>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/Blasphemy_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
