@@ -74,6 +74,11 @@
     </prerequisites>
     <researchViewX>0.00</researchViewX>
     <researchViewY>2.40</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
   </ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -222,6 +227,11 @@
     <prerequisites>
       <li>MechanoidRepurposingPro</li>
     </prerequisites>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
     <researchViewX>3.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
@@ -238,6 +248,11 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>0.60</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -252,6 +267,11 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>1.20</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
   </ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -266,6 +286,11 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>1.80</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -280,6 +305,11 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>2.40</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -294,6 +324,11 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>3.00</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -308,6 +343,11 @@
     </prerequisites>
     <researchViewX>3.00</researchViewX>
     <researchViewY>3.60</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
   </ResearchProjectDef>
 
 </Defs>

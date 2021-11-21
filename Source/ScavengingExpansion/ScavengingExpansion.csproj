@@ -68,6 +68,7 @@
         <Compile Include="Defs\DefModExtensions\ExcavatorExtension.cs" />
         <Compile Include="Defs\DefModExtensions\HealthModifier.cs" />
         <Compile Include="Defs\DefModExtensions\HediffApplier.cs" />
+        <Compile Include="Defs\DefModExtensions\ResearchBlocker.cs" />
         <Compile Include="Defs\DefModExtensions\ScavengingYield.cs" />
         <Compile Include="Defs\ProbabilisticThingSetDef.cs" />
         <Compile Include="Defs\ResearchProjectSetDef.cs" />
@@ -81,6 +82,7 @@
         <Compile Include="Harmony\Patches\PatchPawnHealthPostApplyDamage.cs" />
         <Compile Include="Harmony\Patches\PatchPawnPreApplyDamage.cs" />
         <Compile Include="Harmony\Patches\PatchRecipeYield.cs" />
+        <Compile Include="Harmony\Patches\PatchResearchDefCanStartNow.cs" />
         <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
         <Compile Include="Jobs\JobDriver_Excavate.cs" />
         <Compile Include="Jobs\JobDriver_Unjam.cs" />
@@ -93,6 +95,7 @@
         <Compile Include="Utils\HediffUtils.cs" />
         <Compile Include="Utils\MapUtils.cs" />
         <Compile Include="Utils\RecipeUtils.cs" />
+        <Compile Include="Utils\ResearchUtils.cs" />
         <Compile Include="Utils\TerrainUtils.cs" />
         <Compile Include="Utils\ThingUtils.cs" />
     </ItemGroup>

@@ -22,7 +22,7 @@
             <recipeUsers>
               <li>ElectricSmithy</li>
               <li>FueledSmithy</li>
-              <li>SE_SalvagingTable</li>
+              <li>SE_AdvancedSalvagingTable</li>
               <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
         </recipeMaker>
@@ -81,7 +81,7 @@
             <recipeUsers>
               <li>ElectricSmithy</li>
               <li>FueledSmithy</li>
-              <li>SE_SalvagingTable</li>
+              <li>SE_AdvancedSalvagingTable</li>
               <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
             <memePrerequisitesAny>
@@ -138,7 +138,7 @@
             <recipeUsers>
               <li>ElectricSmithy</li>
               <li>FueledSmithy</li>
-              <li>SE_SalvagingTable</li>
+              <li>SE_AdvancedSalvagingTable</li>
               <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
         </recipeMaker>
@@ -193,7 +193,7 @@
             <recipeUsers>
               <li>ElectricSmithy</li>
               <li>FueledSmithy</li>
-              <li>SE_SalvagingTable</li>
+              <li>SE_AdvancedSalvagingTable</li>
               <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
         </recipeMaker>

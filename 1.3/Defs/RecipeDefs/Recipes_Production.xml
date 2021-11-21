@@ -30,7 +30,6 @@
           <li>Basic</li>
         </scavengingTypes>
         <recipeUsers>
-          <li>SE_SalvagingTable</li>
           <li>SE_AdvancedSalvagingTable</li>
         </recipeUsers>
       </RecipeDef>

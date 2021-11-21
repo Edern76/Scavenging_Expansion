@@ -60,7 +60,7 @@
             <recipeUsers>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
-                <li>SE_SalvagingTable</li>
+                <li>SE_AdvancedSalvagingTable</li>
                 <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
             <workSkill>Crafting</workSkill>
@@ -125,7 +125,7 @@
             <recipeUsers>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
-                <li>SE_SalvagingTable</li>
+                <li>SE_AdvancedSalvagingTable</li>
                 <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
             <skillRequirements>

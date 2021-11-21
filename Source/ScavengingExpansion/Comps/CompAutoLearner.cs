@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using ScavengingExpansion.Defs;
+using ScavengingExpansion.Utils;
 using UnityEngine;
 using Verse;
 
@@ -46,7 +47,7 @@ namespace ScavengingExpansion.Comps
             ResearchProjectDef toLearn = this.setProject != null ? this.setProject : getProjectFromSet();
             if (!toLearn.IsFinished)
             {
-                Find.ResearchManager.FinishProject(toLearn);
+                ResearchUtils.FinishProjectWithoutPrerequisites(toLearn);
                 parent.Destroy();
             }
             else
