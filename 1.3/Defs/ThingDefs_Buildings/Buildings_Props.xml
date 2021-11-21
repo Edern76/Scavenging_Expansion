@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SE_MechPike</defName>
+    <label>mech pike</label>
+    <description>A rotor unit.</description>
+    <graphicData>	
+      <texPath>Things/Building/Props/MechPike</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <uiIconScale>1</uiIconScale>
+	<building>
+		<isInert>true</isInert>
+	</building>
+</ThingDef>
+</Defs>

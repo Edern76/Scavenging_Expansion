@@ -143,6 +143,7 @@
             <WoodLog>10</WoodLog>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>DeadMansKnowledge</researchPrerequisite>
             <skillRequirements>
                 <Crafting>9</Crafting>
             </skillRequirements>
@@ -231,10 +232,9 @@
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-        <stuffCategories>
-            <li>Metallic</li>
-          </stuffCategories>
-        <costStuffCount>75</costStuffCount>
+        <costList>
+            <Steel>1</Steel>
+        </costList>
         <statBases>
             <WorkToMake>12000</WorkToMake>
             <MaxHitPoints>120</MaxHitPoints>
@@ -267,11 +267,6 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
         </apparel>
-        <modExtensions>
-            <li Class="FalloutCore.ApparelExtension">
-                <shouldHideBody>true</shouldHideBody>
-            </li>
-        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="ArmorSmithableBase">
