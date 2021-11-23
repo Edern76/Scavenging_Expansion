@@ -27,6 +27,7 @@
       <defName>SE_Bionics_UnstableHealthCore</defName>
       <label>unstable health core</label>
       <labelNoun>a unstable health core</labelNoun>
+      <defaultLabelColor>(0.713,0.917,0.713)</defaultLabelColor>
       <description>An installed unstable health core.</description>
       <descriptionHyperlinks><ThingDef>SE_Bionics_UnstableHealthCore</ThingDef></descriptionHyperlinks>
       <stages>

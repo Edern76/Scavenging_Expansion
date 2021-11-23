@@ -44,6 +44,7 @@
       <defName>SE_Bionics_VulturesClaw</defName>
       <label>vulture's claw</label>
       <labelNoun>a vulture's claw</labelNoun>
+      <defaultLabelColor>(0.674,0.698,0.623)</defaultLabelColor>
       <description>An installed vulture's claw.</description>
       <descriptionHyperlinks><ThingDef>SE_Bionics_VulturesClaw</ThingDef></descriptionHyperlinks>
       <spawnThingOnRemoved>SE_Bionics_VulturesClaw</spawnThingOnRemoved>
@@ -233,6 +234,7 @@
       <defName>SE_Bionics_Pegger</defName>
       <label>pegger</label>
       <labelNoun>a pegger</labelNoun>
+      <defaultLabelColor>(0.674,0.698,0.623)</defaultLabelColor>
       <description>An installed pegger.</description>
       <descriptionHyperlinks><ThingDef>SE_Bionics_Pegger</ThingDef></descriptionHyperlinks>
       <spawnThingOnRemoved>SE_Bionics_Pegger</spawnThingOnRemoved>
@@ -329,6 +331,7 @@
       <defName>SE_Bionics_SalvagedArm</defName>
       <label>salvaged arm</label>
       <labelNoun>a salvaged arm</labelNoun>
+      <defaultLabelColor>(0.674,0.698,0.623)</defaultLabelColor>
       <description>An installed salvaged arm.</description>
       <descriptionHyperlinks><ThingDef>SE_Bionics_SalvagedArm</ThingDef></descriptionHyperlinks>
       <spawnThingOnRemoved>SE_Bionics_SalvagedArm</spawnThingOnRemoved>
@@ -428,6 +431,7 @@
       <defName>SE_Bionics_SalvagedLeg</defName>
       <label>salvaged leg</label>
       <labelNoun>a salvaged leg</labelNoun>
+      <defaultLabelColor>(0.674,0.698,0.623)</defaultLabelColor>
       <description>An installed salvaged leg.</description>
       <descriptionHyperlinks><ThingDef>SE_Bionics_SalvagedLeg</ThingDef></descriptionHyperlinks>
       <spawnThingOnRemoved>SE_Bionics_SalvagedLeg</spawnThingOnRemoved>

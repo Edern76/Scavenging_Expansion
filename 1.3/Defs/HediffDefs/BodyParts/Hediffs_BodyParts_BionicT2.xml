@@ -44,6 +44,7 @@
     <defName>SE_Bionics_RepurposedCentipedeSensor</defName>
     <label>repurposed centipede sensor</label>
     <labelNoun>a repurposed centipede sensor</labelNoun>
+    <defaultLabelColor>(0.674,0.698,0.623)</defaultLabelColor>
     <description>An installed repurposed centipede sensor.</description>
     <descriptionHyperlinks><ThingDef>SE_Bionics_RepurposedCentipedeSensor</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>SE_Bionics_RepurposedCentipedeSensor</spawnThingOnRemoved>
@@ -131,6 +132,7 @@
     <defName>SE_Bionics_Gearhead</defName>
     <label>gearhead</label>
     <labelNoun>a gearhead</labelNoun>
+    <defaultLabelColor>(0.713,0.917,0.713)</defaultLabelColor>
     <description>An installed gearhead.</description>
     <descriptionHyperlinks><ThingDef>SE_Bionics_Gearhead</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>SE_Bionics_Gearhead</spawnThingOnRemoved>
