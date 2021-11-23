@@ -12,6 +12,8 @@
         <volume>(0.55, 0.30, 0.40)</volume>
       </shadowData>
     </graphicData>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.5</fillPercent>
@@ -20,10 +22,13 @@
       <Mass>5</Mass>
       <Flammability>0</Flammability>
     </statBases>
+    <costList>
+      <SE_MechanoidScrap>20</SE_MechanoidScrap>
+    </costList>
     <size>(1,1)</size>
     <uiIconScale>1</uiIconScale>
-	<building>
-		<isInert>true</isInert>
-	</building>
-</ThingDef>
+	  <building>
+		  <isInert>true</isInert>
+	  </building>
+  </ThingDef>
 </Defs>
