@@ -332,4 +332,52 @@
             <hatRenderedAboveBody>false</hatRenderedAboveBody>
         </apparel>
     </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>SE_VultureMask</defName>
+        <label>vulture mask</label>
+        <description>Placeholder.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/VultureMask/VultureMask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Steel>20</Steel>
+            <SE_MechanoidScrap>10</SE_MechanoidScrap>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>SE_AdvancedSalvagingTable</li>
+            </recipeUsers>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>1700</WorkToMake>
+            <Mass>2</Mass>
+            <MaxHitPoints>70</MaxHitPoints>
+            <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <Insulation_Cold>0</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <EquipDelay>1</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicSensitivity>-0.5</ToxicSensitivity>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Eyes</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/VultureMask/VultureMask</wornGraphicPath>
+            <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+            <layers>
+                <li>EyeCover</li>
+            </layers>
+        </apparel>
+    </ThingDef>
 </Defs>
