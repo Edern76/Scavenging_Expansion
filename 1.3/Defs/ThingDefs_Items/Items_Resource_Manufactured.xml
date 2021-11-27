@@ -10,19 +10,13 @@
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
-        <stackLimit>100</stackLimit>
-        <useHitPoints>false</useHitPoints>
+        <stackLimit>50</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>15</MarketValue>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>2.5</MarketValue>
             <Mass>0.6</Mass>
-            <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-            <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
-            <BluntDamageMultiplier>1</BluntDamageMultiplier>
+            <DeteriorationRate>2</DeteriorationRate>
         </statBases>
         <smeltable>true</smeltable>
         <intricate>true</intricate>
@@ -36,22 +30,6 @@
         <tradeTags>
             <li>ExoticMisc</li>
         </tradeTags>
-        <stuffProps>
-            <categories>
-              <li>Scrappy</li>
-            </categories>
-            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-            <statFactors>
-                <MaxHitPoints>2.8</MaxHitPoints>
-                <Beauty>0.2</Beauty>
-                <Flammability>0</Flammability>
-                <WorkToMake>2.2</WorkToMake>
-                <WorkToBuild>2.2</WorkToBuild>
-                <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
-            </statFactors>
-        </stuffProps>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -64,19 +42,19 @@
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
-        <stackLimit>100</stackLimit>
+        <stackLimit>75</stackLimit>
         <useHitPoints>false</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>100</MarketValue>
-            <Mass>1.2</Mass>
-            <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+            <MarketValue>6</MarketValue>
+            <Mass>0.2</Mass>
+            <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.80</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-            <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
-            <BluntDamageMultiplier>1</BluntDamageMultiplier>
+            <SharpDamageMultiplier>1</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
         </statBases>
         <thingCategories>
             <li>Manufactured</li>
@@ -89,12 +67,12 @@
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <statFactors>
-                <MaxHitPoints>2.8</MaxHitPoints>
-                <Beauty>0.4</Beauty>
+                <MaxHitPoints>2.3</MaxHitPoints>
+                <Beauty>1</Beauty>
                 <Flammability>0</Flammability>
-                <WorkToMake>2.2</WorkToMake>
-                <WorkToBuild>2.2</WorkToBuild>
-                <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+                <WorkToMake>2</WorkToMake>
+                <WorkToBuild>2</WorkToBuild>
+                <MeleeWeapon_CooldownMultiplier>0.1</MeleeWeapon_CooldownMultiplier>
             </statFactors>
         </stuffProps>
     </ThingDef>
