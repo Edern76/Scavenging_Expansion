@@ -129,6 +129,7 @@
                 <maxAmount>200</maxAmount>
               </li>
             </advancedYield>
+            <isMechanoid>false</isMechanoid>
           </li>
         </modExtensions>
     </ThingDef>

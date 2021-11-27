@@ -9,7 +9,7 @@ namespace ScavengingExpansion.Harmony.Patches
     public class PatchResearchDefCanStartNow
     {
         [HarmonyPostfix]
-        public static void postfix(ref bool __result, ResearchProjectDef __instance)
+        public static void Postfix(ref bool __result, ResearchProjectDef __instance)
         {
             if (__instance.HasModExtension<ResearchBlocker>() && __instance.GetModExtension<ResearchBlocker>().disableNormalResearch)
             {
