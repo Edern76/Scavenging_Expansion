@@ -12,9 +12,9 @@ namespace ScavengingExpansion.Harmony.Patches
     public class PatchPawnHealthPostApplyDamage
     {
         [HarmonyPostfix]
-        public static void postfix(DamageInfo dinfo, float totalDamageDealt, Pawn __instance)
+        public static void Postfix(DamageInfo dinfo, float totalDamageDealt, Pawn __instance)
         {
-            if (!(__instance.Dead || __instance.Destroyed))
+            if (!(__instance.Dead || __instance.Destroyed || dinfo.Weapon == null))
             {
                 if (dinfo.Weapon.HasModExtension<HediffApplier>())
                 {

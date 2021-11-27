@@ -151,6 +151,10 @@
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
         <bodyPartHealthOffset>5</bodyPartHealthOffset>
+        <bodyPartArmorOffset>0.40</bodyPartArmorOffset>
+      </li>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.StunImmuniser">
+        <stunImmune>true</stunImmune>
       </li>
     </modExtensions>
   </HediffDef>

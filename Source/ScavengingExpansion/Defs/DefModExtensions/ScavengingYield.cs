@@ -9,5 +9,6 @@ namespace ScavengingExpansion.Defs.DefModExtensions
     {
         public int scrapYield = 0;
         public List<AdvancedScavengingProduct> advancedYield = new List<AdvancedScavengingProduct>();
+        public bool isMechanoid = true;
     }
 }

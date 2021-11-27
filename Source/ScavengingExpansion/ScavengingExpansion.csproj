@@ -70,6 +70,7 @@
         <Compile Include="Defs\DefModExtensions\HediffApplier.cs" />
         <Compile Include="Defs\DefModExtensions\ResearchBlocker.cs" />
         <Compile Include="Defs\DefModExtensions\ScavengingYield.cs" />
+        <Compile Include="Defs\DefModExtensions\StunImmuniser.cs" />
         <Compile Include="Defs\ProbabilisticThingSetDef.cs" />
         <Compile Include="Defs\ResearchProjectSetDef.cs" />
         <Compile Include="Defs\ScavengingRecipeDef.cs" />
@@ -81,8 +82,10 @@
         <Compile Include="Harmony\Patches\PatchPawnGizmos.cs" />
         <Compile Include="Harmony\Patches\PatchPawnHealthPostApplyDamage.cs" />
         <Compile Include="Harmony\Patches\PatchPawnPreApplyDamage.cs" />
+        <Compile Include="Harmony\Patches\PatchPostArmorDamage.cs" />
         <Compile Include="Harmony\Patches\PatchRecipeYield.cs" />
         <Compile Include="Harmony\Patches\PatchResearchDefCanStartNow.cs" />
+        <Compile Include="Harmony\Patches\PatchStunHandler.cs" />
         <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
         <Compile Include="Jobs\JobDriver_Excavate.cs" />
         <Compile Include="Jobs\JobDriver_Unjam.cs" />
@@ -91,6 +94,7 @@
         <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />
         <Compile Include="PlaceWorkers\PlaceWorker_Excavator.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Utils\ArmorUtils.cs" />
         <Compile Include="Utils\Grids\ExcavatorGrid.cs" />
         <Compile Include="Utils\HediffUtils.cs" />
         <Compile Include="Utils\MapUtils.cs" />
