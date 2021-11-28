@@ -18,6 +18,7 @@
     	</tradeTags>
     	<techHediffsTags>
       		<li>Advanced</li>
+          <li>ScavHediffTier2</li>
     	</techHediffsTags>
     	<statBases>
       		<WorkToMake>26000</WorkToMake>

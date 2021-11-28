@@ -29,6 +29,9 @@
             <AccuracyLong>0.40</AccuracyLong>
             <RangedWeapon_Cooldown>1.58</RangedWeapon_Cooldown>
         </statBases>
+        <weaponTag>
+          <li>ScavRangedDecent</li>
+        </weaponTag>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>
@@ -125,6 +128,9 @@
             <AccuracyLong>0.76</AccuracyLong>
             <RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
         </statBases>
+        <weaponTag>
+          <li>ScavRangedDecent</li>
+        </weaponTag>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>
@@ -220,6 +226,9 @@
             <AccuracyLong>0.20</AccuracyLong>
             <RangedWeapon_Cooldown>1.67</RangedWeapon_Cooldown>
         </statBases>
+        <weaponTag>
+          <li>ScavRangedDecent</li>
+        </weaponTag>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -317,6 +326,9 @@
             <AccuracyLong>0.20</AccuracyLong>
             <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
         </statBases>
+        <weaponTag>
+          <li>ScavRangedDecent</li>
+        </weaponTag>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>
@@ -524,6 +536,9 @@
             <AccuracyLong>0.10</AccuracyLong>
             <RangedWeapon_Cooldown>3.33</RangedWeapon_Cooldown>
         </statBases>
+        <weaponTag>
+          <li>ScavRangedDecent</li>
+        </weaponTag>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>

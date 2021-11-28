@@ -38,6 +38,9 @@
             <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
+        <apparelTag>
+            <li>ScavHeavyApparel</li>
+        </apparelTag>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
             <li>RewardStandardQualitySuper</li>
@@ -84,9 +87,6 @@
               <li>SE_AdvancedSalvagingTable</li>
               <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
-            <memePrerequisitesAny>
-                <li>Supremacist</li> <!-- TODO : Replace with scavenger meme-->
-            </memePrerequisitesAny>
         </recipeMaker>
         <statBases>
             <WorkToMake>3200</WorkToMake>
@@ -97,6 +97,9 @@
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
+        <apparelTag>
+            <li>ScavScrapApparel</li>
+        </apparelTag>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
         </thingSetMakerTags>
@@ -263,6 +266,9 @@
             <Insulation_Heat>4</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
+        <apparelTag>
+            <li>ScavRareApparel</li>
+        </apparelTag>
         <equippedStatOffsets>
             <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
             <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">4</PsychicEntropyMax>
@@ -317,6 +323,9 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>6</EquipDelay>
         </statBases>
+        <apparelTag>
+            <li>ScavRareApparel</li>
+        </apparelTag>
         <equippedStatOffsets>
             <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
             <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
@@ -366,6 +375,9 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>1</EquipDelay>
         </statBases>
+        <apparelTag>
+            <li>ScavScrapApparel</li>
+        </apparelTag>
         <equippedStatOffsets>
             <ToxicSensitivity>-0.5</ToxicSensitivity>
         </equippedStatOffsets>

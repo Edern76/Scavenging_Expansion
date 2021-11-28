@@ -51,6 +51,9 @@
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
+        <apparelTag>
+            <li>ScavHeavyApparel</li>
+        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -110,6 +113,9 @@
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
+        <apparelTag>
+            <li>ScavScrapApparel</li>
+        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -313,6 +319,9 @@
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
+        <apparelTag>
+            <li>ScavRareApparel</li>
+        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>

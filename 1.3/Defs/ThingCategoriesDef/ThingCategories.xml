@@ -2,10 +2,9 @@
 <Defs>
 
   <!-- Boots and Gloves -->
-    <ThingCategoryDef>
-      <defName>SE_BootsAndGloves</defName>
-      <label>handwear and footwear</label>
-      <parent>Apparel</parent>
+  <ThingCategoryDef>
+    <defName>SE_BootsAndGloves</defName>
+    <label>handwear and footwear</label>
+    <parent>Apparel</parent>
 	</ThingCategoryDef>
-
 </Defs>

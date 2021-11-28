@@ -12,7 +12,7 @@
         </graphicData>
         <techLevel>Medieval</techLevel>
         <weaponTags>
-          <li>ScavengerMeleeAdvanced</li>
+          <li>ScavScrapWeapons</li>
           <li>LongSword</li>
         </weaponTags>
         <weaponClasses>
@@ -84,7 +84,7 @@
         </graphicData>
         <techLevel>Medieval</techLevel>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
           <li>Mace</li>
           <li>CE_OneHandedWeapon</li>
         </weaponTags>
@@ -102,6 +102,9 @@
           <Mass>1.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.33</MeleeWeapon_AverageArmorPenetration>
         </statBases>
+        <thingCategories>
+          <li>ScavScrapWeapons</li>
+        </thingCategories>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
@@ -175,7 +178,7 @@
           <soundWorking>Recipe_Smith</soundWorking>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>
@@ -245,7 +248,7 @@
           <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>
@@ -315,7 +318,7 @@
           <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>
@@ -385,7 +388,7 @@
           <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>

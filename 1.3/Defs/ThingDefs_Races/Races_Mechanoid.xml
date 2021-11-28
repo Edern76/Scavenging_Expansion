@@ -253,7 +253,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/SE_Amalgam/Amalgam</texPath>
+          <texPath>Things/Pawn/Mechanoid/SE_Amalgam/SE_Amalgam</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
           <shadowData>
@@ -266,8 +266,107 @@
 
   <PawnKindDef ParentName="BaseMechAmalgam">
     <defName>SE_Mech_Amalgam</defName>
-    <label>gatherer</label>
+    <label>amalgam</label>
     <combatPower>400</combatPower>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>AmalgamWeapon</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ==== Vaultkeeper ==== -->
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>SE_Mech_Vaultkeeper</defName>
+    <label>vaultkeeper</label>
+    <description>Most men can't withstand such changes to the body structure, but when they do they become Vaultkeepers. Mechanoid parts reconditioned and interweaved together with natural organs to enhance one being to the fullest.\n\nThe body seems to be rotting away as years passes, some pretend the host died a long time ago while the mechanites and the automatized bone-structure continues to carry out the order.</description>
+    <statBases>
+      <MoveSpeed>2</MoveSpeed> 
+      <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.66</ArmorRating_Sharp>
+      <PsychicSensitivity>0.75</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.20</armorPenetration>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.20</armorPenetration>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.13</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>Lancer</body>
+      <baseBodySize>2</baseBodySize>
+      <baseHealthScale>2.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>30</Steel>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Abstract="true" Name="BaseMechVault" ParentName="BaseMechanoidKind">
+    <race>SE_Mech_Vaultkeeper</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/SE_Vaultkeeper/SE_Vaultkeeper</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseMechVault">
+    <defName>SE_Mech_Vaultkeeper</defName>
+    <label>vaultkeeper</label>
+    <combatPower>300</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
       <li>AmalgamWeapon</li>
