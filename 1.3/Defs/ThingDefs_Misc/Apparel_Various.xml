@@ -50,6 +50,7 @@
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
+            <li>ScavHeavyApparel</li>
         </thingCategories>
         <apparel>
             <bodyPartGroups>
@@ -109,6 +110,7 @@
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
+            <li>ScavScrapApparel</li>
         </thingCategories>
         <apparel>
             <bodyPartGroups>
@@ -312,6 +314,7 @@
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
+            <li>ScavRareApparel</li>
         </thingCategories>
         <apparel>
             <bodyPartGroups>

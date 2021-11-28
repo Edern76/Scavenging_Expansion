@@ -34,8 +34,9 @@
             <Insulation_Heat>0</Insulation_Heat>
             <EquipDelay>2.5</EquipDelay>
 		</statBases>
-		<thingCategories Inherit="False">
+		<thingCategories>
 			<li>SE_BootsAndGloves</li>
+			<li>ScavScrapApparel</li>
 		</thingCategories>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -101,8 +102,9 @@
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 		</equippedStatOffsets>
-		<thingCategories Inherit="False">
+		<thingCategories>
 			<li>SE_BootsAndGloves</li>
+			<li>ScavHeavyApparel</li>
 		</thingCategories>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>

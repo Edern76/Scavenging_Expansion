@@ -38,6 +38,9 @@
             <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
+        <thingCategories>
+            <li>ScavHeavyApparel</li>
+        </thingCategories>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
             <li>RewardStandardQualitySuper</li>
@@ -97,6 +100,9 @@
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
+        <thingCategories>
+            <li>ScavScrapApparel</li>
+        </thingCategories>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
         </thingSetMakerTags>
@@ -263,6 +269,9 @@
             <Insulation_Heat>4</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
+        <thingCategories>
+            <li>ScavRareApparel</li>
+        </thingCategories>
         <equippedStatOffsets>
             <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
             <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">4</PsychicEntropyMax>
@@ -317,6 +326,9 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>6</EquipDelay>
         </statBases>
+        <thingCategories>
+            <li>ScavRareApparel</li>
+        </thingCategories>
         <equippedStatOffsets>
             <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
             <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
@@ -366,6 +378,9 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>1</EquipDelay>
         </statBases>
+        <thingCategories>
+            <li>ScavScrapApparel</li>
+        </thingCategories>
         <equippedStatOffsets>
             <ToxicSensitivity>-0.5</ToxicSensitivity>
         </equippedStatOffsets>

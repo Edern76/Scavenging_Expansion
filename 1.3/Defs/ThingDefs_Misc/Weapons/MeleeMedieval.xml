@@ -29,6 +29,9 @@
           <Mass>2.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.35</MeleeWeapon_AverageArmorPenetration>
         </statBases>
+        <thingCategories>
+          <li>ScavScrapWeaponsMelee</li>
+        </thingCategories>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
@@ -102,6 +105,9 @@
           <Mass>1.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.33</MeleeWeapon_AverageArmorPenetration>
         </statBases>
+        <thingCategories>
+          <li>ScavScrapWeaponsMelee</li>
+        </thingCategories>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
@@ -157,6 +163,9 @@
           <Mass>3.3</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.36</MeleeWeapon_AverageArmorPenetration>
         </statBases>
+        <thingCategories>
+          <li>ScavScrapWeaponsMelee</li>
+        </thingCategories>
         <costList>
           <SE_MechanoidScrap>25</SE_MechanoidScrap>
           <Steel>60</Steel>
@@ -226,6 +235,9 @@
           <Mass>3.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.35</MeleeWeapon_AverageArmorPenetration>
         </statBases>
+        <thingCategories>
+          <li>ScavScrapWeaponsMelee</li>
+        </thingCategories>
         <costList>
           <SE_MechanoidScrap>30</SE_MechanoidScrap>
           <Steel>70</Steel>
@@ -296,6 +308,9 @@
           <Mass>2.55</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.5</MeleeWeapon_AverageArmorPenetration>
         </statBases>
+        <thingCategories>
+          <li>ScavScrapWeaponsMelee</li>
+        </thingCategories>
         <costList>
           <SE_MechanoidScrap>20</SE_MechanoidScrap>
           <Steel>40</Steel>
@@ -366,6 +381,9 @@
           <Mass>5.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.37</MeleeWeapon_AverageArmorPenetration>
         </statBases>
+        <thingCategories>
+          <li>ScavScrapWeaponsMelee</li>
+        </thingCategories>
         <costList>
           <SE_MechanoidScrap>30</SE_MechanoidScrap>
           <Steel>70</Steel>
