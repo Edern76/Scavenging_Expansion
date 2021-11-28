@@ -7,47 +7,4 @@
     <label>handwear and footwear</label>
     <parent>Apparel</parent>
 	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ScavScrapApparel</defName>
-		<label>scavenger scrap apparel</label>
-		<parent>Apparel</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ScavHeavyApparel</defName>
-		<label>scavenger heavy apparel</label>
-		<parent>Apparel</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ScavRareApparel</defName>
-		<label>scavenger rare apparel</label>
-		<parent>Apparel</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ScavRangedDecent</defName>
-		<label>scavenger ranged decent</label>
-		<parent>WeaponsRanged</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ScavRangedAdvanced</defName>
-		<label>scavenger ranged advanced</label>
-		<parent>WeaponsRanged</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ScavScrapWeaponsMelee</defName>
-		<label>scavenger melee scrap weapons</label>
-		<parent>WeaponsMelee</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ScavScrapWeaponsRanged</defName>
-		<label>scavenger ranged scrap weapons</label>
-		<parent>WeaponsRanged</parent>
-	</ThingCategoryDef>
-
 </Defs>

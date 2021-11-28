@@ -50,8 +50,10 @@
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
-            <li>ScavHeavyApparel</li>
         </thingCategories>
+        <apparelTag>
+            <li>ScavHeavyApparel</li>
+        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -110,8 +112,10 @@
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
-            <li>ScavScrapApparel</li>
         </thingCategories>
+        <apparelTag>
+            <li>ScavScrapApparel</li>
+        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -314,8 +318,10 @@
         </equippedStatOffsets>
         <thingCategories>
             <li>ApparelArmor</li>
-            <li>ScavRareApparel</li>
         </thingCategories>
+        <apparelTag>
+            <li>ScavRareApparel</li>
+        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>

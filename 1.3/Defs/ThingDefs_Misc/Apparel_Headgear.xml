@@ -38,9 +38,9 @@
             <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <thingCategories>
+        <apparelTag>
             <li>ScavHeavyApparel</li>
-        </thingCategories>
+        </apparelTag>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
             <li>RewardStandardQualitySuper</li>
@@ -87,9 +87,6 @@
               <li>SE_AdvancedSalvagingTable</li>
               <li>SE_AdvancedSalvagingTable</li>
             </recipeUsers>
-            <memePrerequisitesAny>
-                <li>Supremacist</li> <!-- TODO : Replace with scavenger meme-->
-            </memePrerequisitesAny>
         </recipeMaker>
         <statBases>
             <WorkToMake>3200</WorkToMake>
@@ -100,9 +97,9 @@
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
-        <thingCategories>
+        <apparelTag>
             <li>ScavScrapApparel</li>
-        </thingCategories>
+        </apparelTag>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
         </thingSetMakerTags>
@@ -269,9 +266,9 @@
             <Insulation_Heat>4</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <thingCategories>
+        <apparelTag>
             <li>ScavRareApparel</li>
-        </thingCategories>
+        </apparelTag>
         <equippedStatOffsets>
             <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
             <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">4</PsychicEntropyMax>
@@ -326,9 +323,9 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <thingCategories>
+        <apparelTag>
             <li>ScavRareApparel</li>
-        </thingCategories>
+        </apparelTag>
         <equippedStatOffsets>
             <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
             <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
@@ -378,9 +375,9 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>1</EquipDelay>
         </statBases>
-        <thingCategories>
+        <apparelTag>
             <li>ScavScrapApparel</li>
-        </thingCategories>
+        </apparelTag>
         <equippedStatOffsets>
             <ToxicSensitivity>-0.5</ToxicSensitivity>
         </equippedStatOffsets>

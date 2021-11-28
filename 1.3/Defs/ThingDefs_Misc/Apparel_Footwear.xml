@@ -36,8 +36,10 @@
 		</statBases>
 		<thingCategories>
 			<li>SE_BootsAndGloves</li>
-			<li>ScavScrapApparel</li>
 		</thingCategories>
+		<apparelTag>
+			<li>ScavScrapApparel</li>
+    </apparelTag>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -104,8 +106,10 @@
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>SE_BootsAndGloves</li>
-			<li>ScavHeavyApparel</li>
 		</thingCategories>
+		<apparelTag>
+			<li>ScavHeavyApparel</li>
+    </apparelTag>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>

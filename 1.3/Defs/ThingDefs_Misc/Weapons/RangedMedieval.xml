@@ -30,9 +30,9 @@
             <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
             <MeleeWeapon_AverageArmorPenetration>0.1</MeleeWeapon_AverageArmorPenetration>
         </statBases>
-        <thingCategories>
-          <li>ScavScrapWeaponsRanged</li>
-        </thingCategories>
+        <weaponTags>
+          <li>ScavScrapWeapons</li>
+        </weaponTags>
         <verbs>
             <li>
               <verbClass>Verb_Shoot</verbClass>

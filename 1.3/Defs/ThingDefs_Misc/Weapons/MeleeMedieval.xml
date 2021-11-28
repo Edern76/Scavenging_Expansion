@@ -12,7 +12,7 @@
         </graphicData>
         <techLevel>Medieval</techLevel>
         <weaponTags>
-          <li>ScavengerMeleeAdvanced</li>
+          <li>ScavScrapWeapons</li>
           <li>LongSword</li>
         </weaponTags>
         <weaponClasses>
@@ -29,9 +29,6 @@
           <Mass>2.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.35</MeleeWeapon_AverageArmorPenetration>
         </statBases>
-        <thingCategories>
-          <li>ScavScrapWeaponsMelee</li>
-        </thingCategories>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
@@ -87,7 +84,7 @@
         </graphicData>
         <techLevel>Medieval</techLevel>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
           <li>Mace</li>
           <li>CE_OneHandedWeapon</li>
         </weaponTags>
@@ -106,7 +103,7 @@
           <MeleeWeapon_AverageArmorPenetration>0.33</MeleeWeapon_AverageArmorPenetration>
         </statBases>
         <thingCategories>
-          <li>ScavScrapWeaponsMelee</li>
+          <li>ScavScrapWeapons</li>
         </thingCategories>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
@@ -163,9 +160,6 @@
           <Mass>3.3</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.36</MeleeWeapon_AverageArmorPenetration>
         </statBases>
-        <thingCategories>
-          <li>ScavScrapWeaponsMelee</li>
-        </thingCategories>
         <costList>
           <SE_MechanoidScrap>25</SE_MechanoidScrap>
           <Steel>60</Steel>
@@ -184,7 +178,7 @@
           <soundWorking>Recipe_Smith</soundWorking>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>
@@ -235,9 +229,6 @@
           <Mass>3.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.35</MeleeWeapon_AverageArmorPenetration>
         </statBases>
-        <thingCategories>
-          <li>ScavScrapWeaponsMelee</li>
-        </thingCategories>
         <costList>
           <SE_MechanoidScrap>30</SE_MechanoidScrap>
           <Steel>70</Steel>
@@ -257,7 +248,7 @@
           <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>
@@ -308,9 +299,6 @@
           <Mass>2.55</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.5</MeleeWeapon_AverageArmorPenetration>
         </statBases>
-        <thingCategories>
-          <li>ScavScrapWeaponsMelee</li>
-        </thingCategories>
         <costList>
           <SE_MechanoidScrap>20</SE_MechanoidScrap>
           <Steel>40</Steel>
@@ -330,7 +318,7 @@
           <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>
@@ -381,9 +369,6 @@
           <Mass>5.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.37</MeleeWeapon_AverageArmorPenetration>
         </statBases>
-        <thingCategories>
-          <li>ScavScrapWeaponsMelee</li>
-        </thingCategories>
         <costList>
           <SE_MechanoidScrap>30</SE_MechanoidScrap>
           <Steel>70</Steel>
@@ -403,7 +388,7 @@
           <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
         <weaponTags>
-          <li>ScavengerMeleeDecent</li>
+          <li>ScavScrapWeapons</li>
         </weaponTags>
         <tools>
           <li>
