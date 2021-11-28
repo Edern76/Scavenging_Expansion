@@ -278,8 +278,7 @@
   <ThingDef ParentName="BaseMechanoid">
     <defName>SE_Mech_Vaultkeeper</defName>
     <label>vaultkeeper</label>
-    <description>Most men can't withstand such changes to the body structure, but when they do they become Vaultkeepers. Mechanoid parts reconditioned and interweaved together with natural organs to enhance one being to the fullest.
-    The body seems to be rotting away as years passes, some pretend the host died a long time ago while the mechanites and the automatized bone-structure continues to carry out the order.</description>
+    <description>Most men can't withstand such changes to the body structure, but when they do they become Vaultkeepers. Mechanoid parts reconditioned and interweaved together with natural organs to enhance one being to the fullest.\n\nThe body seems to be rotting away as years passes, some pretend the host died a long time ago while the mechanites and the automatized bone-structure continues to carry out the order.</description>
     <statBases>
       <MoveSpeed>2</MoveSpeed> 
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
