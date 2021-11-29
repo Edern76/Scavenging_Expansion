@@ -387,7 +387,7 @@
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>SE_Gun_Arquebuse</turretGunDef>
       <turretBurstCooldownTime>7.5</turretBurstCooldownTime>
-      <turretTopDrawSize>4</turretTopDrawSize>
+      <turretTopDrawSize>2</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
