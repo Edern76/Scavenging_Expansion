@@ -38,9 +38,6 @@
             <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <apparelTag>
-            <li>ScavHeavyApparel</li>
-        </apparelTag>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
             <li>RewardStandardQualitySuper</li>
@@ -60,6 +57,7 @@
             <tags Inherit="False">
                 <li>Apparel_Scavenger</li>
                 <li>Apparel_ScavengerMilitary</li>
+                <li>ScavHeavyApparel</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -97,9 +95,6 @@
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
-        <apparelTag>
-            <li>ScavScrapApparel</li>
-        </apparelTag>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
         </thingSetMakerTags>
@@ -114,6 +109,7 @@
             <tags Inherit="False">
                 <li>Apparel_Scavenger</li>
                 <li>Apparel_ScavengerMilitary</li>
+                <li>ScavScrapApparel</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -266,9 +262,6 @@
             <Insulation_Heat>4</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <apparelTag>
-            <li>ScavRareApparel</li>
-        </apparelTag>
         <equippedStatOffsets>
             <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
             <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">4</PsychicEntropyMax>
@@ -285,6 +278,9 @@
             </layers>
             <hatRenderedAboveBody>false</hatRenderedAboveBody>
             <canBeDesiredForIdeo MayRequire="Ludeon.RimWorld.Ideology">true</canBeDesiredForIdeo>
+            <tags>
+                <li>ScavRareApparel</li>
+            </tags>
         </apparel>
     </ThingDef>
 
@@ -323,9 +319,6 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <apparelTag>
-            <li>ScavRareApparel</li>
-        </apparelTag>
         <equippedStatOffsets>
             <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
             <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
@@ -339,6 +332,9 @@
                 <li>Overhead</li>
             </layers>
             <hatRenderedAboveBody>false</hatRenderedAboveBody>
+            <tags>
+                <li>ScavRareApparel</li>
+            </tags>
         </apparel>
     </ThingDef>
 
@@ -375,9 +371,6 @@
             <DeteriorationRate>0</DeteriorationRate>
             <EquipDelay>1</EquipDelay>
         </statBases>
-        <apparelTag>
-            <li>ScavScrapApparel</li>
-        </apparelTag>
         <equippedStatOffsets>
             <ToxicSensitivity>-0.5</ToxicSensitivity>
         </equippedStatOffsets>
@@ -390,6 +383,9 @@
             <layers>
                 <li>EyeCover</li>
             </layers>
+            <tags>
+                <li>ScavScrapApparel</li>
+            </tags>
         </apparel>
     </ThingDef>
 </Defs>

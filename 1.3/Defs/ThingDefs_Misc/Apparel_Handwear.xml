@@ -37,9 +37,6 @@
 		<thingCategories>
 			<li>SE_BootsAndGloves</li>
 		</thingCategories>
-    <apparelTag>
-			<li>ScavScrapApparel</li>
-    </apparelTag>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -49,7 +46,7 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>IndustrialMilitary</li>
+				<li>ScavScrapApparel</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -107,9 +104,6 @@
 		<thingCategories>
 			<li>SE_BootsAndGloves</li>
 		</thingCategories>
-		<apparelTag>
-			<li>ScavHeavyApparel</li>
-    </apparelTag>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -119,7 +113,7 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>IndustrialMilitary</li>
+				<li>ScavHeavyApparel</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

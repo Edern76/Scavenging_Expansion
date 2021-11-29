@@ -250,6 +250,7 @@
 
   <PawnKindDef Abstract="true" Name="BaseMechAmalgam" ParentName="BaseMechanoidKind">
     <race>SE_Mech_Amalgam</race>
+    <defaultFactionType>SE_Scavengers</defaultFactionType>
     <lifeStages>
       <li>
         <bodyGraphicData>
