@@ -51,9 +51,6 @@
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
-        <apparelTag>
-            <li>ScavHeavyApparel</li>
-        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -70,6 +67,7 @@
             <tags Inherit="False">
                 <li>Apparel_Scavenger</li>
                 <li>Apparel_ScavengerMilitary</li>
+                <li>ScavHeavyApparel</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -113,9 +111,6 @@
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
-        <apparelTag>
-            <li>ScavScrapApparel</li>
-        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -128,6 +123,7 @@
             <tags Inherit="False">
                 <li>Apparel_Scavenger</li>
                 <li>Apparel_ScavengerMilitary</li>
+                <li>ScavScrapApparel</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -319,9 +315,6 @@
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
-        <apparelTag>
-            <li>ScavRareApparel</li>
-        </apparelTag>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -338,6 +331,9 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <tags>
+                <li>ScavRareApparel</li>
+            </tags>
         </apparel>
     </ThingDef>
 </Defs>
