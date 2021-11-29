@@ -102,9 +102,6 @@
           <Mass>1.25</Mass>
           <MeleeWeapon_AverageArmorPenetration>0.33</MeleeWeapon_AverageArmorPenetration>
         </statBases>
-        <thingCategories>
-          <li>ScavScrapWeapons</li>
-        </thingCategories>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
