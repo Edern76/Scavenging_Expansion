@@ -288,7 +288,6 @@
           <drawSize>1.1</drawSize>
         </graphicData>
         <techLevel>Medieval</techLevel>
-        <costStuffCount>150</costStuffCount>
         <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
         <statBases>
           <MarketValue>230</MarketValue>
@@ -316,6 +315,7 @@
         </recipeMaker>
         <weaponTags>
           <li>ScavScrapWeapons</li>
+          <li>ScrapLance</li>
         </weaponTags>
         <tools>
           <li>

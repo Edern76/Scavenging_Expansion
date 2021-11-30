@@ -169,8 +169,8 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="SE_ScavBase">
-    <defName>SE_Shellpiercer</defName>
-    <label>shellpiercer</label>
+    <defName>SE_Piercer</defName>
+    <label>piercer</label>
     <combatPower>35</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>true</isFighter>
@@ -179,7 +179,7 @@
       <max>2.0</max>
     </gearHealthRange>
     <weaponTags>
-      <li>UnstableLance</li>
+      <li>ScrapLance</li>
     </weaponTags>
     <apparelTags>
       <li>ScavScrapApparel</li>
@@ -187,8 +187,8 @@
       <li>NeolithicRangedBasic</li>
     </apparelTags>
     <weaponMoney>
-      <min>1000</min>
-      <max>3000</max>
+      <min>230</min>
+      <max>460</max>
     </weaponMoney>
     <apparelMoney>
       <min>350</min>
