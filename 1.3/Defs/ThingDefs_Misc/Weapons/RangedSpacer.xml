@@ -230,6 +230,7 @@
         </statBases>
         <weaponTags>
           <li>ScavRangedAdvanced</li>
+          <li>UnstableLance</li>
         </weaponTags>
         <verbs>
             <li>

@@ -179,21 +179,16 @@
       <max>2.0</max>
     </gearHealthRange>
     <weaponTags>
-      <li>Gun</li>
-      <li>ScavScrapWeapons</li>
-      <li>ScavRangedDecent</li>
+      <li>UnstableLance</li>
     </weaponTags>
- 		<!-- <weaponRequired>
-      <li>SE_ScrapLance</li>
- 		</weaponRequired> -->
     <apparelTags>
       <li>ScavScrapApparel</li>
       <li>IndustrialBasic</li>
       <li>NeolithicRangedBasic</li>
     </apparelTags>
     <weaponMoney>
-      <min>300</min>
-      <max>600</max>
+      <min>1000</min>
+      <max>3000</max>
     </weaponMoney>
     <apparelMoney>
       <min>350</min>

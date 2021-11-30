@@ -313,7 +313,7 @@
     <graphicData>
       <texPath>Things/Building/Security/Arquebuse/Arquebuse_base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(3,3)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
@@ -387,7 +387,7 @@
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>SE_Gun_Arquebuse</turretGunDef>
       <turretBurstCooldownTime>7.5</turretBurstCooldownTime>
-      <turretTopDrawSize>2</turretTopDrawSize>
+      <turretTopDrawSize>3</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
