@@ -83,7 +83,7 @@
         <options>
           <SE_Scavenger>30</SE_Scavenger>
           <SE_Swarmer>20</SE_Swarmer>
-          <SE_Shellpiercer>15</SE_Shellpiercer>
+          <SE_Piercer>15</SE_Piercer>
           <SE_LordScavenger>1</SE_LordScavenger>
         </options>
       </li>
@@ -100,7 +100,7 @@
         <guards>
           <SE_Scavenger>25</SE_Scavenger>
           <SE_Swarmer>20</SE_Swarmer>
-          <SE_Shellpiercer>15</SE_Shellpiercer>
+          <SE_Piercer>15</SE_Piercer>
           <SE_Mech_Amalgam>5</SE_Mech_Amalgam>
           <SE_LordScavenger>1</SE_LordScavenger>
         </guards>
@@ -110,7 +110,7 @@
         <options>
           <SE_Scavenger>25</SE_Scavenger>
           <SE_Swarmer>20</SE_Swarmer>
-          <SE_Shellpiercer>15</SE_Shellpiercer>
+          <SE_Piercer>15</SE_Piercer>
           <SE_Mech_Amalgam>5</SE_Mech_Amalgam>
           <SE_LordScavenger>1</SE_LordScavenger>
         </options>
@@ -122,7 +122,7 @@
         <options>
           <SE_Scavenger>25</SE_Scavenger>
           <SE_Swarmer>20</SE_Swarmer>
-          <SE_Shellpiercer>15</SE_Shellpiercer>
+          <SE_Piercer>15</SE_Piercer>
           <SE_Mech_Amalgam>10</SE_Mech_Amalgam>
         </options>
       </li>
@@ -133,7 +133,7 @@
         <options>
           <SE_Scavenger>25</SE_Scavenger>
           <SE_Swarmer>20</SE_Swarmer>
-          <SE_Shellpiercer>15</SE_Shellpiercer>
+          <SE_Piercer>15</SE_Piercer>
           <SE_Mech_Amalgam>5</SE_Mech_Amalgam>
           <SE_LordScavenger>1</SE_LordScavenger>
         </options>
