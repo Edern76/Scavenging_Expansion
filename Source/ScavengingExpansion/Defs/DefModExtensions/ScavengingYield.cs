@@ -8,6 +8,7 @@ namespace ScavengingExpansion.Defs.DefModExtensions
     public class ScavengingYield : DefModExtension
     {
         public int scrapYield = 0;
+        public IntRange alloyYield = new IntRange(0, 0);
         public List<AdvancedScavengingProduct> advancedYield = new List<AdvancedScavengingProduct>();
         public bool isMechanoid = true;
     }

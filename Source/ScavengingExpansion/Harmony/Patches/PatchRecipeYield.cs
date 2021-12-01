@@ -1,10 +1,14 @@
 using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 using HarmonyLib;
 using ScavengingExpansion.Defs;
+using ScavengingExpansion.Defs.DefModExtensions;
 using ScavengingExpansion.Enums;
 using ScavengingExpansion.Utils;
+using UnityEngine;
+using ThingDefOf = ScavengingExpansion.DefOfs.ThingDefOf;
 
 namespace ScavengingExpansion.Harmony.Patches
 {
@@ -41,11 +45,36 @@ namespace ScavengingExpansion.Harmony.Patches
                     }    
                 }
 
-                if (scavengingDef.scavengingTypes.Contains((ScavengingRecipeType.Advanced)))
+                if (scavengingDef.scavengingTypes.Contains((ScavengingRecipeType.Alloy)))
                 {
-                    foreach (Thing product in RecipeUtils.GetAdvancedSalvagingProducts(recipeDef, worker, ingredients))
+                    foreach (Thing product in RecipeUtils.GetAlloySalvagingProducts(recipeDef, worker, ingredients))
                     {
                         yield return product;
+                    }    
+                }    
+
+                if (scavengingDef.scavengingTypes.Contains((ScavengingRecipeType.Advanced)))
+                {
+                    IEnumerable<Thing> salvagingProducts =
+                        RecipeUtils.GetAdvancedSalvagingProducts(recipeDef, worker, ingredients);
+
+                    if (salvagingProducts.Any())
+                    {
+                        foreach (Thing product in salvagingProducts)
+                        {
+                            yield return product;
+                        }
+                    }
+                    else
+                    {
+                        IEnumerable<Thing> productedAlloy =
+                            RecipeUtils.GetAlloySalvagingProducts(recipeDef, worker, ingredients);
+                        int baseAmount = productedAlloy.Sum(thing => thing.stackCount);
+                        int finalAmount = Mathf.RoundToInt(1 / 4 * baseAmount);
+                        if (finalAmount > 0)
+                        {
+                            yield return ThingUtils.makeThingWithCount(ThingDefOf.SE_MechanoidAlloy, finalAmount);
+                        }    
                     }
                 }    
             }

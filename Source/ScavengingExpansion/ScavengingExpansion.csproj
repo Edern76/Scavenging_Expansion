@@ -65,6 +65,7 @@
         <Compile Include="DefOfs\HediffDefOf.cs" />
         <Compile Include="DefOfs\JobDefOf.cs" />
         <Compile Include="DefOfs\SoundDefOf.cs" />
+        <Compile Include="DefOfs\ThingDefOf.cs" />
         <Compile Include="Defs\DefModExtensions\ExcavatorExtension.cs" />
         <Compile Include="Defs\DefModExtensions\HealthModifier.cs" />
         <Compile Include="Defs\DefModExtensions\HediffApplier.cs" />

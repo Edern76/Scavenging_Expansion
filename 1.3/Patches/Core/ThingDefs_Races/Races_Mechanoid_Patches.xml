@@ -5,6 +5,7 @@
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                 <scrapYield>40</scrapYield>
+                <alloyYield>3~9</alloyYield>
             </li>
         </value>
     </Operation>
@@ -14,6 +15,7 @@
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                 <scrapYield>15</scrapYield>
+                <alloyYield>2~4</alloyYield>
             </li>
         </value>
     </Operation>
@@ -23,6 +25,7 @@
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                 <scrapYield>15</scrapYield>
+                <alloyYield>2~4</alloyYield>
             </li>
         </value>
     </Operation>
@@ -32,6 +35,7 @@
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                 <scrapYield>20</scrapYield>
+                <alloyYield>2~6</alloyYield>
             </li>
         </value>
     </Operation>
@@ -42,6 +46,7 @@
         <value>
             <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                 <scrapYield>25</scrapYield>
+                <alloyYield>2~6</alloyYield>
             </li>
         </value>
     </Operation>
