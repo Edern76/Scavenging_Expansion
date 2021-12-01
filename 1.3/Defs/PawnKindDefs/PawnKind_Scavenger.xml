@@ -133,6 +133,7 @@
     <defName>SE_LordScavenger</defName>
     <label>lord</label>
     <combatPower>50</combatPower>
+    <factionLeader>true</factionLeader>
     <itemQuality>Normal</itemQuality>
     <isFighter>true</isFighter>
     <gearHealthRange>
