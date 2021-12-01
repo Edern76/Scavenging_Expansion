@@ -15,6 +15,7 @@
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <techLevel>Spacer</techLevel>
+    <isPlayer>false</isPlayer>
     <allowedCultures>
       <li>Kriminul</li>
     </allowedCultures>
