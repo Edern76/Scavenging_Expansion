@@ -1,4 +1,6 @@
-﻿using RimWorld;
+﻿using System.Linq;
+using RimWorld;
+using ScavengingExpansion.Defs;
 using ScavengingExpansion.Harmony;
 using Verse;
 
@@ -10,6 +12,11 @@ namespace ScavengingExpansion
         static Bootstrap()
         {
             HarmonyBase.ApplyPatches();
+            foreach (ScavengingRecipeDef def in DefDatabase<RecipeDef>.AllDefs.Where(def => def is ScavengingRecipeDef)
+                .Cast<ScavengingRecipeDef>())
+            {
+                def.ResolveFilters();
+            }    
             Log.Message("Hello World !");
         }
     }

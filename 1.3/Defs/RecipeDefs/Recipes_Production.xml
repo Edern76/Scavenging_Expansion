@@ -21,11 +21,6 @@
             <count>1</count>
           </li>
         </ingredients>
-        <fixedIngredientFilter>
-          <categories>
-            <li>CorpsesMechanoid</li>
-          </categories>
-        </fixedIngredientFilter>
         <scavengingTypes>
           <li>Basic</li>
         </scavengingTypes>
@@ -55,11 +50,6 @@
             <count>1</count>
           </li>
         </ingredients>
-        <fixedIngredientFilter>
-          <categories>
-            <li>CorpsesMechanoid</li>
-          </categories>
-        </fixedIngredientFilter>
         <scavengingTypes>
           <li>Basic</li>
           <li>Advanced</li>
@@ -90,11 +80,6 @@
             <count>1</count>
           </li>
         </ingredients>
-        <fixedIngredientFilter>
-          <categories>
-            <li>CorpsesMechanoid</li>
-          </categories>
-        </fixedIngredientFilter>
         <scavengingTypes>
           <li>Alloy</li>
         </scavengingTypes>
