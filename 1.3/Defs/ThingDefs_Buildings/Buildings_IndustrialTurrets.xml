@@ -386,7 +386,7 @@
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>SE_Gun_Arquebuse</turretGunDef>
-      <turretBurstCooldownTime>7.5</turretBurstCooldownTime>
+      <turretBurstCooldownTime>4.67</turretBurstCooldownTime>
       <turretTopDrawSize>3</turretTopDrawSize>
     </building>
     <placeWorkers>
@@ -532,6 +532,7 @@
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>SE_Gun_Shellpiercer</turretGunDef>
+      <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
       <turretTopDrawSize>3</turretTopDrawSize>
     </building>
     <placeWorkers>
@@ -559,7 +560,7 @@
       <AccuracyShort>0.50</AccuracyShort>
       <AccuracyMedium>0.70</AccuracyMedium>
       <AccuracyLong>0.60</AccuracyLong>
-      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>5</Mass>
       <Flammability>0</Flammability>
