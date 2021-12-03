@@ -464,6 +464,7 @@
       <texPath>Things/Building/Security/Shellpiercer/TurretShellpiercer_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
@@ -480,11 +481,11 @@
     <stealable>false</stealable>
     <rotatable>false</rotatable>
     <statBases>
-      <MaxHitPoints>450</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0.70</Flammability>
-      <WorkToBuild>14000</WorkToBuild>
-      <MarketValue>1345</MarketValue>
-      <Mass>12</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <MarketValue>240</MarketValue>
+      <Mass>30</Mass>
       <Beauty>-20</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
@@ -496,10 +497,6 @@
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>
       <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
-      </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Refuelable">
@@ -507,43 +504,41 @@
         <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Steel</li>
+            <li>SE_MechanoidScrap</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>150</fuelCapacity>
+        <fuelCapacity>10</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>1.58</fuelMultiplier>
+        <fuelMultiplier>2</fuelMultiplier>
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
       </li>
     </comps>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-      <SE_MechanoidAlloy>30</SE_MechanoidAlloy>
-      <Steel>450</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <SE_MechanoidScrap>20</SE_MechanoidScrap>
+      <Steel>300</Steel>
     </costList>
     <designationCategory>Security</designationCategory>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>SE_Gun_Shellpiercer</turretGunDef>
-      <turretBurstCooldownTime>7.5</turretBurstCooldownTime>
       <turretTopDrawSize>3</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>Arquebuse</li>
     </researchPrerequisites>
@@ -560,11 +555,11 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <tickerType>Normal</tickerType>
     <statBases>
-      <AccuracyTouch>0.25</AccuracyTouch>
-      <AccuracyShort>0.60</AccuracyShort>
-      <AccuracyMedium>0.55</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
-      <RangedWeapon_Cooldown>4.67</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.10</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>5</Mass>
       <Flammability>0</Flammability>
@@ -574,11 +569,9 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Shellpiercer</defaultProjectile>
-        <warmupTime>0</warmupTime>
-        <minRange>8</minRange>
-        <range>28</range>
-        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <burstShotCount>5</burstShotCount>
+        <warmupTime>1.5</warmupTime>
+        <minRange>5</minRange>
+        <range>30</range>
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -591,15 +584,15 @@
     <defName>Bullet_Shellpiercer</defName>
     <label>arquebuse shell</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <texPath>Things/Projectile/Arrow_Ballista</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>22</damageAmountBase>
-      <stoppingPower>0.5</stoppingPower>
-      <armorPenetrationBase>0.396</armorPenetrationBase>
-      <speed>60</speed>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <speed>50</speed>
     </projectile>
   </ThingDef>
 
@@ -630,10 +623,10 @@
     <stealable>false</stealable>
     <rotatable>false</rotatable>
     <statBases>
-      <MaxHitPoints>450</MaxHitPoints>
-      <Flammability>0.70</Flammability>
-      <WorkToBuild>14000</WorkToBuild>
-      <MarketValue>1345</MarketValue>
+      <MaxHitPoints>230</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>20000</WorkToBuild>
+      <MarketValue>2300</MarketValue>
       <Mass>12</Mass>
       <Beauty>-20</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
@@ -657,7 +650,7 @@
         <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Steel</li>
+            <li>ComponentSpacer</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>150</fuelCapacity>
@@ -665,9 +658,9 @@
         <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>1.58</fuelMultiplier>
+        <fuelMultiplier>120</fuelMultiplier>
         <factorByDifficulty>true</factorByDifficulty>
-        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
       </li>
@@ -679,21 +672,22 @@
     <hasTooltip>true</hasTooltip>
     <costList>
       <SE_MechanoidAlloy>30</SE_MechanoidAlloy>
-      <Steel>450</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>70</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
     </costList>
     <designationCategory>Security</designationCategory>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>SE_Gun_Oathbreaker</turretGunDef>
-      <turretBurstCooldownTime>7.5</turretBurstCooldownTime>
+      <turretBurstCooldownTime>4.5</turretBurstCooldownTime>
       <turretTopDrawSize>3</turretTopDrawSize>
+      <turretTopOffset>(-0.01,0.255)</turretTopOffset>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>Arquebuse</li>
     </researchPrerequisites>
@@ -710,11 +704,11 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <tickerType>Normal</tickerType>
     <statBases>
-      <AccuracyTouch>0.25</AccuracyTouch>
-      <AccuracyShort>0.60</AccuracyShort>
-      <AccuracyMedium>0.55</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
-      <RangedWeapon_Cooldown>4.67</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>5</Mass>
       <Flammability>0</Flammability>
@@ -725,10 +719,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Oathbreaker</defaultProjectile>
         <warmupTime>0</warmupTime>
-        <minRange>8</minRange>
-        <range>28</range>
-        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <burstShotCount>5</burstShotCount>
+        <range>34</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -746,10 +739,10 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>22</damageAmountBase>
-      <stoppingPower>0.5</stoppingPower>
-      <armorPenetrationBase>0.396</armorPenetrationBase>
-      <speed>60</speed>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>120</speed>
     </projectile>
   </ThingDef>
 </Defs>
