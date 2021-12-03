@@ -88,10 +88,9 @@
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-        <stuffCategories>
-            <li>Metallic</li>
-          </stuffCategories>
-        <costStuffCount>75</costStuffCount>
+        <costList>
+            <Steel>75</Steel>
+        </costList>
         <statBases>
             <WorkToMake>12000</WorkToMake>
             <MaxHitPoints>120</MaxHitPoints>
