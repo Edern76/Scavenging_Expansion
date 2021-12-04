@@ -543,7 +543,7 @@
     </placeWorkers>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>Arquebuse</li>
+      <li>Shellpiercer</li>
     </researchPrerequisites>
   </ThingDef>
 
