@@ -40,7 +40,7 @@
               <defaultProjectile>SE_Bullet_ScrapCrossbow</defaultProjectile>
               <warmupTime>1.67</warmupTime>
               <range>38</range>
-              <soundCast>Shot_Minigun</soundCast>
+              <soundCast>Bow_Large</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <muzzleFlashScale>9</muzzleFlashScale>
             </li>

@@ -429,8 +429,8 @@
         <range>28</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
-        <soundCast>GunShotA</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
@@ -497,6 +497,9 @@
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>
       <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Refuelable">
@@ -530,7 +533,6 @@
     </costList>
     <designationCategory>Security</designationCategory>
     <building>
-      <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>SE_Gun_Shellpiercer</turretGunDef>
       <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
       <turretTopDrawSize>3</turretTopDrawSize>
@@ -573,7 +575,7 @@
         <warmupTime>1.5</warmupTime>
         <minRange>5</minRange>
         <range>30</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>Bow_Large</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
@@ -690,7 +692,7 @@
     </placeWorkers>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>Arquebuse</li>
+      <li>UnstableOperation</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -723,8 +725,8 @@
         <range>34</range>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
-        <soundCast>GunShotA</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
@@ -735,7 +737,7 @@
     <defName>Bullet_Oathbreaker</defName>
     <label>oathbreaker energy cell</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>

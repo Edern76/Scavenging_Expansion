@@ -230,7 +230,6 @@
         </statBases>
         <weaponTags>
           <li>ScavRangedAdvanced</li>
-          <li>UnstableLance</li>
         </weaponTags>
         <verbs>
             <li>
@@ -239,8 +238,8 @@
               <defaultProjectile>SE_Bullet_UnstableLance</defaultProjectile>
               <warmupTime>2.33</warmupTime>
               <range>34</range>
-              <soundCast>Shot_Minigun</soundCast>
-              <soundCastTail>GunTail_Medium</soundCastTail>
+              <soundCast>ChargeLance_Fire</soundCast>
+              <soundCastTail>GunTail_Heavy</soundCastTail>
               <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
