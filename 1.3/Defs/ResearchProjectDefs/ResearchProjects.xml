@@ -135,8 +135,8 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>PierceMountain</defName>
-    <label>pierce-mountain</label>
+    <defName>Shellpiercer</defName>
+    <label>shellpiercer</label>
     <description>Construct a deadly manned ballista out of scraps.</description>
     <baseCost>400</baseCost>
     <tab>ScavengerExpanded</tab>
