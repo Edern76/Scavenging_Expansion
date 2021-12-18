@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SitePartDef>
+        <defName>SE_OccupiedRuins</defName>
+        <label>occupied ruins</label>
+        <description>Recently discovered ruins in which a scavenging camp has been established.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Sites/OccupiedRuins</expandingIconTexture>
+        <tags>
+            <li>SE_OccupiedRuins</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>SE_OccupiedRuins</defName>
+        <linkWithSite>SE_OccupiedRuins</linkWithSite>
+        <order>450</order>
+        <genStep Class="KCSG.GenStep_CustomStructureGen">
+            <structureLayoutDefs>
+                <li>SE_TestOccupiedRuins</li>
+            </structureLayoutDefs>
+        </genStep>
+    </GenStepDef>
+</Defs>
