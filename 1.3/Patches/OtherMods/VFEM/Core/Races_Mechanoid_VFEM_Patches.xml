@@ -52,6 +52,7 @@
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
+                            <alloyYield>3~7</alloyYield>
                             <advancedYield>
                                 <li>
                                     <defRef>SE_CarpenterAI</defRef>
@@ -67,12 +68,33 @@
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
+                            <alloyYield>3~9</alloyYield>
                             <advancedYield>
                                 <li>
                                     <defRef>SE_CarpenterAI</defRef>
                                     <chance>0.06</chance>
                                 </li>
                             </advancedYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Inquisitor"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~6</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_AdvancedInquisitor"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~7</alloyYield>
                         </li>
                     </value>
                 </li>

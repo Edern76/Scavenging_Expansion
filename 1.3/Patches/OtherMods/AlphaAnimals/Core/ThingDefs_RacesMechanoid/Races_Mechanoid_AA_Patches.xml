@@ -12,6 +12,61 @@
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
+                            <alloyYield>3~6</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="AA_Goliath"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~8</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="AA_Daggersnout"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>2~4</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="AA_Demolisher"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~6</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="AA_Fireworm"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~6</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="AA_WaywardMobileAssembler"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>1~4</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="AA_Slurrypede"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>1~4</alloyYield>
                         </li>
                     </value>
                 </li>
@@ -20,6 +75,7 @@
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
+                            <alloyYield>4~8</alloyYield>
                             <advancedYield>
                                 <li>
                                     <defRef>SE_SiegebreakerCanon</defRef>
@@ -34,6 +90,7 @@
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
+                            <alloyYield>3~6</alloyYield>
                             <advancedYield>
                                 <li>
                                     <defRef>SE_SubZeroInnerCore</defRef>

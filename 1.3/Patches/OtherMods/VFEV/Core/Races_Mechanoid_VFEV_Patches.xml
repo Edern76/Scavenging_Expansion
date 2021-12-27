@@ -12,6 +12,7 @@
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
+                            <alloyYield>10~20</alloyYield>
                             <advancedYield>
                                 <li>
                                     <defRef>SE_OdinOverchargedCore</defRef>
