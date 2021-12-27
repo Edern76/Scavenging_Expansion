@@ -11,7 +11,7 @@
                     <xpath>Defs/ThingDef[defName="AA_Aura"]</xpath>
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
-                            <scrapYield>20</scrapYield>
+                            <scrapYield>0</scrapYield>
                         </li>
                     </value>
                 </li>

@@ -8,6 +8,46 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_AdvancedCentipede"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~11</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_AdvancedLancer"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~5</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_AdvancedScyther"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~5</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_AdvancedPikeman"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~8</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
                     <xpath>Defs/ThingDef[defName="VFE_Mech_Carpenter"]</xpath>
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
