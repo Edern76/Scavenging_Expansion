@@ -57,9 +57,21 @@
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-      <Steel>30</Steel>
+      <Steel>20</Steel>
       <Plasteel>10</Plasteel>
     </butcherProducts>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+        <scrapYield>0</scrapYield>
+        <alloyYield>3~10</alloyYield>
+        <advancedYield>
+            <li>
+                <defRef>SE_Blueprint</defRef>
+                <chance>0.3</chance>
+            </li>
+        </advancedYield>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <PawnKindDef Abstract="true" Name="BaseMechGatherer" ParentName="BaseMechanoidKind">
@@ -144,9 +156,16 @@
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-      <Steel>30</Steel>
-      <Plasteel>10</Plasteel>
+      <Steel>10</Steel>
+      <Plasteel>5</Plasteel>
     </butcherProducts>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+        <scrapYield>5</scrapYield>
+        <alloyYield>1~3</alloyYield>
+      </li>
+    </modExtensions>
+    
   </ThingDef>
 
   <PawnKindDef Abstract="true" Name="BaseMechForager" ParentName="BaseMechanoidKind">

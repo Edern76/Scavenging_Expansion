@@ -19,7 +19,7 @@
 
     <ThingDef ParentName="ActivableBase">
         <defName>SE_Blueprint</defName>
-        <label>cryptic blueprint</label>
+        <label>survey data</label>
         <thingClass>ThingWithComps</thingClass>
         <description>Placeholder</description>
         <graphicData>
