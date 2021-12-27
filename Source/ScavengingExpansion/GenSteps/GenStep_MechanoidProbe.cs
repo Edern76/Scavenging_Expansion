@@ -49,7 +49,7 @@ namespace ScavengingExpansion.GenSteps
             
             Faction faction = Faction.OfMechanoids;
             Pawn pawn = PawnGenerator.GeneratePawn(pawnKind, faction);
-            LordJob lordJob = new LordJob_AssaultColony(faction, false, false, false, false, false);
+            LordJob lordJob = new LordJob_DefendPoint(rect.CenterCell, null, false, false);
             Lord lord = LordMaker.MakeNewLord(faction, lordJob, map, null);
             
             
