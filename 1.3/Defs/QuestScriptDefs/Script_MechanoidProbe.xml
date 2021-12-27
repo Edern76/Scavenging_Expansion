@@ -2,28 +2,28 @@
 <Defs>
 
     <QuestScriptDef>
-        <defName>SE_OpportunitySite_OccupiedRuins</defName>
+        <defName>SE_OpportunitySite_MechanoidProbe</defName>
         <rootSelectionWeight>0.6</rootSelectionWeight>
         <rootMinPoints>0</rootMinPoints>
         <autoAccept>true</autoAccept>
         <defaultChallengeRating>1</defaultChallengeRating>
         <questNameRules>
             <rulesStrings>
-                <li>questName->[scavs] in the [ruins]</li>
-                <li>ruins->Occupied ruins</li>
-                <li>scavs->Scavengers</li>
-                <li>scavs->Scavenging camp</li>
-                <li>scavs->Looters</li>
-                <li>scavs->Scavenging party</li>
+                <li>questName->[crash] mechanoid [probe]</li>
+                <li>crash->crashed</li>
+                <li>crash->damaged</li>
+                <li>crash->crashlanded</li>
+                <li>probe->probe</li>
+                <li>probe->survey probe</li>
             </rulesStrings>
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
                 <!-- No asker -->
-                <li>questDescription(askerIsNull==true)->Rumors says that scavengers from [siteFaction_name] have established a camp in some ruins not too far from [map_definite].\n We might be able to steal some valuable loot from them. \n\nIt seems that [allSitePartsDescriptionsExceptFirst]</li>
+                <li>questDescription(askerIsNull==true)->A mechanoid probe has crashed near [map_definite]. It appears to be guarded by a powerful mechanoid and its minions. While the probe itself is probably too damaged to yield anything useful, we might be able to extract some valuable intelligence from the mechanoid's databanks should we manage to defeat it and bring back its carcass. \n\nIt seems that [allSitePartsDescriptionsExceptFirst]</li>
 
                 <!-- Faction leader asker -->
-                <li>questDescription(asker_factionLeader==True)->[asker_label], [asker_faction_leaderTitle] of [asker_faction_name], has informed us that scavengers from [siteFaction_name] have established a camp in some ruins not too far from [map_definite]. \n\n[asker_label] says that [allSitePartsDescriptionsExceptFirst]</li>
+                <li>questDescription(asker_factionLeader==True)->[asker_label], [asker_faction_leaderTitle] of [asker_faction_name], has informed us that a mechanoid probe has crashed near [map_definite]. It appears to be guarded by a powerful mechanoid and its minions. While the probe itself is probably too damaged to yield anything useful, we might be able to extract some valuable intelligence from the mechanoid's databanks should we manage to defeat it and bring back its carcass. \n\n[asker_label] says that [allSitePartsDescriptionsExceptFirst]</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
@@ -60,26 +60,13 @@
                     <preferCloserTiles>true</preferCloserTiles>
                 </li>
 
-                <li Class="QuestNode_ViolentQuestsAllowed">
-                    <node Class="QuestNode_Set">
-                        <name>siteThreatChance</name>
-                        <value>0.85</value>
-                    </node>
-                    <elseNode Class="QuestNode_Set">
-                        <name>siteThreatChance</name>
-                        <value>0</value>
-                    </elseNode>
-                </li>
 
                 <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
                     <storeAs>sitePartDefs</storeAs>
                     <storeFactionAs>siteFaction</storeFactionAs>
                     <sitePartsTags>
                         <li>
-                            <tag>SE_OccupiedRuins</tag>
-                        </li>
-                        <li>
-                            <tag>KCSG_EnnemiesPresence</tag>
+                            <tag>SE_MechanoidProbe</tag>
                         </li>
                     </sitePartsTags>
                 </li>
@@ -94,7 +81,7 @@
                 <li Class="QuestNode_SubScript">
                     <def>Util_GenerateSite</def>
                     <parms>
-                        <hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+                        <hiddenSitePartsPossible>false</hiddenSitePartsPossible>
                     </parms>
                 </li>
 
@@ -111,7 +98,7 @@
                         <nodes>
                             <li Class="QuestNode_Letter">
                                 <label>Quest expired: [resolvedQuestName]</label>
-                                <text>Intercepted communications indicate that the scavengers have looted anything of value from the occupied ruins and have departed. The quest [resolvedQuestName] has expired.</text>
+                                <text>The mechanoids guarding the crashed probe have scattered. The quest [resolvedQuestName] has expired.</text>
                             </li>
                             <li Class="QuestNode_End">
                                 <outcome>Fail</outcome>

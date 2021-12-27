@@ -64,6 +64,7 @@
         <Compile Include="DefOfs\BuildingDefOf.cs" />
         <Compile Include="DefOfs\HediffDefOf.cs" />
         <Compile Include="DefOfs\JobDefOf.cs" />
+        <Compile Include="DefOfs\PawnKindDefOf.cs" />
         <Compile Include="DefOfs\SoundDefOf.cs" />
         <Compile Include="DefOfs\ThingDefOf.cs" />
         <Compile Include="Defs\DefModExtensions\ExcavatorExtension.cs" />
@@ -78,6 +79,7 @@
         <Compile Include="Defs\Tags\AdvancedScavengingProduct.cs" />
         <Compile Include="Defs\Tags\RangeWithChance.cs" />
         <Compile Include="Enums\ScavengingRecipeType.cs" />
+        <Compile Include="GenSteps\GenStep_MechanoidProbe.cs" />
         <Compile Include="Harmony\HarmonyBase.cs" />
         <Compile Include="Harmony\Patches\PatchPartMaxHealth.cs" />
         <Compile Include="Harmony\Patches\PatchPawnGizmos.cs" />
