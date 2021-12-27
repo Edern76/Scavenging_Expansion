@@ -167,7 +167,7 @@
 
   <PawnKindDef ParentName="BaseMechForager">
     <defName>SE_Mech_Forager</defName>
-    <label>gatherer</label>
+    <label>forager</label>
     <combatPower>100</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
