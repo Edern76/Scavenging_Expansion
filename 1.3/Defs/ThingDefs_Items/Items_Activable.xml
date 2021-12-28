@@ -24,14 +24,14 @@
         <thingClass>ThingWithComps</thingClass>
         <description>Placeholder</description>
         <graphicData>
-            <texPath>Things/Item/Special/SE_CodeCracker</texPath>
+            <texPath>Things/Item/Special/SE_SurveyData</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <comps>
             <li Class="ScavengingExpansion.Comps.CompProperties_AutoLearner">
                 <compClass>ScavengingExpansion.Comps.CompAutoLearner</compClass>
                 <SpawnWithSetProject>false</SpawnWithSetProject>
-                <AvailableProjects>SE_DefaultBlueprintProjectSet</AvailableProjects>
+                <AvailableProjects>SE_SurveyDataProjectSet</AvailableProjects>
             </li>
         </comps>
     </ThingDef>
@@ -43,7 +43,7 @@
         <description>Placeholder</description>
         <tradeability>All</tradeability>
         <graphicData>
-            <texPath>Things/Item/Special/SE_CodeCracker</texPath>
+            <texPath>Things/Item/Special/SE_Blueprint</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
@@ -53,7 +53,7 @@
             <li Class="ScavengingExpansion.Comps.CompProperties_AutoLearner">
                 <compClass>ScavengingExpansion.Comps.CompAutoLearner</compClass>
                 <SpawnWithSetProject>true</SpawnWithSetProject>
-                <AvailableProjects>SE_DefaultBlueprintProjectSet</AvailableProjects>
+                <AvailableProjects>SE_BlueprintProjectSet</AvailableProjects>
             </li>
         </comps>
     </ThingDef>

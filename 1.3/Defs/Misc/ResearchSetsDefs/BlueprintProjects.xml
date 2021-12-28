@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <ThingDef Class="ScavengingExpansion.Defs.ResearchProjectSetDef">
-        <defName>SE_DefaultBlueprintProjectSet</defName>
+        <defName>SE_TestBlueprintProjectSet</defName>
         <label>DefaultBlueprintProjectSet</label>
         <description>Not sure this is necessary here either.</description>
         <thingClass>ScavengingExpansion.Defs.ResearchProjectSetDef</thingClass>
@@ -16,4 +16,40 @@
             <li>BlowbackOperation</li>
         </projects>
     </ThingDef>    
+
+    <ThingDef Class="ScavengingExpansion.Defs.ResearchProjectSetDef">
+        <defName>SE_BlueprintProjectSet</defName>
+        <label>BlueprintProjectSet</label>
+        <description>Not sure this is necessary here either.</description>
+        <thingClass>ScavengingExpansion.Defs.ResearchProjectSetDef</thingClass>
+        <projects>
+            <li>ScrapWeaponry</li>
+            <li>SluggerTechnology</li>
+            <li>AlloyGunsmithing</li>
+            <li>AlloyArmor</li>
+            <li>UnstableOperation</li>
+            <li>MiningOperation</li>
+            <li>AutomatedExcavation</li>
+            <li>SalvagedProsthetics</li>
+            <li>AugmentedProsthetics</li>
+            <li>Shellpiercer</li>
+            <li>Arquebuse</li>
+        </projects>
+    </ThingDef>
+
+    <ThingDef Class="ScavengingExpansion.Defs.ResearchProjectSetDef">
+        <defName>SE_SurveyDataProjectSet</defName>
+        <label>SurveyDataProjectSet</label>
+        <description>Not sure this is necessary here either.</description>
+        <thingClass>ScavengingExpansion.Defs.ResearchProjectSetDef</thingClass>
+        <projects>
+            <li>ReprocessedAI</li>
+            <li>DominionMight</li>
+            <li>ImpenetrableBulwark</li>
+            <li>FaithAndOrder</li>
+            <li>OverchargedCoreTech</li>
+            <li>BreachingCanon</li>
+            <li>FrozenCoreTech</li>
+        </projects>
+    </ThingDef>
 </Defs>
