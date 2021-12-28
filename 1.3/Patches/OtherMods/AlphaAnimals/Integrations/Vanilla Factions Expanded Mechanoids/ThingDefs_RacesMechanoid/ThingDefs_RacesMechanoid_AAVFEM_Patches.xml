@@ -109,7 +109,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>Defs/ThingDef[defName="VFE_Mech_Advanced_Slurrypede"]</xpath>
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Slurrymaster"]</xpath>
                     <value>
                         <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
                             <scrapYield>0</scrapYield>
