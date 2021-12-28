@@ -20,6 +20,7 @@
     <ThingDef ParentName="ActivableBase">
         <defName>SE_Blueprint</defName>
         <label>survey data</label>
+        <tradeability>Sellable</tradeability>
         <thingClass>ThingWithComps</thingClass>
         <description>Placeholder</description>
         <graphicData>
@@ -40,10 +41,14 @@
         <label>blueprint</label>
         <thingClass>ThingWithComps</thingClass>
         <description>Placeholder</description>
+        <tradeability>All</tradeability>
         <graphicData>
             <texPath>Things/Item/Special/SE_CodeCracker</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
         <comps>
             <li Class="ScavengingExpansion.Comps.CompProperties_AutoLearner">
                 <compClass>ScavengingExpansion.Comps.CompAutoLearner</compClass>
