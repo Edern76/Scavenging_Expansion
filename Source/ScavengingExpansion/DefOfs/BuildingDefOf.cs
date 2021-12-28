@@ -7,6 +7,5 @@ namespace ScavengingExpansion.DefOfs
     public static class BuildingDefOf
     {
         public static ThingDef SE_Excavator;
-        public static ThingDef SE_ExcavationSite;
     }
 }

@@ -65,8 +65,7 @@ namespace ScavengingExpansion.Jobs.WorkGivers
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
             ListerBuildings buildings = pawn.Map.listerBuildings;
-            return buildings.AllBuildingsColonistOfDef(BuildingDefOf.SE_Excavator).Cast<Thing>()
-                .Concat(buildings.AllBuildingsColonistOfDef(BuildingDefOf.SE_ExcavationSite).Cast<Thing>());
+            return buildings.AllBuildingsColonistOfDef(BuildingDefOf.SE_Excavator).Cast<Thing>();
         }
     }
 }
