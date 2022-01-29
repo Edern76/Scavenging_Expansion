@@ -167,8 +167,8 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
-        <offset>(0,0,0)</offset>
+        <volume>(2.2, 1, 2.0)</volume>
+        <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -318,8 +318,8 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
-        <offset>(0,0,0)</offset>
+        <volume>(1.5,0.35,1.2)</volume>
+        <offset>(-0.11,0,-0.05)</offset>
       </shadowData>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -469,8 +469,8 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
-        <offset>(0,0,0)</offset>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -614,8 +614,8 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
-        <offset>(0,0,0)</offset>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
     <techLevel>Industrial</techLevel>

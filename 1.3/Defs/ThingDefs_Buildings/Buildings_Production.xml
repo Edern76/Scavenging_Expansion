@@ -9,6 +9,10 @@
             <texPath>Things/Building/Production/AdvancedSalvagingTable/AdvancedSalvagingTable</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -16,8 +20,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight>
         <costList>
             <Steel>100</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
@@ -82,6 +84,10 @@
             <texPath>Things/Building/Production/AlloyForge/AlloyForge</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(4.5,2.5)</drawSize>
+            <shadowData>
+                <volume>(2.22, 0.8, 0.62)</volume>
+                <offset>(0, 0, -0.13)</offset>
+            </shadowData>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -89,8 +95,6 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight>
         <costList>
             <Steel>100</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
@@ -108,7 +112,7 @@
             <Flammability>1.0</Flammability>
             <Cleanliness>-3</Cleanliness>
         </statBases>
-        <size>(4,2)</size>
+        <size>(3,2)</size>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <designationCategory>Production</designationCategory>
         <passability>PassThroughOnly</passability>
