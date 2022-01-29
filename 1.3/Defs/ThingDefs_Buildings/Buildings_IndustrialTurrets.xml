@@ -276,7 +276,7 @@
         <forcedMissRadius>3.5</forcedMissRadius>
         <warmupTime>0</warmupTime>
         <minRange>16</minRange>
-        <range>60</range>
+        <range>50</range>
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
