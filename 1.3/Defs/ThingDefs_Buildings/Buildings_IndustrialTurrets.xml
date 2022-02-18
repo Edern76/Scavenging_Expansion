@@ -726,7 +726,7 @@
         <range>34</range>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
-        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCast>Railgun/railgun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
