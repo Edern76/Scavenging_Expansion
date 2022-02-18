@@ -35,6 +35,14 @@
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
       </li>
+      <li>
+        <label>headbut</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
     </tools>
     <race>
       <intelligence>ToolUser</intelligence>
@@ -134,6 +142,14 @@
         <armorPenetration>0.14</armorPenetration>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>headbut</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
       </li>
     </tools>
     <race>
