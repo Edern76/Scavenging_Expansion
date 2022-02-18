@@ -14,8 +14,8 @@
       <li>GunTurrets</li>
       <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+  	<researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -29,7 +29,7 @@
       <li>SalvagingTable</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.60</researchViewY>
+  	<researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -43,8 +43,8 @@
       <li>BlowbackOperation</li>
       <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>1.20</researchViewY>
+    <researchViewX>2.00</researchViewX>
+  	<researchViewY>0.75</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -58,8 +58,8 @@
       <li>PlateArmor</li>
       <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>1.80</researchViewY>
+    <researchViewX>2.00</researchViewX>
+  	<researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -72,8 +72,8 @@
     <prerequisites>
       <li>AlloyGunsmithing</li>
     </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>2.40</researchViewY>
+    <researchViewX>2.00</researchViewX>
+  	<researchViewY>0.15</researchViewY>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
         <disableNormalResearch>true</disableNormalResearch>
@@ -91,8 +91,8 @@
     <prerequisites>
       <li>AlloyGunsmithing</li>
     </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>3.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.75</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -105,8 +105,8 @@
     <prerequisites>
       <li>MiningOperation</li>
     </prerequisites>
-    <researchViewX>1.20</researchViewX>
-    <researchViewY>3.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -116,8 +116,8 @@
     <baseCost>300</baseCost>
     <tab>ScavengerExpanded</tab>
     <techLevel>Medieval</techLevel>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>3.60</researchViewY>
+    <researchViewX>0.00</researchViewX>
+  	<researchViewY>3.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -130,8 +130,8 @@
     <prerequisites>
       <li>SalvagedProsthetics</li>
     </prerequisites>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>3.60</researchViewY>
+    <researchViewX>1.00</researchViewX>
+  	<researchViewY>3.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -145,7 +145,7 @@
       <li>ScrapWeaponry</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>4.20</researchViewY>
+  	<researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -158,8 +158,8 @@
     <prerequisites>
       <li>SluggerTechnology</li>
     </prerequisites>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
+    <researchViewX>1.00</researchViewX>
+  	<researchViewY>2.95</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -170,7 +170,7 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Medieval</techLevel>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>5.20</researchViewY>
+    <researchViewY>1.45</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -183,22 +183,8 @@
     <prerequisites>
       <li>SalvagingTable</li>
     </prerequisites>
-    <researchViewX>1.20</researchViewX>
-    <researchViewY>5.20</researchViewY>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef>
-    <defName>MechanoidRepurposingPro</defName>
-    <label>mechanoid repurposing pro</label>
-    <description>Unlocks the ability to be a true gamer in terms of repurposing mechanoids.</description>
-    <baseCost>400</baseCost>
-    <tab>ScavengerExpanded</tab>
-    <techLevel>Spacer</techLevel>
-    <prerequisites>
-      <li>AlloyForge</li>
-    </prerequisites>
-    <researchViewX>1.20</researchViewX>
-    <researchViewY>5.20</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.45</researchViewY>
   </ResearchProjectDef>
 
   <!-- ==== Column 2 ==== -->
@@ -211,15 +197,15 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>MechanoidRepurposingPro</li>
+      <li>AlloyForge</li>
     </prerequisites>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
         <disableNormalResearch>true</disableNormalResearch>
       </li>
     </modExtensions>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -230,10 +216,10 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>MechanoidRepurposingPro</li>
+      <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>0.60</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.05</researchViewY>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
         <disableNormalResearch>true</disableNormalResearch>
@@ -249,10 +235,10 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>MechanoidRepurposingPro</li>
+      <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>1.20</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.40</researchViewY>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
         <disableNormalResearch>true</disableNormalResearch>
@@ -268,10 +254,10 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>MechanoidRepurposingPro</li>
+      <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>1.80</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
         <disableNormalResearch>true</disableNormalResearch>
@@ -287,10 +273,10 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>MechanoidRepurposingPro</li>
+      <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>2.40</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.65</researchViewY>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
         <disableNormalResearch>true</disableNormalResearch>
@@ -306,9 +292,9 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>MechanoidRepurposingPro</li>
+      <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
+    <researchViewX>4.00</researchViewX>
     <researchViewY>3.00</researchViewY>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
@@ -325,10 +311,10 @@
     <tab>ScavengerExpanded</tab>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>MechanoidRepurposingPro</li>
+      <li>AlloyForge</li>
     </prerequisites>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>3.60</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.55</researchViewY>
     <modExtensions>
       <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
         <disableNormalResearch>true</disableNormalResearch>
