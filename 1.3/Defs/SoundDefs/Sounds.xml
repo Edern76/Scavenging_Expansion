@@ -14,4 +14,20 @@
             </li>
         </subSounds>
     </SoundDef>
+
+    <SoundDef>
+        <defName>OathShoot</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Railgun/railgun</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>48~48</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 </Defs>

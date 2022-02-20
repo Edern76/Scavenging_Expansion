@@ -589,6 +589,7 @@
     <graphicData>
       <texPath>Things/Projectile/Arrow_Ballista</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
@@ -725,7 +726,7 @@
         <range>34</range>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
-        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCast>OathShoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
