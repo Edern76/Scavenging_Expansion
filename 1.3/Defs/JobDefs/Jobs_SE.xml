@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <JobDef>
+        <defName>SE_UnjamWeapon</defName>
+        <driverClass>ScavengingExpansion.Jobs.JobDriver_Unjam</driverClass>
+        <reportString>Unjamming TargetB</reportString>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
+
+    <JobDef>
+        <defName>SE_Excavate</defName>
+        <driverClass>ScavengingExpansion.Jobs.JobDriver_Excavate</driverClass>
+        <reportString>Manning excavator.</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>SE_StudyBlueprint</defName>
+        <driverClass>ScavengingExpansion.Jobs.JobDriver_UseBlueprint</driverClass>
+        <reportString>Studying TargetA</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>

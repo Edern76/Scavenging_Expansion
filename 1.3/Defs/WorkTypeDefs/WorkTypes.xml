@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <WorkTypeDef>
+        <defName>Excavating</defName>
+        <labelShort>Excavate</labelShort>
+        <pawnLabel>Miner</pawnLabel>
+        <gerundLabel>excavating</gerundLabel>
+        <description>Operating an excavator.</description>
+        <verb>Excavate</verb>
+        <naturalPriority>550</naturalPriority>
+        <requireCapableColonist>true</requireCapableColonist>
+        <relevantSkills>
+            <li>Mining</li>
+        </relevantSkills>
+        <workTags>
+            <li>ManualSkilled</li>
+            <li>Mining</li>
+            <li>AllWork</li>
+        </workTags>
+    </WorkTypeDef>
+</Defs>

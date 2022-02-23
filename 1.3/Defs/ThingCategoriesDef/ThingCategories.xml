@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Boots and Gloves -->
+  <ThingCategoryDef>
+    <defName>SE_BootsAndGloves</defName>
+    <label>handwear and footwear</label>
+    <parent>Apparel</parent>
+	</ThingCategoryDef>
+</Defs>

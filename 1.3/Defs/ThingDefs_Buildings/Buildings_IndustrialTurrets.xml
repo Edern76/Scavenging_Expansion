@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Heavy Slugger -->
+  <ThingDef Name="SE_Turret_HeavySlugger" ParentName="BuildingBase">
+    <defName>SE_Turret_HeavySlugger</defName>
+    <label>heavy slugger</label>
+    <description>Placeholder.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/HeavySlugger/HeavySlugger_base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <hasInteractionCell>true</hasInteractionCell>
+    <size>(1,1)</size>
+    <uiIconPath>Things/Building/Security/HeavySlugger/HeavySlugger_MenuIcon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>3000</WorkToBuild>
+      <MarketValue>340</MarketValue>
+      <Mass>10</Mass>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>120</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1.2</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <SE_MechanoidAlloy>35</SE_MechanoidAlloy>
+      <Steel>60</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>SE_Gun_HeavySlugger</turretGunDef>
+      <turretBurstCooldownTime>5</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>SluggerTechnology</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef Name="SE_Gun_HeavySlugger" ParentName="BaseWeaponTurret">
+    <defName>SE_Gun_HeavySlugger</defName>
+    <label>heavy slugger gun</label>
+    <description>Placeholder.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/HeavySlugger/HeavySlugger_top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HeavySlugger</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>34</range>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HeavySlugger</defName>
+    <label>heavy slugger bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- Siege Wrecker -->
+  <ThingDef Name="SE_Turret_SiegeWrecker" ParentName="BuildingBase">
+    <defName>SE_Turret_SiegeWrecker</defName>
+    <label>siege wrecker</label>
+    <description>Placeholder.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/SiegeWrecker/SiegeWrecker_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(2.2, 1, 2.0)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <size>(4,4)</size>
+    <uiIconPath>Things/Building/Security/SiegeWrecker/SiegeWrecker_MenuIcon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>20000</WorkToBuild>
+      <MarketValue>17000</MarketValue>
+      <Mass>12</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>10</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>0.07</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <SE_MechanoidAlloy>50</SE_MechanoidAlloy>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>SE_Gun_SiegeWrecker</turretGunDef>
+      <turretBurstCooldownTime>7.5</turretBurstCooldownTime>
+      <turretTopDrawSize>4</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>BreachingCanon</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef Name="SE_Gun_SiegeWrecker" ParentName="BaseWeaponTurret">
+    <defName>SE_Gun_SiegeWrecker</defName>
+    <label>siege wrecker doublegun</label>
+    <description>Two simple automatic guns made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/SiegeWrecker/SiegeWrecker_top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <AccuracyTouch>0.20</AccuracyTouch>
+      <AccuracyShort>0.40</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>7.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SiegeWrecker</defaultProjectile>
+        <forcedMissRadius>3.5</forcedMissRadius>
+        <warmupTime>0</warmupTime>
+        <minRange>16</minRange>
+        <range>50</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SiegeWrecker</defName>
+    <label>siege wrecker shell</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
+      <explosionRadius>3.5</explosionRadius>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- Arquebuse -->
+  <ThingDef Name="SE_Turret_Arquebuse" ParentName="BuildingBase">
+    <defName>SE_Turret_Arquebuse</defName>
+    <label>arquebuse</label>
+    <description>Placeholder.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/Arquebuse/Arquebuse_base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.2)</volume>
+        <offset>(-0.11,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <size>(2,2)</size>
+    <uiIconPath>Things/Building/Security/Arquebuse/Arquebuse_MenuIcon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Flammability>0.70</Flammability>
+      <WorkToBuild>14000</WorkToBuild>
+      <MarketValue>1345</MarketValue>
+      <Mass>12</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>150</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1.58</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <SE_MechanoidAlloy>30</SE_MechanoidAlloy>
+      <Steel>450</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>SE_Gun_Arquebuse</turretGunDef>
+      <turretBurstCooldownTime>4.67</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>Arquebuse</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef Name="SE_Gun_Arquebuse" ParentName="BaseWeaponTurret">
+    <defName>SE_Gun_Arquebuse</defName>
+    <label>siege wrecker doublegun</label>
+    <description>Two simple automatic guns made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/Arquebuse/Arquebuse_top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>4.67</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Arquebuse</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>8</minRange>
+        <range>28</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Arquebuse</defName>
+    <label>arquebuse shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.396</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- Shellpiercer -->
+  <ThingDef Name="SE_Turret_Shellpiercer" ParentName="BuildingBase">
+    <defName>SE_Turret_Shellpiercer</defName>
+    <label>shellpiercer</label>
+    <description>Placeholder.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/Shellpiercer/TurretShellpiercer_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <size>(2,2)</size>
+    <uiIconPath>Things/Building/Security/Shellpiercer/TurretShellpiercer_MenuIcon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.70</Flammability>
+      <WorkToBuild>9000</WorkToBuild>
+      <MarketValue>240</MarketValue>
+      <Mass>30</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>SE_MechanoidScrap</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>10</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>2</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <SE_MechanoidScrap>20</SE_MechanoidScrap>
+      <Steel>300</Steel>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <turretGunDef>SE_Gun_Shellpiercer</turretGunDef>
+      <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>Shellpiercer</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef Name="SE_Gun_Shellpiercer" ParentName="BaseWeaponTurret">
+    <defName>SE_Gun_Shellpiercer</defName>
+    <label>shellpiercer piercer</label>
+    <description>Placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Security/Shellpiercer/TurretShellpiercer_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <AccuracyTouch>0.10</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Shellpiercer</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <minRange>5</minRange>
+        <range>30</range>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shellpiercer</defName>
+    <label>arquebuse shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Ballista</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- Oathbreaker -->
+  <ThingDef Name="SE_Turret_Oathbreaker" ParentName="BuildingBase">
+    <defName>SE_Turret_Oathbreaker</defName>
+    <label>oathbreaker</label>
+    <description>Placeholder.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/Oathbreaker/TurretOathbreaker_base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <size>(2,2)</size>
+    <uiIconPath>Things/Building/Security/Oathbreaker/TurretOathbreaker_MenuIcon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>230</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>20000</WorkToBuild>
+      <MarketValue>2300</MarketValue>
+      <Mass>12</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>150</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>120</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <SE_MechanoidAlloy>30</SE_MechanoidAlloy>
+      <Plasteel>70</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>SE_Gun_Oathbreaker</turretGunDef>
+      <turretBurstCooldownTime>4.5</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+      <turretTopOffset>(-0.01,0.255)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>UnstableOperation</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef Name="SE_Gun_Oathbreaker" ParentName="BaseWeaponTurret">
+    <defName>SE_Gun_Oathbreaker</defName>
+    <label>oathbreaker beam</label>
+    <description>Placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Security/Oathbreaker/TurretOathbreaker_top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Oathbreaker</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>34</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>OathShoot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Oathbreaker</defName>
+    <label>oathbreaker energy cell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

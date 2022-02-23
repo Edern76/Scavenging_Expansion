@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<BodyDef>
+    <defName>SE_Body_Gatherer</defName>
+    <label>gatherer</label>
+    <corePart>
+      <def>SE_BodyPart_MechanicalShell</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>SE_BodyPart_InvestigativeSensor</def>
+          <coverage>0.20</coverage>
+          <height>Middle</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.50</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li> 
+        <li>
+          <def>SE_BodyPart_MechanicalClaw</def>
+          <customLabel>left shoulder</customLabel>
+          <coverage>0.16</coverage>
+          <groups>
+            <li>LeftHand</li>
+          </groups>
+        </li>
+        <li>
+          <def>SE_BodyPart_MechanicalClaw</def>
+          <customLabel>right shoulder</customLabel>
+          <coverage>0.16</coverage>
+          <groups>
+            <li>RightHand</li>
+          </groups>
+        </li>
+        <li>
+        	<def>SE_BodyPart_IndividualSensor</def>
+          <customLabel>back left sight sensor</customLabel>
+          <coverage>0.07</coverage>
+        </li>
+        <li>
+          <def>SE_BodyPart_IndividualSensor</def>
+          <customLabel>back right sight sensor</customLabel>
+          <coverage>0.07</coverage>
+        </li>
+        <li>
+          <def>SE_BodyPart_IndividualSensor</def>
+          <customLabel>top left sight sensor</customLabel>
+          <coverage>0.07</coverage>
+        </li>
+        <li>
+          <def>SE_BodyPart_IndividualSensor</def>
+          <customLabel>top right sight sensor</customLabel>
+          <coverage>0.07</coverage>
+        </li>
+        <li>
+        	<def>SE_BodyPart_LevitationRing</def>
+        	<customLabel>levitation ring</customLabel>
+        	<coverage>0.05</coverage>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+</Defs>

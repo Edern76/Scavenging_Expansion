@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{AECBD874-43F0-4EAD-9971-D3512F545DC5}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>ScavengingExpansion</RootNamespace>
+        <AssemblyName>ScavengingExpansion</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>../../1.3/Assemblies</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>../../1.3/Assemblies</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Assembly-CSharp, Version=1.3.8005.21796, Culture=neutral, PublicKeyToken=null">
+          <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Bootstrap.cs" />
+        <Compile Include="Buildings\Buidling_Excavator.cs" />
+        <Compile Include="Comps\CompAutoExcavator.cs" />
+        <Compile Include="Comps\CompAutoLearner.cs" />
+        <Compile Include="Comps\CompHediffWhenHeld.cs" />
+        <Compile Include="Comps\CompJammable.cs" />
+        <Compile Include="Comps\HediffComp_ExplodeOnDeath.cs" />
+        <Compile Include="DefOfs\BuildingDefOf.cs" />
+        <Compile Include="DefOfs\HediffDefOf.cs" />
+        <Compile Include="DefOfs\JobDefOf.cs" />
+        <Compile Include="DefOfs\PawnKindDefOf.cs" />
+        <Compile Include="DefOfs\SoundDefOf.cs" />
+        <Compile Include="DefOfs\ThingDefOf.cs" />
+        <Compile Include="Defs\DefModExtensions\ExcavatorExtension.cs" />
+        <Compile Include="Defs\DefModExtensions\HealthModifier.cs" />
+        <Compile Include="Defs\DefModExtensions\HediffApplier.cs" />
+        <Compile Include="Defs\DefModExtensions\ResearchBlocker.cs" />
+        <Compile Include="Defs\DefModExtensions\ScavengingYield.cs" />
+        <Compile Include="Defs\DefModExtensions\StunImmuniser.cs" />
+        <Compile Include="Defs\ProbabilisticThingSetDef.cs" />
+        <Compile Include="Defs\ResearchProjectSetDef.cs" />
+        <Compile Include="Defs\ScavengingRecipeDef.cs" />
+        <Compile Include="Defs\Tags\AdvancedScavengingProduct.cs" />
+        <Compile Include="Defs\Tags\RangeWithChance.cs" />
+        <Compile Include="Enums\ScavengingRecipeType.cs" />
+        <Compile Include="GenSteps\GenStep_MechanoidProbe.cs" />
+        <Compile Include="Harmony\HarmonyBase.cs" />
+        <Compile Include="Harmony\Patches\PatchPartMaxHealth.cs" />
+        <Compile Include="Harmony\Patches\PatchPawnGizmos.cs" />
+        <Compile Include="Harmony\Patches\PatchPawnHealthPostApplyDamage.cs" />
+        <Compile Include="Harmony\Patches\PatchPawnPreApplyDamage.cs" />
+        <Compile Include="Harmony\Patches\PatchPostArmorDamage.cs" />
+        <Compile Include="Harmony\Patches\PatchRecipeYield.cs" />
+        <Compile Include="Harmony\Patches\PatchResearchDefCanStartNow.cs" />
+        <Compile Include="Harmony\Patches\PatchStunHandler.cs" />
+        <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
+        <Compile Include="Jobs\JobDriver_Excavate.cs" />
+        <Compile Include="Jobs\JobDriver_Unjam.cs" />
+        <Compile Include="Jobs\JobDriver_UseBlueprint.cs" />
+        <Compile Include="Jobs\JobGiver_TryUnjam.cs" />
+        <Compile Include="Jobs\WorkGivers\WorkGiver_Excavate.cs" />
+        <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />
+        <Compile Include="PlaceWorkers\PlaceWorker_Excavator.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Utils\ArmorUtils.cs" />
+        <Compile Include="Utils\Caches\FilterCache.cs" />
+        <Compile Include="Utils\Filters\CustomFilter.cs" />
+        <Compile Include="Utils\Filters\FilterAdvancedSalvageable.cs" />
+        <Compile Include="Utils\Filters\FilterAlloySalvageable.cs" />
+        <Compile Include="Utils\Filters\FilterBasicSalvageable.cs" />
+        <Compile Include="Utils\Grids\ExcavatorGrid.cs" />
+        <Compile Include="Utils\HediffUtils.cs" />
+        <Compile Include="Utils\MapUtils.cs" />
+        <Compile Include="Utils\RecipeUtils.cs" />
+        <Compile Include="Utils\ResearchUtils.cs" />
+        <Compile Include="Utils\TerrainUtils.cs" />
+        <Compile Include="Utils\ThingUtils.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

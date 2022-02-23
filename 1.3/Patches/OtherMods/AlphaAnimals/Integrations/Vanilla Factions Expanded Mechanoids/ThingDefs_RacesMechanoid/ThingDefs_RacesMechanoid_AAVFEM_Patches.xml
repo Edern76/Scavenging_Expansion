@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="ScavengingExpansion.PatchOperations.PatchOperationFindAllMods">
+        <mods>
+            <li>Alpha Animals</li>
+            <li>Vanilla Factions Expanded - Mechanoids</li>
+        </mods>
+        
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Advanced_Aura"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>30</scrapYield>
+                            <alloyYield>4~7</alloyYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_DominionCrown_Resource</defRef>
+                                    <chance>0.07</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Siegebreaker"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_SiegebreakerCanon</defRef>
+                                    <chance>0.05</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Advanced_Siegebreaker"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>7~10</alloyYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_SiegebreakerCanon</defRef>
+                                    <chance>0.07</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Phalanx"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_SubZeroInnerCore</defRef>
+                                    <chance>0.06</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Advanced_Phalanx"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~7</alloyYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_SubZeroInnerCore</defRef>
+                                    <chance>0.09</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Advanced_Goliath"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~11</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Advanced_Daggersnout"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>2~4</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Advanced_Fireworm"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~7</alloyYield>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFE_Mech_Slurrymaster"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>2~5</alloyYield>
+                        </li>
+                    </value>
+                </li>
+            </operations>    
+        </match>
+    </Operation>
+</Patch>

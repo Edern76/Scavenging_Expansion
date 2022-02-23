@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mechanoids Extraordinaire</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mechanoid_Vespa"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>2~4</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mechanoid_Hound"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~6</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mechanoid_Chimera"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~8</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mechanoid_Goliath"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~8</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mechanoid_Kraken"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~10</alloyYield>
+                        </li>
+                    </value>
+                </li>
+            </operations>    
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>SE_Bionics_UnstableHealthCore</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SE_Bionics_UnstableHealthCore</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+    	<li>Transhumanist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>unstable health core</label>
+        <description>I can feel my heart racing all day long, it's getting annoying.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

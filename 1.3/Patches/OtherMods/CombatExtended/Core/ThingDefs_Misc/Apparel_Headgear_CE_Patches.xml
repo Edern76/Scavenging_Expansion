@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- ===== Mechanoid Alloy Helmet =====-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHelmet"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>15</ArmorRating_Sharp>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHelmet"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>36</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHelmet"]/equippedStatOffsets/MoveSpeed</xpath>
+                </li>
+
+                <!-- ===== Salvaged Helmet =====-->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_SalvagedLightHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
+                    <value>
+                        <StuffEffectMultiplierArmor>4.5</StuffEffectMultiplierArmor>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_SalvagedLightHelmet"]/stuffCategories/li[.="Metallic"]</xpath>
+                    <value>
+                      <li>Steeled</li>
+                    </value>
+                </li>
+
+                <!-- ===== Scrap Crown =====-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_ScrapCrown"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>4</ArmorRating_Sharp>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_ScrapCrown"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>4</ArmorRating_Blunt>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>                

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BenchBase">
+        <defName>SE_AdvancedSalvagingTable</defName>
+        <label>advanced salvaging workbench</label>
+        <description>Placeholder</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/AdvancedSalvagingTable/AdvancedSalvagingTable</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <costList>
+            <Steel>100</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <SE_MechanoidScrap>5</SE_MechanoidScrap>
+        </costList>
+        <constructEffect>ConstructMetal</constructEffect>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>60</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <recipes>
+            <li>ButcherCorpseMechanoid</li>
+        </recipes>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>			
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>200</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                  <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>SalvagingTable</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>SE_AlloyForge</defName>
+        <label>alloy forge</label>
+        <description>Placeholder</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/AlloyForge/AlloyForge</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(4.5,2.5)</drawSize>
+            <shadowData>
+                <volume>(2.22, 0.8, 0.62)</volume>
+                <offset>(0, 0, -0.13)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <costList>
+            <Steel>100</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <SE_MechanoidAlloy>20</SE_MechanoidAlloy>
+        </costList>
+        <constructEffect>ConstructMetal</constructEffect>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <MarketValue>300</MarketValue>
+            <Mass>20</Mass>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+        </statBases>
+        <size>(3,2)</size>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>60</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <recipes>
+            <li>ButcherCorpseMechanoid</li>
+        </recipes>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>     
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>100</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                  <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>AlloyForge</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+      <ThingDef ParentName="BuildingBase">
+        <defName>SE_Excavator</defName>
+        <label>excavator</label>
+        <description>Placeholder</description>
+        <thingClass>ScavengingExpansion.Buildings.Building_Excavator</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+          <texPath>Things/Building/Production/Excavator/Excavator</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(6,6)</drawSize>
+          <shadowData>
+            <volume>(6.03,1.0,5.25)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+          <damageData>
+            <rect>(0.3,0,5.4,6)</rect>
+          </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <fillPercent>1</fillPercent>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+          <MaxHitPoints>500</MaxHitPoints>
+          <WorkToBuild>12000</WorkToBuild>
+          <Flammability>0.5</Flammability>
+          <Beauty>-30</Beauty>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <size>(6,6)</size>
+        <costList>
+          <Steel>340</Steel>
+          <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <rotatable>false</rotatable>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <building>
+          <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        <constructEffect>ConstructMetal</constructEffect>
+        <placeWorkers>
+          <li>ScavengingExpansion.PlaceWorkers.PlaceWorker_Excavator</li>
+        </placeWorkers>
+        <modExtensions>
+          <li Class="ScavengingExpansion.Defs.DefModExtensions.ExcavatorExtension">
+            <excavationCycleTime>10000</excavationCycleTime>
+          </li>
+        </modExtensions>
+        <comps>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>2500</basePowerConsumption>
+            <shortCircuitInRain>false</shortCircuitInRain>
+          </li>
+          <li Class="ScavengingExpansion.Comps.CompProperties_AutoExcavator">
+            <AllowManualExcavating>false</AllowManualExcavating>
+          </li>
+        </comps>
+        <researchPrerequisites>
+            <li>AutomatedExcavation</li>
+        </researchPrerequisites>
+      </ThingDef>
+</Defs>

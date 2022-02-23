@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Alpha Animals</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements</xpath>
+                    <value>
+                        <li>
+                            <anyMemeRequired>
+                                <li>Supremacist</li> <!-- TODO : Replace with Scavenger meme -->
+                            </anyMemeRequired>
+                            <requirement>
+                                <bodyPartGroupsMatchAny>
+                                    <li>FullHead</li>
+                                </bodyPartGroupsMatchAny>
+                                <requiredDefs>
+                                    <li>SE_DominionCrownHelmet</li>
+                                </requiredDefs>
+                            </requirement>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+
+    </Operation>
+</Patch>

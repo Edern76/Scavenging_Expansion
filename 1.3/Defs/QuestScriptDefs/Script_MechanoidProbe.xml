@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>SE_OpportunitySite_MechanoidProbe</defName>
+        <rootSelectionWeight>0.6</rootSelectionWeight>
+        <rootMinPoints>0</rootMinPoints>
+        <autoAccept>true</autoAccept>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->[crash] mechanoid [probe]</li>
+                <li>crash->crashed</li>
+                <li>crash->damaged</li>
+                <li>crash->crashlanded</li>
+                <li>probe->probe</li>
+                <li>probe->survey probe</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <!-- No asker -->
+                <li>questDescription(askerIsNull==true)->A mechanoid probe has crashed near [map_definite]. It appears to be guarded by a powerful mechanoid and its minions. While the probe itself is probably too damaged to yield anything useful, we might be able to extract some valuable intelligence from the mechanoid's databanks should we manage to defeat it and bring back its carcass. \n\nIt seems that [allSitePartsDescriptionsExceptFirst]</li>
+
+                <!-- Faction leader asker -->
+                <li>questDescription(asker_factionLeader==True)->[asker_label], [asker_faction_leaderTitle] of [asker_faction_name], has informed us that a mechanoid probe has crashed near [map_definite]. It appears to be guarded by a powerful mechanoid and its minions. While the probe itself is probably too damaged to yield anything useful, we might be able to extract some valuable intelligence from the mechanoid's databanks should we manage to defeat it and bring back its carcass. \n\n[asker_label] says that [allSitePartsDescriptionsExceptFirst]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+
+                <li Class="QuestNode_IsSet">
+                    <name>asker</name>
+                    <elseNode Class="QuestNode_RandomNode">
+                        <nodes>
+                            <li Class="QuestNode_Set">
+                                <name>askerIsNull</name>
+                                <value>true</value>
+                                <selectionWeight>0.4</selectionWeight>
+                            </li>
+                            <li Class="QuestNode_GetPawn">
+                                <storeAs>asker</storeAs>
+                                <mustBeFactionLeader>true</mustBeFactionLeader>
+                                <mustBeNonHostileToPlayer>true</mustBeNonHostileToPlayer>
+                                <selectionWeight>0.6</selectionWeight>
+                            </li>
+                        </nodes>
+                    </elseNode>
+                </li>
+
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+
+
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>SE_MechanoidProbe</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$siteFaction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <hiddenSitePartsPossible>false</hiddenSitePartsPossible>
+                    </parms>
+                </li>
+
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(12,28)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Quest expired: [resolvedQuestName]</label>
+                                <text>The mechanoids guarding the crashed probe have scattered. The quest [resolvedQuestName] has expired.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+
+                <li Class="QuestNode_NoWorldObject">
+                    <worldObject>$site</worldObject>
+                    <node Class="QuestNode_End">
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimsenal - Federation Faction Pack</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mech_Federator"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_FederatorCrucibleCore</defRef>
+                                    <chance>0.04</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

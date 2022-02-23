@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SitePartDef>
+        <defName>SE_MechanoidProbe</defName>
+        <label>mechanoid probe</label>
+        <description>Crashed mechanoid probe guarded by powerful mechanoids.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Sites/MechanoidProbe</expandingIconTexture>
+        <tags>
+            <li>SE_MechanoidProbe</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>SE_MechanoidProbe</defName>
+        <linkWithSite>SE_MechanoidProbe</linkWithSite>
+        <order>450</order>
+        <genStep Class="ScavengingExpansion.GenSteps.GenStep_MechanoidProbe" />
+    </GenStepDef>
+</Defs>

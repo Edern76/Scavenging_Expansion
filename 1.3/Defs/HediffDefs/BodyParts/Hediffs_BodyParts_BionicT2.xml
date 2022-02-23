@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  	<!--Tier 2 (Spacer Tech)-->
+
+	<ThingDef Name="TierTwo" ParentName="BodyPartBase" Abstract="True">
+    	<techLevel>Spacer</techLevel>
+    	<thingCategories>
+      		<li>BodyPartsBionic</li>
+    	</thingCategories>
+    	<graphicData>
+      	<texPath>Things/Item/ProstheticIcons/ScavImplantsTierTwo</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      	<drawSize>0.80</drawSize>
+    	</graphicData>
+    	<tradeTags>
+      		<li>Bionic</li>
+    	</tradeTags>
+    	<techHediffsTags>
+      		<li>Advanced</li>
+          <li>ScavHediffTier2</li>
+    	</techHediffsTags>
+    	<statBases>
+      		<WorkToMake>26000</WorkToMake>
+    	</statBases>
+    	<recipeMaker>
+          <researchPrerequisite>AugmentedProsthetics</researchPrerequisite>
+      		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      		<workSkill>Crafting</workSkill>
+      		<effectWorking>Smith</effectWorking>
+      		<soundWorking>Recipe_Smith</soundWorking>
+      		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      		<skillRequirements>
+        		<Crafting>8</Crafting>
+      		</skillRequirements>
+      		<recipeUsers>
+        		<li>FabricationBench</li>
+      		</recipeUsers>
+    	</recipeMaker>
+  	</ThingDef>
+
+    <!-- Repurposed Centipede Sensor -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>SE_Bionics_RepurposedCentipedeSensor</defName>
+    <label>repurposed centipede sensor</label>
+    <labelNoun>a repurposed centipede sensor</labelNoun>
+    <defaultLabelColor>(0.674,0.698,0.623)</defaultLabelColor>
+    <description>An installed repurposed centipede sensor.</description>
+    <descriptionHyperlinks><ThingDef>SE_Bionics_RepurposedCentipedeSensor</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>SE_Bionics_RepurposedCentipedeSensor</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+          <AimingDelayFactor>-0.2</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.15</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+        <bodyPartHealthOffset>6</bodyPartHealthOffset>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <ThingDef ParentName="TierTwo">
+    <defName>SE_Bionics_RepurposedCentipedeSensor</defName>
+    <label>repurposed centipede sensor</label>
+    <description>Placeholder</description>
+    <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_RepurposedCentipedeSensor</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <SE_MechanoidAlloy>10</SE_MechanoidAlloy>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>18000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallSE_Bionics_RepurposedCentipedeSensor</defName>
+    <label>install repurposed centipede sensor</label>
+    <description>Install a repurposed centipede sensor.</description>
+    <descriptionHyperlinks>
+      <ThingDef>SE_Bionics_RepurposedCentipedeSensor</ThingDef>
+      <HediffDef>SE_Bionics_RepurposedCentipedeSensor</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing repurposed centipede sensor.</jobString>
+    <workAmount>2400</workAmount>
+    <skillRequirements>
+      <Medicine>7</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SE_Bionics_RepurposedCentipedeSensor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SE_Bionics_RepurposedCentipedeSensor</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SE_Bionics_RepurposedCentipedeSensor</addsHediff>
+  </RecipeDef>
+
+    <!-- Gearhead -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>SE_Bionics_Gearhead</defName>
+    <label>gearhead</label>
+    <labelNoun>a gearhead</labelNoun>
+    <defaultLabelColor>(0.713,0.917,0.713)</defaultLabelColor>
+    <description>An installed gearhead.</description>
+    <descriptionHyperlinks><ThingDef>SE_Bionics_Gearhead</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>SE_Bionics_Gearhead</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <stages>
+      <li>
+        <painOffset>-0.3</painOffset>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.15</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.HealthModifier">
+        <bodyPartHealthOffset>5</bodyPartHealthOffset>
+        <bodyPartArmorOffset>0.40</bodyPartArmorOffset>
+      </li>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.StunImmuniser">
+        <stunImmune>true</stunImmune>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <ThingDef ParentName="TierTwo">
+    <defName>SE_Bionics_Gearhead</defName>
+    <label>gearhead</label>
+    <description>Placeholder</description>
+    <descriptionHyperlinks><RecipeDef>InstallSE_Bionics_Gearhead</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <SE_MechanoidAlloy>10</SE_MechanoidAlloy>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>20000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallSE_Bionics_Gearhead</defName>
+    <label>install gearhead</label>
+    <description>Install a gearhead.</description>
+    <descriptionHyperlinks>
+      <ThingDef>SE_Bionics_Gearhead</ThingDef>
+      <HediffDef>SE_Bionics_Gearhead</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing gearhead.</jobString>
+    <workAmount>2700</workAmount>
+    <skillRequirements>
+      <Medicine>14</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SE_Bionics_Gearhead</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SE_Bionics_Gearhead</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SE_Bionics_Gearhead</addsHediff>
+  </RecipeDef>
+</Defs>

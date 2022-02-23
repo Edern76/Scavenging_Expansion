@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="ScavengingExpansion.PatchOperations.PatchOperationFindAllMods">
+        <mods>
+            <li>Combat Extended</li>
+            <li>More Mechanoids</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- ====== Mammoth Cuirass ====== -->
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/statBases</xpath>
+                    <value>
+                        <Bulk>110</Bulk>
+                        <WornBulk>20</WornBulk>
+                    </value>
+                </li>
+
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/statBases/Mass</xpath>
+                    <value>
+                        <Mass>20</Mass>
+                    </value>
+                </li>
+
+            <!--
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/useHitPoints</xpath>
+                    <value>
+                        <useHitPoints>true</useHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/statBases</xpath>
+                    <value>
+                        <MaxHitPoints>1000</MaxHitPoints>
+                    </value>
+                </li>
+            -->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>25</ArmorRating_Sharp>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/equippedStatOffsets/MoveSpeed</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MammothCuirass"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Hands</li>
+                        <li>Feet</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>    
+</Patch>

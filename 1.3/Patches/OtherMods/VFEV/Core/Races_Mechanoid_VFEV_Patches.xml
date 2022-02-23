@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Vikings</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="VFEV_Mech_Odin"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>10~20</alloyYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_OdinOverchargedCore</defRef>
+                                    <chance>0.10</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+            </operations>    
+        </match>
+    </Operation>
+</Patch>

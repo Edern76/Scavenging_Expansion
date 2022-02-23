@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==== Column 1 ==== -->
+
+	<ResearchProjectDef>
+    <defName>SluggerTechnology</defName>
+    <label>slugger technology</label>
+    <description>Salvaged debris from a  mechanoid cluster, repurposed into a more fitting defense system.</description>
+    <baseCost>500</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>GunTurrets</li>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+  	<researchViewY>2.10</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ScrapWeaponry</defName>
+    <label>scrap weaponry</label>
+    <description>Allows you to craft weapons from mechanoid scraps.</description>
+    <baseCost>300</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>SalvagingTable</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+  	<researchViewY>2.10</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AlloyGunsmithing</defName>
+    <label>alloy gunsmithing</label>
+    <description>Craft powerful but unreliable guns using mechanoid alloy.</description>
+    <baseCost>550</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BlowbackOperation</li>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+  	<researchViewY>0.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AlloyArmor</defName>
+    <label>alloy armor</label>
+    <description>Craft a proper armor out of mechanoid alloy, heavy but resistant.</description>
+    <baseCost>500</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>PlateArmor</li>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+  	<researchViewY>2.10</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>UnstableOperation</defName>
+    <label>unstable operation</label>
+    <description>Build a deadly highly unstable charge lance capable of ripping through metal and flesh.</description>
+    <baseCost>1</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyGunsmithing</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+  	<researchViewY>0.15</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+	<ResearchProjectDef>
+    <defName>MiningOperation</defName>
+    <label>mining operation</label>
+    <description>By repurposing a thump canon, create a powerful mining device.</description>
+    <baseCost>550</baseCost
+    	><tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyGunsmithing</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AutomatedExcavation</defName>
+    <label>automated excavation</label>
+    <description>Automatizing the excavation process, yielding even more valuables from sub-terran ruins while being fully automatized.</description>
+    <baseCost>1300</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MiningOperation</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SalvagedProsthetics</defName>
+    <label>salvaged prosthetics</label>
+    <description>Craft crude, inexpensive and often painful prosthetics.</description>
+    <baseCost>300</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0.00</researchViewX>
+  	<researchViewY>3.70</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AugmentedProsthetics</defName>
+    <label>augmented prosthetics</label>
+    <description>Repurposing mechanoids inner-circuits into bionic upgrades.</description>
+    <baseCost>700</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SalvagedProsthetics</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+  	<researchViewY>3.70</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Shellpiercer</defName>
+    <label>shellpiercer</label>
+    <description>Construct a deadly manned ballista out of scraps.</description>
+    <baseCost>400</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ScrapWeaponry</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+  	<researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+
+	<ResearchProjectDef>
+    <defName>Arquebuse</defName>
+    <label>arquebuse</label>
+    <description>Produce a deadly slow-firing auto-canon that needs to be manned.</description>
+    <baseCost>600</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SluggerTechnology</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+  	<researchViewY>2.95</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SalvagingTable</defName>
+    <label>salvaging table</label>
+    <description>Unlocks the ability to salvage alloy and precious parts out of mechanoids with a salvaging table.</description>
+    <baseCost>400</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.45</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AlloyForge</defName>
+    <label>alloy forge</label>
+    <description>A powered forge used to bend and reshape mechanoid alloy and metals alike into useful weapons.</description>
+    <baseCost>400</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SalvagingTable</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.45</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- ==== Column 2 ==== -->
+
+  <ResearchProjectDef>
+    <defName>ReprocessedAI</defName>
+    <label>reprocessed AI</label>
+    <description>Recycling the Carpenter AI chip into useful all-purpose tools.</description>
+    <baseCost>1</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.50</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DominionMight</defName>
+    <label>dominion might</label>
+    <description>Allow you to concentrate the Psychic power of the dominion into a crown.</description>
+    <baseCost>1</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.05</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ImpenetrableBulwark</defName>
+    <label>impenetrable bulwark</label>
+    <description>Bend the Mammoth plates into a indestructible and heavy armor.</description>
+    <baseCost>1</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.40</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+	<ResearchProjectDef>
+    <defName>FaithAndOrder</defName>
+    <label>Faith and Order</label>
+    <description>Stealing and merging both mechanoid and crucible technology into new powerful devices.</description>
+    <baseCost>1</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>OverchargedCoreTech</defName>
+    <label>overcharged core sub-technology</label>
+    <description>Concentre, stabilize and weaponize the energy of the overcharged core.</description>
+    <baseCost>1</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.65</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>BreachingCanon</defName>
+    <label>breaching canon</label>
+    <description>Using the salvaged canon from a siegebreaker build both a long range powerful turret and a portable canon-device.</description>
+    <baseCost>1</baseCost>
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FrozenCoreTech</defName>
+    <label>frozen core sub-technology</label>
+    <description>Securing the innercore of the phalanx, repurposing it's ever freezing fluid.</description>
+    <baseCost>1</baseCost>  
+    <tab>ScavengerExpanded</tab>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AlloyForge</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.55</researchViewY>
+    <modExtensions>
+      <li Class="ScavengingExpansion.Defs.DefModExtensions.ResearchBlocker">
+        <disableNormalResearch>true</disableNormalResearch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+</Defs>

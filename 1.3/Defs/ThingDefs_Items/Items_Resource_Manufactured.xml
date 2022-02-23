@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_MechanoidScrap</defName>
+        <label>mechanoid scrap</label>
+        <description>Worn out components and fragments of a mechanoid shell. Mostly useless, tho some with enough imagination may find use in those.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_MechanoidScrap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>2.5</MarketValue>
+            <Mass>0.6</Mass>
+            <DeteriorationRate>2</DeteriorationRate>
+        </statBases>
+        <smeltable>true</smeltable>
+        <intricate>true</intricate>
+        <smeltProducts>
+            <Steel>2</Steel>
+            <Plasteel>1</Plasteel>
+        </smeltProducts>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_MechanoidAlloy</defName>
+        <label>mechanoid alloy</label>
+        <description>Layers of unknown metals and plasteel extracted from the outerplates of mechanoids. Hard to manipulate but somehow stronger than plasteel.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_MechanoidAlloy</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>75</stackLimit>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>6</MarketValue>
+            <Mass>0.2</Mass>
+            <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.80</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>1</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <stuffProps>
+            <categories>
+              <li>Metallic</li>
+            </categories>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statFactors>
+                <MaxHitPoints>2.3</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <Flammability>0</Flammability>
+                <WorkToMake>2</WorkToMake>
+                <WorkToBuild>2</WorkToBuild>
+                <MeleeWeapon_CooldownMultiplier>0.1</MeleeWeapon_CooldownMultiplier>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_DominionCrown_Resource</defName>
+        <label>dominion broken crown</label>
+        <description>A broken but not useless crown extracted with care from a dominion. A psychic energy seems to emanate from it.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_DominionCrown</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>750</MarketValue>
+            <Mass>1.5</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_SlurrypedeDatabase</defName>
+        <label>slurrypede database</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_SlurrypedeDatabase</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_CarpenterAI</defName>
+        <label>carpenter's AI</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_CarpenterAI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>450</MarketValue>
+            <Mass>0.4</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_MammothPlate</defName>
+        <label>mammoth plate</label>
+        <description>Overplates carefully extracted from a Mammoth. Harder than anything known on the rim, even surpassing plasteel.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_MammothPlate</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>560</MarketValue>
+            <Mass>2</Mass>
+            <StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.30</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <categories>
+              <li>Scrappy</li>
+            </categories>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statFactors>
+                <MaxHitPoints>8</MaxHitPoints>
+                <Beauty>0.2</Beauty>
+                <Flammability>0</Flammability>
+                <WorkToMake>5</WorkToMake>
+                <WorkToBuild>5</WorkToBuild>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_OdinOverchargedCore</defName>
+        <label>odin's overcharged core</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_OdinOverchargedCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <Mass>1</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_SiegebreakerCanon</defName>
+        <label>siegebreaker canon</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_SiegebreakerCanon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>530</MarketValue>
+            <Mass>4</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_FederatorCrucibleCore</defName>
+        <label>federator crucible core</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_FederatorCrucibleCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <Mass>0.6</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SE_SubZeroInnerCore</defName>
+        <label>sub-zero innercore</label>
+        <description>Placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SE_SubZeroInnerCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>540</MarketValue>
+            <Mass>0.6</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+</Defs>

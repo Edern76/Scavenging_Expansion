@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- ===== Mechanoid Alloy Armor =====-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases</xpath>
+                    <value>
+                        <Bulk>100</Bulk>
+                        <WornBulk>15</WornBulk>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>17</ArmorRating_Sharp>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>'(</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_MechanoidAlloyHeavyArmor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Hands</li>
+                        <li>Feet</li>
+                    </value>
+                </li>
+
+                <!-- ===== Scav Armor =====-->
+
+            
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_ScavLightArmor"]/statBases</xpath>
+                    <value>
+                        <Bulk>50</Bulk>
+                        <WornBulk>10</WornBulk>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SE_ScavLightArmor"]/statBases/StuffEffectMultiplierArmor</xpath>
+                    <value>
+                        <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+                    </value>
+                </li>
+            
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="SE_ScavLightArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+                </li>
+            
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="SE_ScavLightArmor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <MeleeDodgeChance>-0.05</MeleeDodgeChance>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

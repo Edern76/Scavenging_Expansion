@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>More Mechanoids</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mech_Mammoth"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>4~10</alloyYield>
+                            <advancedYield>
+                                <li>
+                                    <defRef>SE_MammothPlate</defRef>
+                                    <chance>0.05</chance>
+                                </li>
+                            </advancedYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mech_Crawler"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>5</scrapYield>
+                            <alloyYield>1~2</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mech_Flamebot"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>7</scrapYield>
+                            <alloyYield>1~2</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mech_Skullywag"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>10</scrapYield>
+                            <alloyYield>2~4</alloyYield>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Mech_Assaulter"]</xpath>
+                    <value>
+                        <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                            <scrapYield>0</scrapYield>
+                            <alloyYield>3~5</alloyYield>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

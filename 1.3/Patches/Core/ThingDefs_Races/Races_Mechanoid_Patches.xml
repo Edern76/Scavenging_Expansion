@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Centipede"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>40</scrapYield>
+                <alloyYield>3~9</alloyYield>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Lancer"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>15</scrapYield>
+                <alloyYield>2~4</alloyYield>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Scyther"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>15</scrapYield>
+                <alloyYield>2~4</alloyYield>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Pikeman"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>20</scrapYield>
+                <alloyYield>2~6</alloyYield>
+            </li>
+        </value>
+    </Operation>
+
+    
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Mech_Termite"]</xpath>
+        <value>
+            <li Class="ScavengingExpansion.Defs.DefModExtensions.ScavengingYield">
+                <scrapYield>25</scrapYield>
+                <alloyYield>2~6</alloyYield>
+            </li>
+        </value>
+    </Operation>
+</Patch>
