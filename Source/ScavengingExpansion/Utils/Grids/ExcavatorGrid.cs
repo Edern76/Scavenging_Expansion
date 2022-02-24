@@ -46,14 +46,18 @@ namespace ScavengingExpansion.Utils.Grids
                     AddToGrid(cell, false); //TODO : Make it so only a few subsets of rocky tiles are valid
                 }    
             }
-            
-            List<List<IntVec3>> clusters = ExtractClusters();
-            List<IntVec3> finalCells = clusters.Take(_mapMaxClusters).SelectMany(x => x).ToList();
 
-            foreach (IntVec3 cell in GetCellsInGrid().Where(c => !finalCells.Contains(c)))
+            if (_boolGrid.TrueCount > 0)
             {
-                RemoveFromGrid(cell, false);
+                List<List<IntVec3>> clusters = ExtractClusters();
+                List<IntVec3> finalCells = clusters.Take(_mapMaxClusters).SelectMany(x => x).ToList();
+
+                foreach (IntVec3 cell in GetCellsInGrid().Where(c => !finalCells.Contains(c)))
+                {
+                    RemoveFromGrid(cell, false);
+                }
             }
+
             _drawer.SetDirty();
         }
 
