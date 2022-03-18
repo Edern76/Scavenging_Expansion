@@ -139,7 +139,7 @@
 
       <!-- Mechanoid Alloy Skin-Plates -->
 
-    <HediffDef ParentName="AddedBodyPartBase">
+    <HediffDef ParentName="ImplantHediffBase">
       <defName>SE_Bionics_MechanoidAlloySkinPlates</defName>
       <label>mechanoid alloy skin-plates</label>
       <labelNoun>a mechanoid alloy skin-plates</labelNoun>
