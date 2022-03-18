@@ -32,6 +32,7 @@
                 <compClass>ScavengingExpansion.Comps.CompAutoLearner</compClass>
                 <SpawnWithSetProject>false</SpawnWithSetProject>
                 <AvailableProjects>SE_SurveyDataProjectSet</AvailableProjects>
+                <StudyingEffect>SE_SurveyData_Effecter</StudyingEffect>
             </li>
         </comps>
     </ThingDef>
@@ -54,6 +55,7 @@
                 <compClass>ScavengingExpansion.Comps.CompAutoLearner</compClass>
                 <SpawnWithSetProject>true</SpawnWithSetProject>
                 <AvailableProjects>SE_BlueprintProjectSet</AvailableProjects>
+                <StudyingEffect>SE_Blueprint_Effecter</StudyingEffect>
             </li>
         </comps>
     </ThingDef>

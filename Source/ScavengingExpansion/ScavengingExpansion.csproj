@@ -32,7 +32,7 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="0Harmony, Version=2.1.1.0, Culture=neutral, PublicKeyToken=null">
+        <Reference Include="0Harmony, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
           <Private>False</Private>
         </Reference>
@@ -92,6 +92,7 @@
         <Compile Include="Harmony\Patches\PatchVerbShoot.cs" />
         <Compile Include="Jobs\JobDriver_Excavate.cs" />
         <Compile Include="Jobs\JobDriver_Unjam.cs" />
+        <Compile Include="Jobs\JobDriver_UseBlueprint.cs" />
         <Compile Include="Jobs\JobGiver_TryUnjam.cs" />
         <Compile Include="Jobs\WorkGivers\WorkGiver_Excavate.cs" />
         <Compile Include="PatchOperations\PatchOperationFindAllMods.cs" />

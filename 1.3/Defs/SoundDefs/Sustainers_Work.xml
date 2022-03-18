@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <SoundDef>
+    <defName>SE_Blueprint_Loop</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Research/Blueprint</clipPath>
+          </li>
+        </grains>
+        <muteWhenPaused>true</muteWhenPaused>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <gameSpeedRange>0~2</gameSpeedRange>
+        <volumeRange>100~100</volumeRange>
+        <distRange>10~70</distRange>
+        <sustainLoop>false</sustainLoop>
+        <sustainIntervalRange>0~0.25</sustainIntervalRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>SE_SurveyData_Loop</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Research/SurveyData</clipPath>
+          </li>
+        </grains>
+        <muteWhenPaused>true</muteWhenPaused>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <gameSpeedRange>0~2</gameSpeedRange>
+        <volumeRange>100~100</volumeRange>
+        <distRange>10~70</distRange>
+        <sustainLoop>false</sustainLoop>
+        <sustainIntervalRange>0~0.25</sustainIntervalRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

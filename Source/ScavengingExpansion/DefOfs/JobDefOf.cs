@@ -8,6 +8,7 @@ namespace ScavengingExpansion.DefOfs
     {
         public static JobDef SE_UnjamWeapon;
         public static JobDef SE_Excavate;
+        public static JobDef SE_StudyBlueprint;
 
         public static WorkTypeDef Excavating;
     }
