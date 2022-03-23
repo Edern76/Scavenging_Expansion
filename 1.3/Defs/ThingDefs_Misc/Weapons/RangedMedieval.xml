@@ -21,13 +21,13 @@
         </costList>
         <statBases>
             <WorkToMake>10000</WorkToMake>
-            <MarketValue>120</MarketValue>
+            <MarketValue>630</MarketValue>
             <Mass>3.4</Mass>
-            <AccuracyTouch>0.70</AccuracyTouch>
-            <AccuracyShort>0.79</AccuracyShort>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
             <AccuracyMedium>0.50</AccuracyMedium>
             <AccuracyLong>0.30</AccuracyLong>
-            <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
             <MeleeWeapon_AverageArmorPenetration>0.1</MeleeWeapon_AverageArmorPenetration>
         </statBases>
         <weaponTags>
@@ -39,7 +39,7 @@
               <hasStandardCommand>true</hasStandardCommand>
               <defaultProjectile>SE_Bullet_ScrapCrossbow</defaultProjectile>
               <warmupTime>1.67</warmupTime>
-              <range>38</range>
+              <range>30</range>
               <soundCast>Bow_Large</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <muzzleFlashScale>9</muzzleFlashScale>
@@ -77,7 +77,7 @@
         <damageAmountBase>16</damageAmountBase>
         <stoppingPower>1</stoppingPower>
         <armorPenetrationBase>0.3</armorPenetrationBase>
-        <speed>50</speed>
+        <speed>45</speed>
       </projectile>
       <graphicData>
         <texPath>Things/Projectile/Arrow_Small</texPath>
