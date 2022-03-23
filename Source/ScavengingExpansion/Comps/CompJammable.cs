@@ -117,6 +117,19 @@ namespace ScavengingExpansion.Comps
             this.parent.Destroy();
         }
 
+        public float GetJamChance()
+        {
+            CompOverclockable compOverclockable = parent.TryGetComp<CompOverclockable>();
+            if (compOverclockable != null)
+            {
+                return Mathf.Min(Props.JamChancePerShot + compOverclockable.Props.AdditionalJamChance, 1f);
+            }
+            else
+            {
+                return Props.JamChancePerShot;
+            }
+        }
+
         private void tryStartUnjam()
         {
             Job unjamJob = TryMakeJob();

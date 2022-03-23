@@ -43,7 +43,7 @@ namespace ScavengingExpansion.Harmony.Patches
                     {
                         compJam.ShotsSinceLastBurst = 0;
                         float diceRoll = Rand.Value;
-                        float chance = compJam.Props.JamChancePerShot;
+                        float chance = compJam.GetJamChance();
                         #if DEBUG
                             Log.Message($"DiceRoll : {diceRoll} | Chance : {chance}");
                         #endif
