@@ -68,6 +68,9 @@
                 <JamChancePerShot>0.15</JamChancePerShot>
             </li>
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
+              <MaxOverclockTicks>300</MaxOverclockTicks>
+            </li>
         </comps>
         <recipeMaker>
           <researchPrerequisite>AlloyGunsmithing</researchPrerequisite>
@@ -165,6 +168,9 @@
         <comps>
             <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
                 <JamChancePerShot>0.25</JamChancePerShot>
+            </li>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
+              <MaxOverclockTicks>300</MaxOverclockTicks>
             </li>
         </comps>
         <recipeMaker>
@@ -266,6 +272,9 @@
             <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
                 <JamChancePerShot>0.15</JamChancePerShot>
             </li>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
+              <MaxOverclockTicks>300</MaxOverclockTicks>
+            </li>
         </comps>
         <recipeMaker>
           <researchPrerequisite>AlloyGunsmithing</researchPrerequisite>
@@ -356,6 +365,9 @@
         <comps>
             <li Class="ScavengingExpansion.Comps.CompProperties_Jammable">
                 <JamChancePerShot>0.20</JamChancePerShot>
+            </li>
+            <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
+              <MaxOverclockTicks>300</MaxOverclockTicks>
             </li>
         </comps>
         <recipeMaker>

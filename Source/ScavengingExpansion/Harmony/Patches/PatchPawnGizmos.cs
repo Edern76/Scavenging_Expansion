@@ -28,7 +28,17 @@ namespace ScavengingExpansion.Harmony.Patches
                 {
                     yield return g;
                 }
-            }    
+            }
+            
+            CompOverclockable comp2 = __instance?.equipment?.Primary?.TryGetComp<CompOverclockable>();
+            if (comp2 != null && __instance.Faction == Faction.OfPlayer)
+            {
+                foreach (Gizmo g in comp2.CompGetGizmosExtra())
+                {
+                    yield return g;
+                }
+            }
+            
         }
     }
 }
