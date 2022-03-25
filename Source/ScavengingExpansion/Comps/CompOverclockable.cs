@@ -19,6 +19,9 @@ namespace ScavengingExpansion.Comps
         public float AimingDelayOffsetFactor = 0.8f;
         public float RangeOffsetFactor = 1.15f;
         public float AdditionalEMPDamagePercent = 0.2f;
+        public float HandsBurningChance = 0.5f;
+        public float HandsDamage = 5f;
+
     }
 
     public class CompOverclockable : ThingComp
@@ -41,7 +44,7 @@ namespace ScavengingExpansion.Comps
             get { return ContentFinder<Texture2D>.Get(Props.UIIconPath); }
         }
         
-        protected virtual Pawn GetWearer
+        public virtual Pawn GetWearer
         {
             get
             {
