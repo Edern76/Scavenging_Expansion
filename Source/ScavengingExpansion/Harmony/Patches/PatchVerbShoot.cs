@@ -62,7 +62,7 @@ namespace ScavengingExpansion.Harmony.Patches
                             CompOverclockable compOverclockable = equipment.TryGetComp<CompOverclockable>();
                             if (compOverclockable != null && compOverclockable.Overclocked)
                             {
-                                float burnChance = compOverclockable.Props.HandsDamage;
+                                float burnChance = compOverclockable.Props.HandsBurningChance;
                                 float burnDiceRoll = Rand.Value;
                                 if (burnDiceRoll < burnChance)
                                 {
