@@ -69,7 +69,7 @@
             </li>
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
             <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
-              <MaxOverclockTicks>300</MaxOverclockTicks>
+              <MaxOverclockTicks>2500</MaxOverclockTicks>
             </li>
         </comps>
         <recipeMaker>
@@ -170,7 +170,7 @@
                 <JamChancePerShot>0.25</JamChancePerShot>
             </li>
             <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
-              <MaxOverclockTicks>300</MaxOverclockTicks>
+              <MaxOverclockTicks>2500</MaxOverclockTicks>
             </li>
         </comps>
         <recipeMaker>
@@ -273,7 +273,7 @@
                 <JamChancePerShot>0.15</JamChancePerShot>
             </li>
             <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
-              <MaxOverclockTicks>300</MaxOverclockTicks>
+              <MaxOverclockTicks>2500</MaxOverclockTicks>
             </li>
         </comps>
         <recipeMaker>
@@ -367,7 +367,7 @@
                 <JamChancePerShot>0.20</JamChancePerShot>
             </li>
             <li Class="ScavengingExpansion.Comps.CompProperties_Overclockable">
-              <MaxOverclockTicks>300</MaxOverclockTicks>
+              <MaxOverclockTicks>2500</MaxOverclockTicks>
             </li>
         </comps>
         <recipeMaker>
